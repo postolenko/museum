@@ -95,7 +95,23 @@ $(document).ready(function() {
             slidesToShow: 5,
             slidesToScroll: 1,
             prevArrow: '<button class="slick_prev" aria-label="Previous" type="button"><img src="img/arrow_right_gold.svg"></button>',
-            nextArrow: '<button class="slick_next" aria-label="Next" type="button"><img src="img/arrow_left_gold.svg"></button>'
+            nextArrow: '<button class="slick_next" aria-label="Next" type="button"><img src="img/arrow_left_gold.svg"></button>',
+            responsive: [
+             {
+               breakpoint: 1020,
+               settings: {
+                 slidesToShow: 4,
+                 slidesToScroll: 1
+               }
+             },
+             {
+               breakpoint: 800,
+               settings: {
+                 slidesToShow: 3,
+                 slidesToScroll: 1
+               }
+             }
+           ]
         });
     }   
 
@@ -109,7 +125,23 @@ $(document).ready(function() {
             slidesToShow: 4,
             slidesToScroll: 1,
             prevArrow: '<button class="slick_prev" aria-label="Previous" type="button"><img src="img/arrow_right_gold.svg"></button>',
-            nextArrow: '<button class="slick_next" aria-label="Next" type="button"><img src="img/arrow_left_gold.svg"></button>'
+            nextArrow: '<button class="slick_next" aria-label="Next" type="button"><img src="img/arrow_left_gold.svg"></button>',
+            responsive: [
+             {
+               breakpoint: 1250,
+               settings: {
+                 slidesToShow: 3,
+                 slidesToScroll: 1
+               }
+             },
+             {
+               breakpoint: 970,
+               settings: {
+                 slidesToShow: 2,
+                 slidesToScroll: 1
+               }
+             }
+           ]
         });
 	}	    
 

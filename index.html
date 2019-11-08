@@ -7,9 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" type="text/css" href="style.css">	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Сахалинский Областной Краеведческий Музей</title>
-	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -20,23 +21,18 @@
 		
 	<header>
 		<div class="header_site">
-			<div class="row row_1">
+			<div class="row row_1" id="resp_header">
 				<div class="top_row">
 					<div class="col_left">
 						<a href="#" class="logo">
-							<img src="img/logo.svg" alt="" />
+							<img class="logo_desc" src="img/logo.svg" alt="" />
+							<img class="logo_resp" src="img/logo_resp.svg" alt="" />
 						</a>
 					</div>
 					<div class="col_right">
-						<div class="inner">
-							<div class="sign_links">
-								<ul>
-									<li><a href="#">Вход</a></li>
-									<li><a href="#">Регистрация</a></li>
-								</ul>
-							</div>
+						<div class="inner">							
 							<div class="header_three_cols">
-								<div class="col tels">
+								<div class="col tels resp_hidden">
 									<div class="tel_wrapp">
 										<div class="tel_col">
 											<p>касса</p>
@@ -62,7 +58,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col time_des">
+								<div class="col time_des resp_hidden">
 									<h3>Ждем вас:</h3>
 									<div class="time_list_wrapp">
 										<ul>
@@ -74,94 +70,117 @@
 									</div>
 								</div>
 								<div class="col options_wrapp">
-									<div class="icons_links_wrapp">
-										<a href="#" class="icon_link">
-											<img src="img/eye.svg" alt="" />
-										</a>
-										<a href="#" class="icon_link">
-											<img src="img/search.svg" alt="" />
-										</a>
+									<div class="sign_links resp_hidden">
+										<ul>
+											<li><a href="#">Вход</a></li>
+											<li><a href="#">Регистрация</a></li>
+										</ul>
 									</div>
-									<div class="langs_wrapp">
-										<button type="button" class="lang_active">RU</button>
-										<div class="dropdown_langs">
-											<ul class="langs_list">
-												<li><a href="#" class="active">ru</a></li>
-												<li><a href="#">en</a></li>
-												<li><a href="#">jp</a></li>
-											</ul>
+									<div>
+										<div class="icons_links_wrapp resp_hidden">
+											<a href="#" class="icon_link">
+												<img src="img/eye.svg" alt="" />
+											</a>
+											<a href="#" class="icon_link">
+												<img src="img/search.svg" alt="" />
+											</a>
+										</div>
+										<div class="langs_wrapp">
+											<button type="button" class="lang_active">RU</button>
+											<div class="dropdown_langs">
+												<ul class="langs_list">
+													<li><a href="#" class="active">ru</a></li>
+													<li><a href="#">en</a></li>
+													<li><a href="#">jp</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="resp_inline">
+											<button type="button" class="resp_button time_button">
+												<img src="img/clock.svg" alt="" />
+											</button>
+										</div>
+										<div class="resp_inline">
+											<button type="button" class="resp_button search_button">
+												<img src="img/search_white.svg" alt="" />
+											</button>
+										</div>
+										<div class="resp_inline">
+											<button class="respmenubtn">
+												<span></span>
+												<span></span>
+												<span></span>
+											</button>
+										</div>
+										<div class="resp_hidden">
+											<button type="button" class="transparent_pill">купить билет</button>
 										</div>
 									</div>
-									<button type="button" class="transparent_pill">купить билет</button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		<div class="main_nav_sect">
-			<div class="main_nav_scroll_wrapp">
-				<div class="main_nav_scroll" id="fixed_menu">
+			<div class="main_nav_sect">
+				<div class="main_nav_scroll_wrapp">
+					<div class="main_nav_scroll" id="fixed_menu">
+						<div class="row">
+							<div class="short_logo_wrapp">
+								<a href="#" class="logo_short_link">
+									<img src="img/logo_short.svg" alt="" />
+								</a>
+							</div>
+							<div class="main_nav_wrapp" id="resp_nav">
+								<ul class="main_nav">							
+									<li><a href="#">Музей</a></li>
+									<li><a href="#">Афиша</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Выставки</a></li>
+									<li><a href="#">Коллекции</a></li>
+									<li><a href="#">Наука</a></li>
+									<li><a href="#">Конкурсы</a></li>
+									<li><a href="#">Купить</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="promo_slider_sect">
 					<div class="row">
-						<div class="short_logo_wrapp">
-							<a href="#" class="logo_short_link">
-								<img src="img/logo_short.svg" alt="" />
-							</a>
-						</div>
-						<div class="main_nav_wrapp" id="resp_nav">
-							<ul class="main_nav">							
-								<li><a href="#">Музей</a></li>
-								<li><a href="#">Афиша</a></li>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Выставки</a></li>
-								<li><a href="#">Коллекции</a></li>
-								<li><a href="#">Наука</a></li>
-								<li><a href="#">Конкурсы</a></li>
-								<li><a href="#">Купить</a></li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
+						<div class="promo_slider_wrapp">
+							<div class="promo_sl_arrows"></div>
+							<div class="promo_slider">
+								<div class="slide">
+									<div class="img_box" style="background-image: url(img/culture.jpg);"></div>
+									<div class="slide_desc">
+										<div class="inner">					
+											<p>Экспозиция</p>
+											<h3>ДРЕВНИЕ КУЛЬТУРЫ И КОРЕННЫЕ НАРОДЫ</h3>
+											<a class="transparent_pill_2" href="#">Интересно?</a>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="img_box" style="background-image: url(img/culture.jpg);"></div>
+									<div class="slide_desc">
+										<div class="inner">
+											<p>Экспозиция</p>
+											<h3>ДРЕВНИЕ КУЛЬТУРЫ И КОРЕННЫЕ НАРОДЫ 2</h3>
+											<a class="transparent_pill_2" href="#">Интересно?</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slides_desc_append">
+								<div class="inner" id="slideContent"></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- <button class="respmenubtn">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button> -->
-			<div class="promo_slider_sect">
-				<div class="row">
-					<div class="promo_slider_wrapp">
-						<div class="promo_sl_arrows"></div>
-						<div class="promo_slider">
-							<div class="slide">
-								<div class="img_box" style="background-image: url(img/culture.jpg);"></div>
-								<div class="slide_desc">
-									<div class="inner">					
-										<p>Экспозиция</p>
-										<h3>ДРЕВНИЕ КУЛЬТУРЫ И КОРЕННЫЕ НАРОДЫ</h3>
-										<a class="transparent_pill_2" href="#">Интересно?</a>
-									</div>
-								</div>
-							</div>
-							<div class="slide">
-								<div class="img_box" style="background-image: url(img/culture.jpg);"></div>
-								<div class="slide_desc">
-									<div class="inner">
-										<p>Экспозиция</p>
-										<h3>ДРЕВНИЕ КУЛЬТУРЫ И КОРЕННЫЕ НАРОДЫ 2</h3>
-										<a class="transparent_pill_2" href="#">Интересно?</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="slides_desc_append">
-							<div class="inner" id="slideContent"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>						
+		</div>
 	</header>
 
 	<!-- /Header -->
@@ -173,7 +192,7 @@
 
 		<section>
 			<div class="row">
-			<!-- Slider Header -->
+				<!-- Slider Header -->
 				<div class="slider_header">
 					<div class="left_col">
 						<div class="inline_blocks">
@@ -343,7 +362,7 @@
 
 		<section>
 			<div class="row">
-			<!-- Slider Header -->
+				<!-- Slider Header -->
 				<div class="slider_header">
 					<div class="left_col">
 						<div class="inline_blocks">
@@ -659,7 +678,6 @@
 						</a>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
@@ -759,7 +777,7 @@
 
 		<!-- Section 6 - Main Page -->
 
-		<section class="grey_bg">			
+		<section class="grey_bg">
 			<div class="row">
 				<div class="slider_6">
 					<div class="slide">
@@ -822,7 +840,6 @@
 	<!-- Footer -->
 
 		<footer class="footer_section">
-
 			<div class="footer row">
 				<div class="col_left">
 					<a href="#" class="logo_white">
@@ -936,7 +953,6 @@
 					</div>
 				</div>
 			</div>
-
 		</footer>
 
 	<!-- /Footer -->
@@ -946,7 +962,6 @@
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
-	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<!-- <script src="vendors/js/jquery.js"></script> -->
 	<script
   src="https://code.jquery.com/jquery-3.4.1.js"

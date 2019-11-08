@@ -1,13 +1,300 @@
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1305px) {
+
+	.row {
+		padding: 0 20px;
+	}
+
+	/*-- Footer --*/
+
+	.footer .col_left {
+	    width: 238px;
+	}
+
+	.footer .col_right {
+	    width: calc(100% - 238px);
+	}
+
+	/*-- /Footer --*/
+
+}
 
 
+@media only screen and (max-width: 1124px) {
+
+	/*-- Header --*/
+
+	.top_row {
+	    padding-bottom: 14px;
+	}
+
+	.top_row .col_left {
+	    padding-top: 16px;
+	}
+
+	.header_three_cols .options_wrapp {
+	    width: 201px;
+	}
+
+	.time_list_wrapp {
+	    margin: 2px 0;
+	    max-width: 280px;
+	}
+
+	.time_list_wrapp ul {
+	    display: block;
+	    flex-wrap: none;
+	}
+
+	.time_list_wrapp ul li:nth-child(odd) {
+	    width: 100%;
+	}
+
+	.time_list_wrapp ul li:nth-child(even) {
+	    width: 100%;
+	}
+
+	.time_list_wrapp ul li {
+		line-height: 1.6;
+	}
+
+	.main_nav_sect {
+	    padding: 16px 0;
+	}
+
+	.main_nav li {
+	    padding: 5px 7px;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 5 - Main Page --*/
+
+	.thumb_2 {
+		max-width: 185px;
+	    height: 185px;
+	}
+
+	.thumb_2 .mask .inner {
+	    padding: 10px 10px 8px 10px;
+	}
+
+	.thumb_2 .mask h3 {
+	    font-size: 18px;
+	    line-height: 19px;
+	}
+
+	/*-- /Section 5 - Main Page --*/
+
+
+
+	/*-- Footer --*/
+
+	.footer_three_cols .col:nth-child(1) {
+	    width: calc(100% - 370px);
+	}
+
+	.footer_three_cols .col:nth-child(2) {
+		width: 170px;
+	}
+
+	.texts_wrapp {
+		width: calc(100% + 238px);
+		margin-left: -238px;
+	}
+
+	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 1020px) {
+
+	/*-- Header --*/
+
+	.top_row {
+	    padding: 0 0 8px 0;
+	}
+
+	.top_row .col_left {
+	    width: 220px;
+	    padding-top: 30px;
+	    padding-right: 10px;
+	}
+
+	.top_row .col_right {
+	    width: calc(100% - 220px);
+	}
+
+	.main_nav li a {
+	    font-size: 14px;
+	    line-height: 14px;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Footer --*/
+
+	.footer {
+	    display: block;
+	}
+
+	.footer .col_left {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.footer .col_right {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.logo_white {
+	    margin-bottom: 20px;
+	}
+
+	.footer_three_cols .col {
+	    padding: 10px 10px;
+	}
+
+	.texts_wrapp {
+	    width: 100%;
+	    margin-left: 0;
+	}
+
+	/*-- /Footer --*/
 
 }
 
 
 @media only screen and (max-width: 900px) {
 
+	.row {
+		padding: 0 15px;
+	}
 
+	/*-- Header --*/
+
+	.header_site {
+	    /*background-color: #6d777c;*/
+	    background-color: transparent;
+	}
+
+	#resp_header {
+		width: 100%;
+		/*background-color: #6d777c;*/
+		background-color: rgba(0, 0, 0, .4);
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 11;
+	}
+
+	.top_row .col_left {
+	    padding-right: 5px;
+	}
+
+	.top_row .col_right {
+	    padding-left: 5px;
+	}
+
+	.top_row {
+		padding: 2px 0;
+	    border-bottom: 1px solid rgba(255, 255, 255, .4);
+	}
+
+	.top_row .col_left {
+	    width: 85px;
+	    padding-top: 14px;
+	    padding-bottom: 14px;
+	}
+
+	.top_row .col_right {
+	    width: calc(100% - 85px);
+	}
+
+	.resp_hidden {
+		display: none;
+	}
+
+	.resp_inline {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.logo {
+		width: 75px;
+	}
+
+	.logo_desc {
+		display: none !important;
+	}
+
+	.logo_resp {
+	    display: block !important;
+	}
+
+	.main_nav_sect {
+		height: none;
+		height: auto;
+	}
+
+	.main_nav_scroll_wrapp {
+		display: none;
+	}
+
+	.lang_active {
+		color: #ffffff;
+	}
+
+	.lang_active:after {
+	    background-image: url(img/little_arrow_white.svg);
+	}
+
+	.respmenubtn {
+		display: block;
+	}
+
+	.header_three_cols .options_wrapp {
+	    width: 100%;
+	    margin: 0 -7px;
+	    padding-top: 23px;
+	    padding-left: 0;
+	}
+
+	.resp_inline {
+	    padding: 10px 4px;
+	}
+
+	.main_nav_sect {
+	    padding: 0;
+	    margin: 0;
+	}
+
+	.main_nav_sect:before {
+		display: none;
+	}
+
+	.promo_slider_wrapp {
+	    margin: 0 -15px;
+	}
+
+	.promo_slider {
+	    height: 440px;
+	}
+
+	.promo_slider .slide .img_box {
+	    height: 440px;
+	}
+
+	.slides_desc_append .inner {
+	    padding: 18px 38px 50px 38px;
+	}
+
+	.promo_slider_wrapp .promo_sl_arrows {
+	    top: auto;
+	    bottom: 10px;
+	}
+
+	/*-- /Header --*/
 
 }
 

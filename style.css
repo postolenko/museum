@@ -162,6 +162,7 @@ body {
     -ms-flex-direction: column;
     min-height: 100%;
     min-height: 100vh;
+    min-width: 320px;
 }
 
 header {
@@ -566,7 +567,7 @@ textarea:focus {
 
 .top_row .col_left {
     width: 305px;
-    padding-top: 8px;
+    padding-top: 10px;
     padding-right: 10px;
 }
 
@@ -588,8 +589,12 @@ textarea:focus {
     max-width: 100%;
 }
 
+.logo_resp {
+    display: none !important;
+}
+
 .sign_links {
-    padding: 8px 0 0 0;
+    padding: 4px 0 6px 0;
 }
 
 .sign_links ul {
@@ -666,6 +671,7 @@ textarea:focus {
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .header_three_cols .col {
@@ -683,19 +689,21 @@ textarea:focus {
 
 .header_three_cols .tels {
     width: auto;    
-    padding-top: 14px;
+    padding-bottom: 6px;
     padding-right: 18px;
 }
 
 .header_three_cols .time_des {
     width: auto;
     max-width: 335px;
-    padding-top: 14px;
+    padding-top: 13px;
+    padding-bottom: 7px;
 }
 
 .header_three_cols .options_wrapp {
-    width: 184px;
+    width: 200px;
     padding-top: 8px;
+    padding-bottom: 16px;
     text-align: right;
 }
 
@@ -783,6 +791,7 @@ textarea:focus {
 
 .time_list_wrapp {
     margin: 7px 0;
+    max-width: 280px;
 }
 
 .time_list_wrapp ul {
@@ -799,6 +808,14 @@ textarea:focus {
     line-height: 1.8;
     font-weight: normal;
     color: #3f4649;
+}
+
+.time_list_wrapp ul li:nth-child(odd) {
+    width: 58%;
+}
+
+.time_list_wrapp ul li:nth-child(even) {
+    width: 42%;
 }
 
 .icons_links_wrapp {
@@ -1008,6 +1025,29 @@ textarea:focus {
     background: #7e1b1f;
 }
 
+.resp_inline {
+    display: none;
+    padding: 10px 7px;
+}
+
+.resp_button {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.time_button {
+    width: 24px;
+    height: 24px;
+}
+
+.search_button {
+    width: 24px;
+    height: 24px;
+}
+
 .main_nav_sect {
     padding: 20px 0;
     height: 350px;
@@ -1166,17 +1206,17 @@ textarea:focus {
     background: transparent;
     cursor: pointer;
     position: relative;
-    top: 6px;
+    top: -7px;
     z-index: 11;
     border: 1px solid transparent;
 }
 
 .respmenubtn span {
     display: block;
-    width: 27px;
+    width: 30px;
     height: 2px;
-    background: #466896;
-    margin: 0 auto 7px auto;
+    background: #ffffff;
+    margin: 0 auto 5px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1208,7 +1248,7 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #e9ba5f;
+    background: #ffffff;
 }
 
 .respmenubtn.active span {
@@ -1216,7 +1256,7 @@ textarea:focus {
     width: 35px;
     top: 2px;
     left: 0;
-    background: #e9ba5f;
+    background: #ffffff;
 }
 
 .respmenubtn.active span:last-child {
@@ -2581,14 +2621,15 @@ p.date_2 {
 }
 
 .slider_5 .slide {
-
+    padding: 10px;
 }
 
 .thumb_2 {
     display: block;
     max-width: 235px;
     height: 235px;
-    margin: 10px;
+    /*margin: 10px;*/
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
@@ -2856,6 +2897,7 @@ p.date_2 {
 }
 
 .seo_texts_wrapp {
+    margin: 0 -5px;
     padding: 10px 0;
     column-count: 4;
     -webkit-column-count: 4;
@@ -2864,7 +2906,7 @@ p.date_2 {
 }
 
 .seo_text {
-    padding: 2px 0 8px 0;
+    padding: 2px 5px 8px 5px;
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
 }
