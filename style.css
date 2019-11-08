@@ -2251,6 +2251,39 @@ p.date_2 {
     font-weight: 900;
     letter-spacing: 1px;
     color: #3f4649;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.thumb_4:link h3,
+.thumb_4:visited h3 {
+    color: #3f4649;
+}
+
+.thumb_4:active h3,
+.thumb_4.active h3 {
+    color: #c69f5b;
+}
+
+.thumb_4:hover h3 {
+    color: #c69f5b;
 }
 
 .thumb_4 p {
