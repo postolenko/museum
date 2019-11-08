@@ -65,6 +65,10 @@
 	    max-width: 280px;
 	}
 
+	.header_three_cols .time_des {
+	    padding-bottom: 7px;
+	}
+
 	.time_list_wrapp ul {
 	    display: block;
 	    flex-wrap: none;

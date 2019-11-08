@@ -697,7 +697,7 @@ textarea:focus {
     width: auto;
     max-width: 335px;
     padding-top: 13px;
-    padding-bottom: 7px;
+    /*padding-bottom: 7px;*/
 }
 
 .header_three_cols .options_wrapp {
@@ -837,7 +837,6 @@ textarea:focus {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    /*margin: 10px;*/
 }
 
 .lang_active {
