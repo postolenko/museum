@@ -1008,7 +1008,6 @@ textarea:focus {
     background: #7e1b1f;
 }
 
-
 .main_nav_sect {
     padding: 20px 0;
     height: 350px;
@@ -1030,9 +1029,78 @@ textarea:focus {
     left: 0;
 }
 
+.main_nav_scroll_wrapp {
+
+}
+
+.main_nav_scroll {
+    background-color: #6d777c;
+    top: -100vh;
+}
+
+.main_nav_scroll.fixed {
+    width: 100%;
+    padding: 15px 0 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: top;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: top;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: top;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: top;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.main_nav_scroll .row {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.short_logo_wrapp {
+    display: none;
+    width: 126px;
+}
+
+.main_nav_scroll.fixed .short_logo_wrapp {
+    display: block;
+}
+
+.logo_short_link {
+    display: block;
+    max-width: 85px;
+}
+
+.logo_short_link img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+}
+
 .main_nav_wrapp {
+    width: 100%;
     margin: 13px 0;
     text-align: center;
+}
+
+.main_nav_scroll.fixed .main_nav_wrapp {
+    margin-top: 20px;
+    width: calc(100% - 252px);
 }
 
 .main_nav li {
@@ -1176,7 +1244,7 @@ textarea:focus {
 /* ----- / Responsive Menu Button ------ */
 
 .promo_slider_wrapp {
-    margin: 29px 0;
+    margin: 15px 0;
     position: relative;
     z-index: 2;
 }

@@ -7,6 +7,16 @@ function getThumbDescriptSize() {
     });
 }
 
+function getPositionMenu() {
+    if( $(document).scrollTop() > $(".main_nav_scroll_wrapp").offset().top + 150) {
+        $(".main_nav_scroll_wrapp").height($("#fixed_menu").height());
+        $("#fixed_menu").addClass("fixed");
+    } else {
+        $(".main_nav_scroll_wrapp").height(false);
+        $("#fixed_menu").removeClass("fixed");
+    }
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -28,15 +38,17 @@ $(window).on('load', function() {
 
 $(window).resize(function() {
     getThumbDescriptSize();
+    getPositionMenu();
 });
 
 $(document).scroll(function() {
-
+    getPositionMenu();
 });
 
 $(document).ready(function() {
 
     getThumbDescriptSize();
+    getPositionMenu();
 
 	if( $(".promo_slider").length > 0 ) {
         $(".promo_slider").not(".slick-initialized").slick({
@@ -116,7 +128,7 @@ $(document).ready(function() {
 
     // ---------------------
 
-        $("[data-dropdownbtn2], .select_input").on('click', function(e) {
+    $("[data-dropdownbtn2], .select_input").on('click', function(e) {
         e.preventDefault();
         if( $(this).hasClass("select_input") ) {
             dropdownMenuName = $(this).closest(".dropdowm_select_menu").find('[data-dropdownbtn2]').attr("data-dropdownbtn2");
