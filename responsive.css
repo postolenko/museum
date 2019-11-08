@@ -4,6 +4,14 @@
 		padding: 0 20px;
 	}
 
+	/*-- Header --*/
+
+	.main_nav li {
+	    padding: 5px 5px;
+	}
+
+	/*-- /Header --*/
+
 	/*-- Footer --*/
 
 	.footer .col_left {
@@ -15,6 +23,23 @@
 	}
 
 	/*-- /Footer --*/
+
+}
+
+
+@media only screen and (max-width: 1224px) {
+
+	/*-- Header --*/
+
+	.main_nav_scroll.fixed .short_logo_wrapp {
+	    display: none;
+	}
+
+	.main_nav_scroll.fixed .main_nav_wrapp {
+	    width: 100%;
+	}
+
+	/*-- /Header --*/
 
 }
 
@@ -65,6 +90,10 @@
 	    padding: 5px 7px;
 	}
 
+	.main_nav_scroll.fixed {
+	    padding: 7px 0 7px 0;
+	}
+
 	/*-- /Header --*/
 
 	/*-- Section 5 - Main Page --*/
@@ -84,8 +113,6 @@
 	}
 
 	/*-- /Section 5 - Main Page --*/
-
-
 
 	/*-- Footer --*/
 
@@ -176,6 +203,7 @@
 	.header_site {
 	    /*background-color: #6d777c;*/
 	    background-color: transparent;
+	    margin-bottom: 0;
 	}
 
 	#resp_header {
