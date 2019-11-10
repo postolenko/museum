@@ -420,20 +420,25 @@ $(document).ready(function() {
     var respMenu;
 
     $("[data-resp-btn]").click(function() {
+        $(".resp_menu").fadeOut(300);
+        $("[data-resp-btn]").removeClass("active");
         respMenu = $("[data-resp-menu = '"+$(this).attr('data-resp-btn')+"']");
         if( respMenu.is(":hidden") ) {
             respMenu.fadeIn(300);
             $(this).addClass("active");
+            $("#resp_header").addClass("bg");
         } else {
             respMenu.fadeOut(300);
             $(this).removeClass("active");
+            $("#resp_header").removeClass("bg");
         }
     });
 
     $(this).keydown(function(eventObject){
         if (eventObject.which == 27 ) {
                 $(".resp_menu").fadeOut(300);
-                $("[data-resp-menu]").removeClass("active");
+                $("[data-resp-btn]").removeClass("active");
+                $("#resp_header").removeClass("bg");
         }
     });
 

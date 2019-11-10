@@ -3677,6 +3677,11 @@ input.search_input::placeholder {
     padding: 0 15px;
 }
 
+.time_menu_inner {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
 .time_menu_content {
     padding: 20px 0 43px 0;
     border-bottom: 1px solid #899399;
