@@ -101,7 +101,7 @@
 											</button>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button search_button">
+											<button type="button" class="resp_button search_button" data-popup-link = "popup_1">
 												<img src="img/search_white.svg" alt="" />
 											</button>
 										</div>
@@ -123,7 +123,7 @@
 				</div>
 			</div>
 			<div class="main_nav_sect">
-				<div class="main_nav_scroll_wrapp">
+				<div class="main_nav_scroll_wrapp" id="resp_menu">
 					<div class="main_nav_scroll" id="fixed_menu">
 						<div class="back_el"></div>
 						<div class="row">
@@ -132,7 +132,7 @@
 									<img src="img/logo_short.svg" alt="" />
 								</a>
 							</div>
-							<div class="main_nav_wrapp" id="resp_nav">
+							<div class="main_nav_wrapp main_nav_resp" id="resp_nav">
 								<ul class="main_nav">
 									<li>
 										<a href="#">Музей</a>
@@ -285,7 +285,7 @@
 								<div class="img_box">
 									<img src="img/afisha_1.jpg" alt="" />
 								</div>
-								<div class="thumb_5_header">
+								<!-- <div class="thumb_5_header">
 									<div class="place_item">
 										<div class="col">
 											<i class="location_pin"></i>
@@ -294,7 +294,7 @@
 											<p>Сахалинский областной краеведческий музей</p>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<div class="thumb_5_descript">
 									<p>лекция</p>
 									<h3>Природные особенности северо-западного сектора Тихого океана</h3>
@@ -337,7 +337,7 @@
 								<div class="img_box">
 									<img src="img/afisha_1.jpg" alt="" />
 								</div>
-								<div class="thumb_5_header">
+								<!-- <div class="thumb_5_header">
 									<div class="place_item">
 										<div class="col">
 											<i class="location_pin"></i>
@@ -346,7 +346,7 @@
 											<p>Сахалинский областной краеведческий музей</p>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<div class="thumb_5_descript">
 									<p>лекция</p>
 									<h3>Природные особенности северо-западного сектора Тихого океана</h3>
@@ -971,14 +971,27 @@
 							</div>
 						</div>
 					</div>
+					<div class="soc_resp_wrapp">
+						<h3>музей в соцсетях</h3>
+						<ul class="soc_list_resp">
+							<li><a href="#"><i class="facebook"></i></a></li>
+							<li><a href="#"><i class="instagram"></i></a></li>
+							<li><a href="#"><i class="vk"></i></a></li>
+							<li><a href="#"><i class="odnoklassniki"></i></a></li>
+							<li><a href="#"><i class="twitter"></i></a></li>
+						</ul>
+					</div>
+					<div class="site_map_wrapp_resp">
+						<a href="#" class="line_link">карта сайта</a>
+					</div>
 					<div class="texts_wrapp">
 						<div>
 							<p>© 2019, ГБУК «Сахалинский областной краеведческий музей»</p>
 						</div>
-						<div>
+						<div class="site_map_wrapp">
 							<p><a href="#" class="line_link">карта сайта</a></p>
 						</div>
-						<div>
+						<div class="statistic_wrapp">
 							<p>статистика посещения: 435 049</p>
 						</div>
 						<div>
@@ -998,17 +1011,19 @@
 
 	<div class="popup_sect" data-popup="popup_1">
 		<div class="popup_wrapp">
-			<div class="center_position">				
-				<div class="search_form">
-					<button type="button" class="close_btn"><i class="close"></i></button>
-					<h3>Поиск</h3>
-					<div class="search_form_wrapp">
-						<form>
-							<div class="input_wrapp">
-								<input type="text" name="search_input" class="search_input" placeholder="Я ищу…" />
-							</div>
-							<input type="submit" class="search_submit" value="" />
-						</form>
+			<div class="center_position">
+				<div>		
+					<div class="search_form">
+						<button type="button" class="close_btn"><i class="close"></i></button>
+						<h3>Поиск</h3>
+						<div class="search_form_wrapp">
+							<form>
+								<div class="input_wrapp">
+									<input type="text" name="search_input" class="search_input" placeholder="Я ищу…" />
+								</div>
+								<input type="submit" class="search_submit" value="" />
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
