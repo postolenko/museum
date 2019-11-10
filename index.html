@@ -96,7 +96,7 @@
 											</div>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button time_button">
+											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu">
 												<img src="img/clock.svg" alt="" />
 											</button>
 										</div>
@@ -106,7 +106,7 @@
 											</button>
 										</div>
 										<div class="resp_inline">
-											<button class="respmenubtn">
+											<button type="button" class="respmenubtn" data-resp-btn = "nav_resp">
 												<span></span>
 												<span></span>
 												<span></span>
@@ -123,7 +123,7 @@
 				</div>
 			</div>
 			<div class="main_nav_sect">
-				<div class="main_nav_scroll_wrapp" id="resp_menu">
+				<div class="main_nav_scroll_wrapp">
 					<div class="main_nav_scroll" id="fixed_menu">
 						<div class="back_el"></div>
 						<div class="row">
@@ -132,8 +132,8 @@
 									<img src="img/logo_short.svg" alt="" />
 								</a>
 							</div>
-							<div class="main_nav_wrapp main_nav_resp" id="resp_nav">
-								<ul class="main_nav">
+							<div class="main_nav_wrapp">
+								<ul class="main_nav" id="resp_nav">
 									<li>
 										<a href="#">Музей</a>
 										<ul>
@@ -215,6 +215,100 @@
 				</div>
 			</div>
 		</div>
+		<!-- Responsive Menus -->
+		<!-- Times -->
+		<div class="resp_menu time_menu" data-resp-menu = "time_menu">
+			<div class="inner">
+				<div class="time_menu_content">
+					<div class="time_items_wrapp">
+						<h3>Ждем вас:</h3>
+						<div class="time_item">
+							<div class="col">
+								<p>Пн:</p>
+							</div>
+							<div class="col">
+								<p>выходной</p>
+							</div>
+						</div>
+						<div class="time_item">
+							<div class="col">
+								<p>Вт-пт:</p>
+							</div>
+							<div class="col">
+								<p>10:00 — 18:00</p>
+							</div>
+						</div>
+						<div class="time_item">
+							<div class="col">
+								<p>Сб:</p>
+							</div>
+							<div class="col">
+								<p>10:00—20:00</p>
+							</div>
+						</div>
+						<div class="time_item">
+							<div class="col">
+								<p>Вс:</p>
+							</div>
+							<div class="col">
+								<p>10:00—18:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="pill_wrapp">
+						<a href="#" class="transparent_pill_2">Купить билет</a>
+					</div>
+				</div>
+				<div class="time_menu_footer">
+					<div class="align_center">
+						<div class="resp_tels_wrapp">
+							<div class="tel_wrapp resp_tel_wrapp">
+								<div class="tel_col">
+									<p>касса</p>
+								</div>
+								<div class="tel_col">
+									<a href="tel:727357">72—73—57</a>
+								</div>
+							</div>
+							<div class="tel_wrapp resp_tel_wrapp">
+								<div class="tel_col">
+									<p>Экскурсии:</p>
+								</div>
+								<div class="tel_col">
+									<a href="tel:727555">72–75–55</a>
+								</div>
+							</div>
+							<div class="tel_wrapp resp_tel_wrapp">
+								<div class="tel_col">
+									<p>Мероприятия:</p>
+								</div>
+								<div class="tel_col">
+									<a href="tel:505051">50–50–51</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>г. Южно-Сахалинск, Коммунистический проспект, 29</p>
+				</div>
+			</div>
+		</div>
+		<!-- /Times -->
+		<!-- Resp Nav -->
+
+		<div class="resp_menu" data-resp-menu = "nav_resp">
+			<div class="inner">
+				<div class="resp_nav_wrapp"></div>
+				<div class="sign_links sign_links_2">
+					<ul>
+						<li><a href="#">Вход</a></li>
+						<li><a href="#">Регистрация</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- /Resp Nav -->
+		<!-- /Responsive Menus -->
 	</header>
 
 	<!-- /Header -->

@@ -99,7 +99,7 @@
 	}
 
 	.main_nav_scroll.fixed {
-   		padding: 5px 0 17px 0;
+		padding: 5px 0;
 	}
 
 	/*-- /Header --*/
@@ -226,9 +226,9 @@
 		background-color: #6d777c;
 	}
 
-	#resp_header.grey_bg_dark .top_row {
+/*	#resp_header.grey_bg_dark .top_row {
 	    border-bottom: none;
-	}
+	}*/
 
 	.top_row .col_left {
 	    padding-right: 5px;
@@ -279,9 +279,9 @@
 		height: auto;
 	}
 
-	.main_nav_scroll_wrapp {
+/*	.main_nav_scroll_wrapp {
 		display: none;
-	}
+	}*/
 
 	.lang_active {
 		color: #ffffff;
@@ -298,7 +298,8 @@
 	.header_three_cols .options_wrapp {
 	    width: 100%;
 	    margin: 0 -7px;
-	    padding-top: 23px;
+	    /*padding-top: 23px;*/
+	    padding-top: 15px;
 	    padding-left: 0;
 	}
 
@@ -340,8 +341,11 @@
 	    display: inline-block;
 	}
 
-	#resp_menu {
-		/*display: block;*/
+	.main_nav_scroll_wrapp {
+		display: none;
+	}
+
+/*	#resp_menu {
 		display: none;
 		width: 100%;
 		height: 100vh;
@@ -352,13 +356,13 @@
 		top: 0;
 		left: 0;
 		z-index: 30;
-	}
+	}*/
 
-	.main_nav_resp {
+/*	.main_nav_resp {
 		height: calc(100vh - 50px);
 		margin: 0;
 		padding: 20px 0;
-	}
+	}*/
 
 	.main_nav > li {
 		display: block;
@@ -849,4 +853,17 @@ section {
 
 	/*-- /Slider Header --*/
 
+}
+
+@media only screen and (min-width: 901px) {
+	/*-- Header --*/
+	.main_nav_scroll_wrapp {
+		display: block !important;
+	}
+	/*-- /Header --*/
+	/*-- Responsive Menus --*/
+	.resp_menu {
+		display: none !important;
+	}
+	/*-- /Responsive Menus --*/
 }
