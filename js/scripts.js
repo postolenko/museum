@@ -289,7 +289,6 @@ $(document).ready(function() {
     //     }, 400);
     // });
 
-
     $("[data-calendar-link]").on("click", function(e) {
         e.preventDefault();
         var calendarName = $(this).attr("data-calendar-link");
