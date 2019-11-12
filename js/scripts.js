@@ -338,7 +338,11 @@ $(document).ready(function() {
     $(".active_val").on("click", function(e) {
         e.preventDefault();
         parentBlock = $(this).closest(".dropdown_select");
-        parentBlock.toggleClass("active");
+        if(parentBlock.hasClass("active")) {
+            parentBlock.removeClass("active");
+        } else {
+            parentBlock.addClass("active");
+        }        
     });
 
     $(".vals_list li a").on("click", function(e) {
@@ -350,10 +354,10 @@ $(document).ready(function() {
     });
 
     $(document).mouseup(function (e){
-        hide_element = $(".dropdown_box");
+        hide_element = $(".dropdown_select");
         if (!hide_element.is(e.target)
             && hide_element.has(e.target).length === 0) {
-            hide_element.closest(".dropdown_select").removeClass("active");
+            hide_element.removeClass("active");
         }
     });
 
