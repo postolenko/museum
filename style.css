@@ -943,6 +943,14 @@ textarea:focus {
     background-image: url(img/little_arrow_white.svg);
 }
 
+.bg .lang_active {
+    color: #fffffe;
+}
+
+.bg .lang_active:after {
+    background-image: url(img/little_arrow_white.svg);
+}
+
 .dropdown_langs {
     width: 68px;
     display: none;
