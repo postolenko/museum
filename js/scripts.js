@@ -19,13 +19,15 @@ function getPositionMenu() {
     }
 }
 
-function getRespHeiaderParams() {
+function getRespHeaderParams() {
     if(bodyWidth <= 900) {
         if( $(document).scrollTop() > 2 ) {
             $("#resp_header").addClass("grey_bg_dark");
         } else {
             $("#resp_header").removeClass("grey_bg_dark");
         }
+    } else {
+        $("#resp_header").removeClass("grey_bg_dark");
     }
 }
 
@@ -66,21 +68,21 @@ $(window).resize(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
     getThumbDescriptSize();
     getPositionMenu();
-    getRespHeiaderParams();
+    getRespHeaderParams();
     setSliderArrows();
     getAppendNavMenu();
 });
 
 $(document).scroll(function() {
     getPositionMenu();
-    getRespHeiaderParams();
+    getRespHeaderParams();
 });
 
 $(document).ready(function() {
 
     getThumbDescriptSize();
     getPositionMenu();
-    getRespHeiaderParams();
+    getRespHeaderParams();
     getAppendNavMenu();
 
 	if( $(".promo_slider").length > 0 ) {
@@ -227,7 +229,7 @@ $(document).ready(function() {
             swipeToSlide: true,
             variableWidth: true,
             prevArrow: '<button class="slick_prev transparent_arrow_left" aria-label="Previous" type="button"></button>',
-            nextArrow: '<button class="slick_next transparent_arrow_right" aria-label="Next" type="button"></button>'
+            nextArrow: '<button class="slick_next transparent_arrow_right" aria-label="Next" type="button"></button>',
         });
     } 
 
@@ -255,6 +257,21 @@ $(document).ready(function() {
     $(this).keydown(function(eventObject){
         if (eventObject.which == 27 ) {
             $(".dropdown_langs").slideUp(300);
+        }
+    });
+
+    // ---------------------
+
+    $(".resp_filter_item").on("click", function(e) {
+        e.preventDefault();
+        parentBlock = $(this).closest(".resp_filter");
+        dropdownMenu = parentBlock.find(".resp_filter_dropdown");
+        if(dropdownMenu.is(":hidden")) {
+            dropdownMenu.slideDown(300);
+            $(this).addClass("active");
+        } else {
+            dropdownMenu.slideUp(300);
+            $(this).removeClass("active");
         }
     });
 

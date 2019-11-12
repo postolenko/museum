@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Сахалинский Областной Краеведческий Музей</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -97,12 +96,10 @@
 										</div>
 										<div class="resp_inline">
 											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu">
-												<img src="img/clock.svg" alt="" />
 											</button>
 										</div>
 										<div class="resp_inline">
 											<button type="button" class="resp_button search_button" data-popup-link = "popup_1">
-												<img src="img/search_white.svg" alt="" />
 											</button>
 										</div>
 										<div class="resp_inline">
@@ -122,66 +119,64 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="main_nav_sect"> -->
-				<div class="main_nav_scroll_wrapp">
-					<div class="main_nav_scroll" id="fixed_menu">
-						<div class="back_el"></div>
-						<div class="row">
-							<div class="short_logo_wrapp">
-								<a href="#" class="logo_short_link">
-									<img src="img/logo_short.svg" alt="" />
-								</a>
-							</div>
-							<div class="main_nav_wrapp">
-								<ul class="main_nav" id="resp_nav">
-									<li>
-										<a href="#">Музей</a>
-										<ul>
-											<li><a href="#">История создания</a></li>
-											<li><a href="#">Слово директору</a></li>
-											<li><a href="#">Услуги</a></li>
-											<li><a href="#">Партнеры</a></li>
-											<li><a href="#">Документы</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Афиша</a>
-										<ul>
-											<li><a href="#">Афиша 1</a></li>
-											<li><a href="#">Афиша 2</a></li>
-											<li><a href="#">Афиша 3</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Новости</a>
-										<ul>
-											<li><a href="#">Новость 1</a></li>
-											<li><a href="#">Новость 2</a></li>
-											<li><a href="#">Новость 3</a></li>
-											<li><a href="#">Новость 4</a></li>
-											<li><a href="#">Новость 5</a></li>
-											<li><a href="#">Новость 6</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Выставки</a></li>
-									<li><a href="#">Коллекции</a></li>
-									<li><a href="#">Наука</a></li>
-									<li><a href="#">Конкурсы</a></li>
-									<li>
-										<a href="#">Купить</a>
-										<ul>
-											<li><a href="#">История создания</a></li>
-											<li><a href="#">Слово директору</a></li>
-											<li><a href="#">Услуги</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Контакты</a></li>
-								</ul>
-							</div>
+			<div class="main_nav_scroll_wrapp">
+				<div class="main_nav_scroll" id="fixed_menu">
+					<div class="back_el"></div>
+					<div class="row">
+						<div class="short_logo_wrapp">
+							<a href="#" class="logo_short_link">
+								<img src="img/logo_short.svg" alt="" />
+							</a>
+						</div>
+						<div class="main_nav_wrapp">
+							<ul class="main_nav" id="resp_nav">
+								<li>
+									<a href="#">Музей</a>
+									<ul>
+										<li><a href="#">История создания</a></li>
+										<li><a href="#">Слово директору</a></li>
+										<li><a href="#">Услуги</a></li>
+										<li><a href="#">Партнеры</a></li>
+										<li><a href="#">Документы</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Афиша</a>
+									<ul>
+										<li><a href="#">Афиша 1</a></li>
+										<li><a href="#">Афиша 2</a></li>
+										<li><a href="#">Афиша 3</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+									<ul>
+										<li><a href="#">Новость 1</a></li>
+										<li><a href="#">Новость 2</a></li>
+										<li><a href="#">Новость 3</a></li>
+										<li><a href="#">Новость 4</a></li>
+										<li><a href="#">Новость 5</a></li>
+										<li><a href="#">Новость 6</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Выставки</a></li>
+								<li><a href="#">Коллекции</a></li>
+								<li><a href="#">Наука</a></li>
+								<li><a href="#">Конкурсы</a></li>
+								<li>
+									<a href="#">Купить</a>
+									<ul>
+										<li><a href="#">История создания</a></li>
+										<li><a href="#">Слово директору</a></li>
+										<li><a href="#">Услуги</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
+			</div>
 		</div>
 		<!-- Responsive Menus -->
 		<!-- Times -->
@@ -282,7 +277,7 @@
 	<!-- /Header -->
 
 	<!-- Content -->
-		<div class="content">
+		<div class="content inner_page">
 
 		<!-- Section 1 - Afisha -->
 
@@ -290,7 +285,12 @@
 			<div class="row">
 
 				<div class="page_header">
-					<h3>Афиша</h3>
+					<div>
+						<h3>Афиша</h3>
+					</div>
+					<div class="resp_inline">
+						<a href="#" class="line_link_2">Архив событий</a>
+					</div>
 				</div>
 
 				<div class="filter_wrapp">
@@ -305,7 +305,7 @@
 							<a href="#" class="filter_link arrow_link" data-calendar-link = "cal_1">Другой день</a>
 						</div>
 					</div>
-					<div class="col archives_link_wrapp">
+					<div class="col archives_link_wrapp resp_hidden">
 						<a href="#" class="line_link_2">Архив событий</a>
 					</div>
 				</div>
@@ -370,6 +370,53 @@
 						<div class="date_item active_day"><p class="day">пт</p><p class="num">28</p></div>
 						<div class="date_item active_day"><p class="day">сб</p><p class="num">29</p></div>
 						<div class="date_item red_day"><p class="day">вс</p><p class="num">30</p></div>
+					</div>
+					<div class="resp_calendar">
+						<div class="resp_calendar_header">
+							<div>пн</div>
+							<div>вт</div>
+							<div>ср</div>
+							<div>чт</div>
+							<div>пт</div>
+							<div>сб</div>
+							<div>вс</div>
+						</div>
+						<div class="resp_calendar_days">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div><span>1</span></div>
+							<div><span>2</span></div>
+							<div><span>3</span></div>
+							<div><span>4</span></div>
+							<div><span>5</span></div>
+							<div><span>6</span></div>
+							<div><span>7</span></div>
+							<div><span>8</span></div>
+							<div><span>9</span></div>
+							<div><span>10</span></div>
+							<div><span>11</span></div>
+							<div><span>12</span></div>
+							<div><span>13</span></div>
+							<div><span class="black_day">14</span></div>
+							<div><span class="red_day">15</span></div>
+							<div><span class="red_day">16</span></div>
+							<div><span class="active_day">17</span></div>
+							<div><span class="active_day">18</span></div>
+							<div><span class="active_day">19</span></div>
+							<div><span class="red_day">20</span></div>
+							<div><span class="active_day">21</span></div>
+							<div><span class="active_day">22</span></div>
+							<div><span class="active_day">23</span></div>
+							<div><span class="active_day">24</span></div>
+							<div><span class="active_day">25</span></div>
+							<div><span class="red_day">26</span></div>
+							<div><span class="active_day">27</span></div>
+							<div><span class="active_day">28</span></div>
+							<div><span class="active_day">29</span></div>
+							<div><span class="active_day">30</span></div>
+						</div>
 					</div>
 				</div>
 
@@ -461,6 +508,74 @@
 				</div>
 
 				<!-- /Filters -->
+
+				<!-- Resp Filters -->
+
+				<div class="resp_filters_wrapp">
+					<div class="resp_filter">
+						<div class="resp_filter_item">
+							<p>Все события</p>
+						</div>
+						<div class="resp_filter_dropdown">
+							<ul class="resp_filters_list">
+								<li><a href="#">Все события</a></li>
+								<li><a href="#">Лекции</a></li>
+								<li><a href="#">Мастер–классы</a></li>
+								<li><a href="#">Выставки</a></li>
+								<li><a href="#">Фотовыставки</a></li>
+								<li><a href="#">Экскурсии</a></li>
+								<li><a href="#">Праздничная программа</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="resp_filter">
+						<div class="resp_filter_item">
+							<p class="setting_p">
+								<i class="settings"></i>
+								<span>Фильтр</span>
+							</p>
+						</div>
+						<div class="resp_filter_dropdown">
+							<div class="filter_thumb">
+								<h3>Аудитория</h3>
+								<ul class="filters_list">
+									<li><a href="#">Дошкольникам</a></li>
+									<li><a href="#">Школьникам</a></li>
+									<li><a href="#">Взрослым</a></li>
+									<li><a href="#">Любая</a></li>
+								</ul>
+							</div>
+							<div class="filter_thumb">
+								<h3>Длительность</h3>
+								<ul class="filters_list">
+									<li><a href="#">Меньше часа</a></li>
+									<li><a href="#">Больше часа</a></li>
+									<li><a href="#">Любая</a></li>
+								</ul>
+							</div>
+							<div class="filter_thumb">
+								<h3>Размер группы</h3>
+								<ul class="filters_list">
+									<li><a href="#">Меньше пяти человек</a></li>
+									<li><a href="#">От пяти до десяти</a></li>
+									<li><a href="#">Больше десяти</a></li>
+									<li><a href="#">Любая</a></li>
+								</ul>
+							</div>
+							<div class="filter_thumb">
+								<h3>Стоимость</h3>
+								<ul class="filters_list">
+									<li><a href="#">Бесплатно</a></li>
+									<li><a href="#">Меньше ста рублей</a></li>
+									<li><a href="#">Больше ста рублей</a></li>
+									<li><a href="#">Любая</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- /Resp Filters -->
 
 				<!-- Afisha thumbnails -->
 

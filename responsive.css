@@ -122,6 +122,21 @@
 
 	/*-- /Section 5 - Main Page --*/
 
+	/*-- Calendar --*/
+
+	.day {
+	    font-size: 13px;
+	    line-height: 17px;
+	}
+
+	.num {
+	    padding: 3px 0 0 0;
+	    font-size: 17px;
+	    line-height: 21px;
+	}
+
+	/*-- /Calendar --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -166,6 +181,24 @@
 
 	/*-- /Header --*/
 
+	/*-- Filters --*/
+
+	.filters_thumbs .filter_thumb {
+	    width: 33.33%;
+	}
+
+	/*-- /Filters --*/
+
+	/*-- Afisha thumbnails --*/
+
+	.afisha_thumbnails .afisha_thumb,
+	.afisha_thumbnails .afisha_thumb_big,
+	.afisha_thumbnails .afisha_thumb_default {
+	    width: calc(50% - 20px);
+	}
+
+	/*-- /Afisha thumbnails --*/
+
 	/*-- Footer --*/
 
 	.footer {
@@ -202,6 +235,10 @@
 
 @media only screen and (max-width: 900px) {
 
+	.inner_page {
+		padding-top: 100px;
+	}
+
 	.row {
 		padding: 0 15px;
 	}
@@ -230,10 +267,6 @@
 		background-color: #6d777c;
 	}
 
-/*	#resp_header.grey_bg_dark .top_row {
-	    border-bottom: none;
-	}*/
-
 	.top_row .col_left {
 	    padding-right: 5px;
 	}
@@ -245,6 +278,10 @@
 	.top_row {
 		padding: 2px 0;
 	    border-bottom: 1px solid rgba(255, 255, 255, .4);
+	}
+
+	.inner_header .top_row {
+	    border-bottom: 1px solid #d0d0d0;
 	}
 
 	.top_row .col_left {
@@ -283,10 +320,6 @@
 		height: auto;
 	}
 
-/*	.main_nav_scroll_wrapp {
-		display: none;
-	}*/
-
 	.lang_active {
 		color: #ffffff;
 	}
@@ -302,7 +335,6 @@
 	.header_three_cols .options_wrapp {
 	    width: 100%;
 	    margin: 0 -7px;
-	    /*padding-top: 23px;*/
 	    padding-top: 15px;
 	    padding-left: 0;
 	}
@@ -380,6 +412,8 @@
 	.back_el {
 		display: none !important;
 	}
+
+
 
 	/*-- /Header --*/
 
@@ -549,6 +583,116 @@ input.search_input {
 }
 
 /*-- /Section 1 - Main Page --*/
+
+/*-- Calendar --*/
+
+.calendar_wrapp {
+    padding: 10px 0 0 0;
+}
+
+.calendar_header {
+    margin: 4px -15px 14px -15px;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.calendar {
+	display: none;
+}
+
+.resp_calendar {
+	display: block;
+}
+
+/*-- /Calendar --*/
+
+/*-- Filters --*/
+
+.events_slider_wrapp {
+	display: none;
+}
+
+.filters_wrapp {
+	display: none;
+}
+
+.resp_filters_wrapp {
+    display: block;
+}
+
+/*-- /Filters --*/
+
+/*-- Afisha thumbnails --*/
+
+.afisha_thumbnails .afisha_thumb,
+.afisha_thumbnails .afisha_thumb_big,
+.afisha_thumbnails .afisha_thumb_default {
+    height: 280px;
+}
+
+.afisha_thumb .img_box {
+	height: 280px;
+}
+
+.afisha_thumb_header {
+    padding: 15px;
+}
+
+.afisha_thumb_descript {
+    padding: 3px 15px;
+}
+
+.afisha_thumb_descript p {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.afisha_thumb_descript h3 {
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.afisha_thumb_descript_footer {
+	margin: 0 -8px;
+    padding: 0 5px 0 0;
+}
+
+.afisha_thumb_descript_footer > div {
+    padding: 3px 8px;
+}
+
+.afisha_thumb_default_header {
+    padding: 15px;
+}
+
+.afisha_thumb_default_descript {
+    padding: 3px 15px;
+}
+
+.afisha_thumb_default_descript p {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.afisha_thumb_default_descript h3 {
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.afisha_thumb_default_descript_footer {
+	margin: 0 -8px;
+    padding: 0 5px 0 0;
+}
+
+.afisha_thumb_default_descript_footer > div {
+    padding: 3px 8px;
+}
+
+.upload_btn_wrapp {
+    padding: 9px 0 43px 0;
+}
+
+/*-- /Afisha thumbnails --*/
 
 /*-- Footer --*/
 
@@ -791,6 +935,21 @@ section {
 }
 
 /*-- /Section 3 - Main Page --*/
+
+/*-- Afisha thumbnails --*/
+
+.afisha_thumbnails {
+    margin: 19px 0;
+}
+
+.afisha_thumbnails .afisha_thumb,
+.afisha_thumbnails .afisha_thumb_big,
+.afisha_thumbnails .afisha_thumb_default {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/*-- /Afisha thumbnails --*/
 
 /*-- Footer --*/
 
