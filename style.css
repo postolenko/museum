@@ -3304,7 +3304,6 @@ p.date_2 {
     width: 30px;
     height: 30px;
     margin: 0 10px;
-    outline: 1px solid red;
     background-image: url(img/filter.svg);
     background-size: contain;
     background-repeat: no-repeat;
