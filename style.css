@@ -3295,7 +3295,7 @@ p.date_2 {
     display: inline-flex;
     align-items: center;
     position: relative;
-    padding: 18px 0;
+    margin: 18px 0;
 }
 
 .settings {
