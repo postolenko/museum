@@ -286,6 +286,7 @@ h1 {
 }
 
 h2 {
+    text-transform: uppercase;
     font-family: Room;
     font-size: 23px;
     line-height: 32px;
@@ -3304,6 +3305,10 @@ p.date_2 {
     height: 30px;
     margin: 0 10px;
     outline: 1px solid red;
+    background-image: url(img/filter.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .settings_link span {
@@ -3660,6 +3665,599 @@ p.date_2 {
 }
 
 /*-- /Section 1 - Afisha --*/
+
+/*-- Header 2 --*/
+
+.promo_box {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.promo_box_content {
+    width: 509px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(126, 27, 31, .7);
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+.promo_box_header {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    width: 100%;
+    padding: 41px 30px 10px 34px;
+}
+
+.promo_box_header > div:nth-child(1) {
+    width: calc(100% - 130px);
+}
+
+.promo_box_header > div:nth-child(2) {
+    width: 130px;
+    text-align: right;
+}
+
+.promo_box_content .promo_box_header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+    position: relative;
+}
+
+.breadcrumbs li:before {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    top: 6px;
+    left: -6px;
+    background-image: url(img/little_arrow_white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.breadcrumbs li a {
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #fffffe;
+    border-bottom: 1px solid #fffffe;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.breadcrumbs li a:link,
+.breadcrumbs li a:visited {
+    border-bottom: 1px solid #fffffe;
+}
+
+.breadcrumbs li a:active,
+.breadcrumbs li a.active {
+    border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs li a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.white_tag {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 114px;
+    padding: 7px 20px 7px 20px;
+    text-align: center;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    font-family: PT Sans;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #7e1b1f;
+}
+
+.promo_box_descr_wrapp {
+    padding: 10px 30px 42px 30px;
+}
+
+.promo_box_descr {
+   
+}
+
+.promo_box_descr p {
+    padding: 3px 0;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    color: #fffffe;
+}
+
+.promo_box_descr p.p_tag {
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #fffffe;
+}
+
+.promo_box_descr h3 {
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 900;
+    letter-spacing: 0.95px;
+    color: #ffffff;
+}
+
+.promo_box_footer {
+    margin: 26px -12px 0 -12px;
+}
+
+.promo_box_footer div {
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 12px;
+}
+
+.promo_box_footer p {
+    color: #fffffe;
+}
+
+/*-- /Header 2 --*/
+
+/*-- Section 1 - Afisha Events --*/
+
+.two_cols_templ {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.two_cols_templ .left_col {
+    width: 38%;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.two_cols_templ .right_col {
+    width: 72%;
+    padding: 17px 0 17px 10px;
+}
+
+.items_wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    text-align: left;
+}
+
+.item_1 {
+    margin: 18px 0;
+}
+
+.item_1 h3 {
+    padding: 3px 0;
+    font-family: PT Sans;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: normal;
+    color: #3f4649;
+}
+
+.item_1 p {
+    padding: 3px 0;
+    text-transform: uppercase;
+    font-family: Room;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 900;
+    color: #3f4649;
+}
+
+.item_1 a {
+    text-transform: uppercase;
+    font-family: Room;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 900;
+    color: #3f4649;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.item_1 a:link,
+.item_1 a:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.item_1 a:active,
+.item_1 a.active {
+    border-bottom: 1px solid #3f4649;;
+}
+
+.item_1 a:hover {
+    border-bottom: 1px solid #3f4649;;
+}
+
+.tel_link {
+    text-transform: uppercase;
+    font-family: Room;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 900;
+    color: #3f4649;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.tel_link:link,
+.tel_link:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.tel_link:active,
+.tel_link.active {
+    border-bottom: 1px solid #3f4649;;
+}
+
+.tel_link:hover {
+    border-bottom: 1px solid #3f4649;;
+}
+
+.event_article p {
+    padding: 6px 0;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #3f4649;
+}
+
+.text_wrapp {
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.afisha_images {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    /*margin: 34px 0 18px 0;*/
+}
+
+.img_box_wrapp {
+    margin: 33px 0 2px;
+}
+
+.afisha_images .img_box_wrapp {
+    width: calc(50% - 12px);    
+}
+
+.img_box_wrapp .img_box {
+    position: relative;
+    height: 580px;
+    overflow: hidden;
+}
+
+.img_box_wrapp .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.img_box_wrapp p {
+    padding: 17px 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    text-align: right;
+    color: #3f4649;
+}
+
+.event_article h2 {
+    padding: 23px 0 1px 0;
+/*    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #7e1b1f;*/
+}
+
+.img_box_wrapp + .text_wrapp h2:nth-child(1) {
+    padding-top: 20px;
+}
+
+.text_quote_wrapp {
+    margin: 16px 0;
+}
+
+.text_quote_wrapp p {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #3f4649;
+}
+
+.text_quote_wrapp + .text_wrapp h2:nth-child(1) {
+    padding-top: 5px;
+}
+
+/*-- /Section 1 - Afisha Events --*/
+
+/*-- Section 2 - Afisha Events --*/
+
+.small_thumbs {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 9px -12px 17px -12px;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.small_thumb {
+    /*display: block;*/
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    width: 295px;
+    height: 295px;
+    margin: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.small_thumb .img_box {
+    width: 295px;
+    height: 295px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: 1s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.small_thumb:hover .img_box {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.small_thumb .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.small_thumb_header {
+    width: 100%;
+    padding: 16px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.small_thumb_header > div {
+    padding: 3px;
+}
+
+.small_thumb_descript {
+    padding: 12px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.small_thumb_descript p {
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #fffffe;
+}
+
+.small_thumb_descript h3 {
+    padding: 3px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fffffe;
+}
+
+.small_thumb_descript_footer {
+    padding: 10px 0;
+}
+
+/*-- /Section 2 - Afisha Events --*/
+
+/*-- Section 1 - Afisha Event Fin --*/
+
+.single_image_slider_wrapp {
+    margin: 33px 0 47px 0;
+    position: relative;
+}
+
+.single_image_slider {
+
+}
+
+.single_image_slider .slide {
+
+}
+
+.single_image_slider .img_box {
+    height: 580px;
+    overflow: hidden;
+    position: relative;
+}
+
+.single_image_slider .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slide_footer {
+    padding: 19px 100px 10px 0;
+}
+
+.slide_footer p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #3f4649;
+}
+
+.single_image_slider_arrows {
+    width: 100px;
+}
+
+.single_image_slider_wrapp .single_image_slider_arrows {
+    position: absolute;
+    bottom: -8px;
+    right: -4px;
+}
+
+.single_image_slider_arrows .slick-arrow {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.slick_arrow_big {
+    margin: 2px;
+}
+
+.slick_arrow_big img {
+    width: 44px;
+    height: 52px;
+}
+
+/*-- /Section 1 - Afisha Event Fin --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

@@ -196,7 +196,23 @@ $(document).ready(function() {
              }
            ]
         });
-	}	    
+	}
+
+    if( $(".single_image_slider").length > 0 ) {
+        $(".single_image_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: true,
+            appendArrows: $(".single_image_slider_arrows"),
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            prevArrow: '<button class="slick_prev slick_arrow_big" aria-label="Previous" type="button"><img src="img/arrow_right_gold.svg"></button>',
+            nextArrow: '<button class="slick_next slick_arrow_big" aria-label="Next" type="button"><img src="img/arrow_left_gold.svg"></button>'
+        });
+    }   
 
 	$(".lang_active").on("click", function(e) {
 		e.preventDefault();
