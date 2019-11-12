@@ -5187,6 +5187,18 @@ input.search_input::placeholder {
     padding: 99px 0 50px 0;
 }
 
+.resp_menu .inner:after {
+    display: block;
+    width: 290px;
+    height: 63px;
+    content: "";
+    background-image: url(img/uzor_mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 23px auto;
+}
+
 .resp_menu .inner {
     padding: 0 15px;
 }

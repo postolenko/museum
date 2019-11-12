@@ -349,25 +349,6 @@
 		display: none;
 	}
 
-/*	#resp_menu {
-		display: none;
-		width: 100%;
-		height: 100vh;
-		margin: 0;
-		background-color: #6d777c;
-		padding: 90px 30px 50px 30px;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 30;
-	}*/
-
-/*	.main_nav_resp {
-		height: calc(100vh - 50px);
-		margin: 0;
-		padding: 20px 0;
-	}*/
-
 	.main_nav > li {
 		display: block;
 		padding: 15px 0;
@@ -782,7 +763,6 @@ section {
 /*-- Section 3 - Main Page --*/
 
 .thumb_4 {
-    /*height: 240px;*/
     max-width: 240px;
 }
 
