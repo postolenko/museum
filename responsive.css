@@ -1053,11 +1053,11 @@ section {
 }
 
 .small_thumb_header {
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 
 .small_thumb_descript {
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 
 .small_thumb_descript h3 {
@@ -1066,6 +1066,18 @@ section {
 
 .small_thumb_descript p {
     padding: 0;
+}
+
+.single_image_slider_wrapp {
+    margin: 20px 0;
+}
+
+.slide_footer {
+    margin: 5px 0 0 0;
+}
+
+.single_image_slider .img_box {
+    height: 420px;
 }
 
 /*-- /Section 1 - Afisha Events --*/
