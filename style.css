@@ -393,6 +393,10 @@ textarea:focus {
     text-align: left;
 }
 
+.resp_900 {
+    display: none;
+}
+
 /*-- Slick --*/
 
 .slick-arrow {
@@ -1707,6 +1711,10 @@ textarea:focus {
     font-weight: bold;
     letter-spacing: 1.58px;
     color: #ffffff;
+}
+
+.header_site.inner_header_2 {
+    margin-bottom: 260px;
 }
 
 /*-------------------------------------------*/
@@ -4217,6 +4225,10 @@ p.date_2 {
 /*-- Header 2 --*/
 
 .promo_box {
+    position: relative;
+}
+
+.promo_box .promo_img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4326,6 +4338,79 @@ p.date_2 {
     border-bottom: 1px solid transparent;
 }
 
+.breadcrumbs_wrapp {
+    margin: 17px 0;
+}
+
+.breadcrumbs_dark {
+    margin: 0 5px;
+}
+
+.breadcrumbs_dark li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+    position: relative;
+}
+
+.breadcrumbs_dark li:before {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    top: 6px;
+    left: -6px;
+    background-image: url(img/little_arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.breadcrumbs_dark li a {
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #3f4649;
+    border-bottom: 1px solid #3f4649;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.breadcrumbs_dark li a:link,
+.breadcrumbs_dark li a:visited {
+    border-bottom: 1px solid #3f4649;
+}
+
+.breadcrumbs_dark li a:active,
+.breadcrumbs_dark li a.active {
+    border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs_dark li a:hover {
+    border-bottom: 1px solid transparent;
+}
+
 .white_tag {
     display: inline-block;
     vertical-align: top;
@@ -4393,6 +4478,60 @@ p.date_2 {
 /*-- /Header 2 --*/
 
 /*-- Section 1 - Afisha Events --*/
+
+/*-- Resp Promo --*/
+
+.resp_promo {
+    display: none;
+}
+
+.resp_promo_content {
+    border-bottom: solid 1px #d0d0d0;
+    padding-bottom: 19px;
+}
+
+.resp_promo .img_box {
+    height: 290px;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.resp_promo .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.tab_p_2 {
+
+}
+
+.resp_promo h2 {
+
+}
+
+.resp_promo p {
+    padding: 5px 0;
+}
+
+.resp_promo_footer p {
+    padding: 0;
+}
+
+.place_item_2 {
+
+}
+
+/*-- /Resp Promo --*/
 
 .two_cols_templ {
     display: flex;

@@ -126,7 +126,19 @@ $(document).ready(function() {
              }
            ]
         });
-    }   
+    }
+
+    if( $(".variable_width_sl_2").length > 0 ) {
+        $(".variable_width_sl_2").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToScroll: 1,
+            variableWidth: true
+        });
+    }
 
     if( $(".slider_5").length > 0 ) {
         $(".slider_5").not(".slick-initialized").slick({

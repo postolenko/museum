@@ -20,7 +20,7 @@
 	<!-- Header 2 -->
 		
 	<header>
-		<div class="header_site">
+		<div class="header_site inner_header inner_header_2">
 			<div class="row row_1" id="resp_header">
 				<div class="top_row">
 					<div class="col_left">
@@ -96,14 +96,10 @@
 											</div>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu">
-												<img src="img/clock.svg" alt="" />
-											</button>
+											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu"></button>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button search_button" data-popup-link = "popup_1">
-												<img src="img/search_white.svg" alt="" />
-											</button>
+											<button type="button" class="resp_button search_button" data-popup-link = "popup_1"></button>
 										</div>
 										<div class="resp_inline">
 											<button type="button" class="respmenubtn" data-resp-btn = "nav_resp">
@@ -182,7 +178,8 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="promo_box" style="background-image: url(img/banner_afisha_1.jpg);">
+					<div class="promo_box">
+						<div class="promo_img" style="background-image: url(img/banner_afisha_1.jpg);"></div>
 						<div class="promo_box_content">
 							<div class="promo_box_header">
 								<div>
@@ -315,9 +312,52 @@
 	<!-- /Header 2 -->
 
 	<!-- Content -->
-		<div class="content">
+		<div class="content inner_page">
+
+		<!-- Breadcrumbs -->
+		<div class="breadcrumbs_wrapp resp_900">
+			<div class="row">
+				<ul class="breadcrumbs_dark">
+					<li>
+						<a href="#">Афиша</a>
+					</li>
+					<li>
+						<a href="#">Выставки</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Breadcrumbs -->
 
 		<!-- Section 1 - Afisha Events -->
+
+		<!-- Resp Promo -->
+
+		<div class="resp_promo">
+			<div class="row">
+				<div class="resp_promo_content">
+					<div class="img_box">
+						<img src="img/banner-afisha-1.jpg" alt="" />
+					</div>
+					<p class="tab_p_2">выставка</p>
+					<h2>Волшебный резец</h2>
+					<p>На выставке будут представлены работы из оленьего рога, моржового клыка и других материалов из фондов Сахалинского областного краеведческого музея, Сахалинского областного художественного музея и Поронайского краеведческого музея.</p>
+					<div class="resp_promo_footer">
+						<div class="place_item_2">
+							<div class="col">
+								<i class="location_pin_dark"></i>
+							</div>
+							<div class="col">
+								<p>Сахалинский областной краеведческий музей</p>
+							</div>
+						</div>
+						<p>9 июля – 27 августа</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- /Resp Promo -->
 
 		<section>
 			<div class="row">
@@ -419,37 +459,13 @@
 				<div class="h2_wrapp">
 					<h2>Другие события</h2>
 				</div>
-				<div class="small_thumbs">
-					<a href="#" class="small_thumb">
-						<div class="img_box">
-							<img src="img/sob-3.jpg" alt="" />
-						</div>
-						<div class="small_thumb_header">
-							<div class="place_item">
-								<div class="col">
-									<i class="location_pin"></i>
-								</div>
-								<div class="col">
-									<p>Краеведческий музей</p>
-								</div>
+				<div class="small_thumbs variable_width_sl_2">
+					<div class="slide">
+						<a href="#" class="small_thumb">
+							<div class="img_box">
+								<img src="img/sob-3.jpg" alt="" />
 							</div>
-						</div>
-						<div class="small_thumb_descript">
-							<p>экскурсия</p>
-							<h3>История геологического развития Сахалина и Курильских островов</h3>
-							<div class="small_thumb_descript_footer">
-								<div>
-									<p>23 июня, 12:00 — 14:00</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="small_thumb">
-						<div class="img_box">
-							<img src="img/sob-2.jpg" alt="" />
-						</div>
-						<div class="small_thumb_header">
-							<div>
+							<div class="small_thumb_header">
 								<div class="place_item">
 									<div class="col">
 										<i class="location_pin"></i>
@@ -459,89 +475,121 @@
 									</div>
 								</div>
 							</div>
-							<div>
-								<div class="zayavki_item">
-									<div class="col">
-										<i class="edit"></i>
-									</div>
-									<div class="col">
-										<p>по заявкам</p>
+							<div class="small_thumb_descript">
+								<p>экскурсия</p>
+								<h3>История геологического развития Сахалина и Курильских островов</h3>
+								<div class="small_thumb_descript_footer">
+									<div>
+										<p>23 июня, 12:00 — 14:00</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="small_thumb_descript">
-							<p>мастер–класс</p>
-							<h3>В мире сахалинских животных</h3>
-							<div class="small_thumb_descript_footer">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="small_thumb">
+							<div class="img_box">
+								<img src="img/sob-2.jpg" alt="" />
+							</div>
+							<div class="small_thumb_header">
 								<div>
-									<p>июль</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="small_thumb">
-						<div class="img_box">
-							<img src="img/sob-6.jpg" alt="" />
-						</div>
-						<div class="small_thumb_header">
-							<div>
-								<div class="place_item">
-									<div class="col">
-										<i class="location_pin"></i>
-									</div>
-									<div class="col">
-										<p>Краеведческий музей</p>
+									<div class="place_item">
+										<div class="col">
+											<i class="location_pin"></i>
+										</div>
+										<div class="col">
+											<p>Краеведческий музей</p>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="small_thumb_descript">
-							<p>мастер–класс</p>
-							<h3>От Анны Резник</h3>
-							<div class="small_thumb_descript_footer">
 								<div>
-									<p>23 июня, 12:00 — 14:00</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="small_thumb">
-						<div class="img_box">
-							<img src="img/sob-4.jpg" alt="" />
-						</div>
-						<div class="small_thumb_header">
-							<div>
-								<div class="place_item">
-									<div class="col">
-										<i class="location_pin"></i>
-									</div>
-									<div class="col">
-										<p>Краеведческий музей</p>
+									<div class="zayavki_item">
+										<div class="col">
+											<i class="edit"></i>
+										</div>
+										<div class="col">
+											<p>по заявкам</p>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div>
-								<div class="zayavki_item">
-									<div class="col">
-										<i class="edit"></i>
-									</div>
-									<div class="col">
-										<p>по заявкам</p>
+							<div class="small_thumb_descript">
+								<p>мастер–класс</p>
+								<h3>В мире сахалинских животных</h3>
+								<div class="small_thumb_descript_footer">
+									<div>
+										<p>июль</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="small_thumb_descript">
-							<p>лекция</p>
-							<h3>Детский сад музею рад</h3>
-							<div class="small_thumb_descript_footer">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="small_thumb">
+							<div class="img_box">
+								<img src="img/sob-6.jpg" alt="" />
+							</div>
+							<div class="small_thumb_header">
 								<div>
-									<p>23 июня, 12:00 — 14:00</p>
+									<div class="place_item">
+										<div class="col">
+											<i class="location_pin"></i>
+										</div>
+										<div class="col">
+											<p>Краеведческий музей</p>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</a>
+							<div class="small_thumb_descript">
+								<p>мастер–класс</p>
+								<h3>От Анны Резник</h3>
+								<div class="small_thumb_descript_footer">
+									<div>
+										<p>23 июня, 12:00 — 14:00</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="small_thumb">
+							<div class="img_box">
+								<img src="img/sob-4.jpg" alt="" />
+							</div>
+							<div class="small_thumb_header">
+								<div>
+									<div class="place_item">
+										<div class="col">
+											<i class="location_pin"></i>
+										</div>
+										<div class="col">
+											<p>Краеведческий музей</p>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="zayavki_item">
+										<div class="col">
+											<i class="edit"></i>
+										</div>
+										<div class="col">
+											<p>по заявкам</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="small_thumb_descript">
+								<p>лекция</p>
+								<h3>Детский сад музею рад</h3>
+								<div class="small_thumb_descript_footer">
+									<div>
+										<p>23 июня, 12:00 — 14:00</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>

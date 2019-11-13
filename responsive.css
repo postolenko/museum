@@ -137,6 +137,14 @@
 
 	/*-- /Calendar --*/
 
+	/*-- Section 1 - Afisha Events --*/
+
+	.afisha_images .img_box_wrapp {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 - Afisha Events --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -241,6 +249,10 @@
 
 	.row {
 		padding: 0 15px;
+	}
+
+	.resp_900 {
+		display: block;
 	}
 
 	/*-- Header --*/
@@ -413,9 +425,23 @@
 		display: none !important;
 	}
 
+	.header_site.inner_header_2 {
+	    margin-bottom: 0;
+	}
 
+	.promo_box {
+		display: none;
+	}
 
 	/*-- /Header --*/
+
+	/*-- Resp Promo --*/
+
+	.resp_promo {
+	    display: block;
+	}
+
+	/*-- /Resp Promo --*/
 
 /*-- Popup 1 --*/
 
@@ -694,6 +720,49 @@ input.search_input {
 
 /*-- /Afisha thumbnails --*/
 
+/*-- Section 1 - Afisha Events --*/
+
+.two_cols_templ {
+	display: block;
+}
+
+.two_cols_templ .left_col {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+}
+
+.two_cols_templ .right_col {
+    width: 100%;
+    padding: 0;
+}
+
+.items_wrap {
+    width: 100%;
+}
+
+.text_wrapp {
+    max-width: 100%;
+}
+
+.img_box_wrapp .img_box {
+    height: 420px;
+}
+
+.afisha_images {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.afisha_images .img_box_wrapp {
+    width: calc(50% - 12px);    
+}
+
+/*-- /Section 1 - Afisha Events --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -950,6 +1019,56 @@ section {
 }
 
 /*-- /Afisha thumbnails --*/
+
+/*-- Section 1 - Afisha Events --*/
+
+.afisha_images {
+	display: block;
+}
+
+.afisha_images .img_box_wrapp {
+    width: 100%;    
+}
+
+.event_article p {
+    padding: 2px 0;
+}
+
+.img_box_wrapp p {
+    padding: 7px 0;
+}
+
+.text_quote_wrapp {
+    margin: 11px 0;
+}
+
+.small_thumb {
+    width: 240px;
+    height: 240px;
+}
+
+.small_thumb .img_box {
+    width: 240px;
+    height: 240px;
+}
+
+.small_thumb_header {
+    padding: 5px 10px;
+}
+
+.small_thumb_descript {
+    padding: 5px 10px;
+}
+
+.small_thumb_descript h3 {
+    padding: 0;
+}
+
+.small_thumb_descript p {
+    padding: 0;
+}
+
+/*-- /Section 1 - Afisha Events --*/
 
 /*-- Footer --*/
 
