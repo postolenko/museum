@@ -648,6 +648,14 @@ input.search_input {
 
 /*-- /Filters --*/
 
+/*-- Section 1 - Afisha --*/
+
+.page_header {
+    padding-top: 13px;
+}
+
+/*-- /Section 1 - Afisha --*/
+
 /*-- Afisha thumbnails --*/
 
 .afisha_thumbnails .afisha_thumb,
@@ -1083,6 +1091,19 @@ section {
 }
 
 /*-- /Section 1 - Afisha Events --*/
+
+/*-- Exhibitions thumbnails --*/
+
+.exhibitions_content {
+	padding-top: 27px;
+    padding-bottom: 30px;
+}
+
+.exhibitions_sect .afisha_thumbnails {
+    margin: 1px 0;
+}
+
+/*-- /Exhibitions thumbnails --*/
 
 /*-- Footer --*/
 
