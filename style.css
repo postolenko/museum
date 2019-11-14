@@ -4953,6 +4953,129 @@ p.date_2 {
 
 /*-- /Section 1 - Afisha Event Fin --*/
 
+/*-- Section 1 - Afisha Old--*/
+
+.breadcrumbs_wrapp_3 {
+    margin: 10px -12px 3px -12px;
+}
+
+.custom_selects_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 20px -5px 0 -5px;
+}
+
+.custom_selects_wrapp > div {
+    padding: 5px;
+}
+
+.custom_select {
+    width: 166px;
+    height: 36px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+    border: solid 1px #7e1b1f;
+    position: relative;
+}
+
+.select_title {
+    position: relative;
+    padding: 0 20px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+    background: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    font-family: Room;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: normal;
+    letter-spacing: 0.83px;
+    color: #7e1b1f;
+}
+
+.select_title:after {
+    display: block;
+    content: "";
+    width: 13px;
+    height: 8px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    background-image: url(img/arrow_red.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.custom_select.active .select_title {
+    position: relative;
+    z-index: 2;
+    -webkit-border-radius: 21px 21px 0 0;
+    -moz-border-radius: 21px 21px 0 0;
+    border-radius: 21px 21px 0 0;
+}
+
+.custom_select.active .select_title:after {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.custom_select .select_list {
+    display: none;
+    padding: 13px 20px 5px 20px;
+    background: #ffffff;
+    width: calc(100% + 2px);
+    margin-top: -13px;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    border-left: solid 1px #7e1b1f;
+    border-right: solid 1px #7e1b1f;
+    border-bottom: solid 1px #7e1b1f;
+    -webkit-border-radius: 0 0 21px 21px;
+    -moz-border-radius: 0 0 21px 21px;
+    border-radius: 0 0 21px 21px;
+}
+
+.custom_select.active .select_list {
+    display: block;
+}
+
+.select_list ul li {
+    padding: 8px 0;
+}
+
+.select_list ul li a {
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+    font-family: Room;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: normal;
+    letter-spacing: 0.83px;
+    color: #7e1b1f;
+}
+
+.select_list ul li a:hover {
+    border-bottom: 1px solid #7e1b1f;
+}
+
+.afisha_thumbnails_2 {
+    margin-bottom: 49px;
+}
+
+.afisha_thumb_default.thumb_big {
+    width: calc(66.66% - 20px);
+}
+
+/*-- /Section 1 - Afisha Old--*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/

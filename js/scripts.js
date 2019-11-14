@@ -370,6 +370,7 @@ $(document).ready(function() {
         if(parentBlock.hasClass("active")) {
             parentBlock.removeClass("active");
         } else {
+            $(".dropdown_select").removeClass("active");
             parentBlock.addClass("active");
         }        
     });
