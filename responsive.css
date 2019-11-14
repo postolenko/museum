@@ -981,13 +981,15 @@ section {
 
 .thumb_4 .img_box {
     height: 240px;
-    max-width: 240px;
+    width: 240px;
 }
 
 .thumb_4 img {
     display: block;
     width: auto;
-    height: 250px;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
     position: relative;
     top: 50%;
     left: 50%;

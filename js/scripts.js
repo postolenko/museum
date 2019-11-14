@@ -1,12 +1,3 @@
-function getThumbDescriptSize() {
-    $(".thumb_4").each(function() {
-        imageWidth = $(this).find(".img_box").width();
-        $(this).find(".descript").css({
-            "width" : imageWidth + "px"
-        });
-    });
-}
-
 function getPositionMenu() {
     if(bodyWidth > 900) {
         if( $(document).scrollTop() > $(".main_nav_scroll_wrapp").offset().top + 150) {
@@ -66,7 +57,6 @@ $(window).on('load', function() {
 
 $(window).resize(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
-    getThumbDescriptSize();
     getPositionMenu();
     getRespHeaderParams();
     setSliderArrows();
@@ -80,7 +70,6 @@ $(document).scroll(function() {
 
 $(document).ready(function() {
 
-    getThumbDescriptSize();
     getPositionMenu();
     getRespHeaderParams();
     getAppendNavMenu();
@@ -237,11 +226,13 @@ $(document).ready(function() {
             autoplay: false,
             autoplaySpeed: false,
             speed: 1200,
+            infinite: false,
             slidesToScroll: 1,
             swipeToSlide: true,
             variableWidth: true,
+            initialSlide: 0,
             prevArrow: '<button class="slick_prev transparent_arrow_left" aria-label="Previous" type="button"></button>',
-            nextArrow: '<button class="slick_next transparent_arrow_right" aria-label="Next" type="button"></button>',
+            nextArrow: '<button class="slick_next transparent_arrow_right" aria-label="Next" type="button"></button>'
         });
     } 
 

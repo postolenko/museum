@@ -10,16 +10,17 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Сахалинский Областной Краеведческий Музей</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
 
 	<div class="wrapper">
 
-	<!-- Header 2 -->
+	<!-- Header -->
 		
 	<header>
-		<div class="header_site inner_header inner_header_2">
+		<div class="header_site inner_header">
 			<div class="row row_1" id="resp_header">
 				<div class="top_row">
 					<div class="col_left">
@@ -95,10 +96,12 @@
 											</div>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu"></button>
+											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu">
+											</button>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button search_button" data-popup-link = "popup_1"></button>
+											<button type="button" class="resp_button search_button" data-popup-link = "popup_1">
+											</button>
 										</div>
 										<div class="resp_inline">
 											<button type="button" class="respmenubtn" data-resp-btn = "nav_resp">
@@ -117,99 +120,60 @@
 					</div>
 				</div>
 			</div>
-			<div class="main_nav_sect">
-				<div class="main_nav_scroll_wrapp">
-					<div class="main_nav_scroll" id="fixed_menu">
-						<div class="back_el"></div>
-						<div class="row">
-							<div class="short_logo_wrapp">
-								<a href="#" class="logo_short_link">
-									<img src="img/logo_short.svg" alt="" />
-								</a>
-							</div>
-							<div class="main_nav_wrapp">
-								<ul class="main_nav" id="resp_nav">
-									<li>
-										<a href="#">Музей</a>
-										<ul>
-											<li><a href="#">История создания</a></li>
-											<li><a href="#">Слово директору</a></li>
-											<li><a href="#">Услуги</a></li>
-											<li><a href="#">Партнеры</a></li>
-											<li><a href="#">Документы</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Афиша</a>
-										<ul>
-											<li><a href="#">Афиша 1</a></li>
-											<li><a href="#">Афиша 2</a></li>
-											<li><a href="#">Афиша 3</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Новости</a>
-										<ul>
-											<li><a href="#">Новость 1</a></li>
-											<li><a href="#">Новость 2</a></li>
-											<li><a href="#">Новость 3</a></li>
-											<li><a href="#">Новость 4</a></li>
-											<li><a href="#">Новость 5</a></li>
-											<li><a href="#">Новость 6</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Выставки</a></li>
-									<li><a href="#">Коллекции</a></li>
-									<li><a href="#">Наука</a></li>
-									<li><a href="#">Конкурсы</a></li>
-									<li>
-										<a href="#">Купить</a>
-										<ul>
-											<li><a href="#">История создания</a></li>
-											<li><a href="#">Слово директору</a></li>
-											<li><a href="#">Услуги</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Контакты</a></li>
-								</ul>
-							</div>
+			<div class="main_nav_scroll_wrapp">
+				<div class="main_nav_scroll" id="fixed_menu">
+					<div class="back_el"></div>
+					<div class="row">
+						<div class="short_logo_wrapp">
+							<a href="#" class="logo_short_link">
+								<img src="img/logo_short.svg" alt="" />
+							</a>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="promo_box">
-						<div class="promo_img" style="background-image: url(img/banner_afisha_2.jpg);"></div>
-						<div class="promo_box_content">
-							<div class="promo_box_header">
-								<div>
-									<ul class="breadcrumbs">
-										<li>
-											<a href="#">Афиша</a>
-										</li>
-										<li>
-											<a href="#">Выставки</a>
-										</li>
+						<div class="main_nav_wrapp">
+							<ul class="main_nav" id="resp_nav">
+								<li>
+									<a href="#">Музей</a>
+									<ul>
+										<li><a href="#">История создания</a></li>
+										<li><a href="#">Слово директору</a></li>
+										<li><a href="#">Услуги</a></li>
+										<li><a href="#">Партнеры</a></li>
+										<li><a href="#">Документы</a></li>
 									</ul>
-								</div>
-								<div>
-									<div class="white_tag">Завершено</div>
-								</div>
-							</div>							
-							<div class="promo_box_descr_wrapp">
-								<div class="promo_box_descr">
-									<p class="p_tag">игра</p>
-									<h3>Тропой первобытного человека</h3>
-									<p>Данный проект поможет школьникам средних общеобразовательных учреждений области сформировать интерес к изучению древней истории островного региона, в игровой форме познакомиться с жизнью первобытного человека.</p>
-								</div>
-								<div class="promo_box_footer">
-									<div>
-										<p><i class="location_pin"></i> Сахалинский областной краеведческий музей</p>
-									</div>
-									<div>
-										<p>9 июля – 27 августа</p>
-									</div>
-								</div>
-							</div>
+								</li>
+								<li>
+									<a href="#">Афиша</a>
+									<ul>
+										<li><a href="#">Афиша 1</a></li>
+										<li><a href="#">Афиша 2</a></li>
+										<li><a href="#">Афиша 3</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+									<ul>
+										<li><a href="#">Новость 1</a></li>
+										<li><a href="#">Новость 2</a></li>
+										<li><a href="#">Новость 3</a></li>
+										<li><a href="#">Новость 4</a></li>
+										<li><a href="#">Новость 5</a></li>
+										<li><a href="#">Новость 6</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Выставки</a></li>
+								<li><a href="#">Коллекции</a></li>
+								<li><a href="#">Наука</a></li>
+								<li><a href="#">Конкурсы</a></li>
+								<li>
+									<a href="#">Купить</a>
+									<ul>
+										<li><a href="#">История создания</a></li>
+										<li><a href="#">Слово директору</a></li>
+										<li><a href="#">Услуги</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -311,275 +275,212 @@
 		<!-- /Responsive Menus -->
 	</header>
 
-	<!-- /Header 2 -->
+	<!-- /Header -->
 
 	<!-- Content -->
 		<div class="content inner_page">
 
-		<!-- Breadcrumbs -->
-		<div class="breadcrumbs_wrapp resp_900">
-			<div class="row">
-				<ul class="breadcrumbs_dark">
-					<li>
-						<a href="#">Афиша</a>
-					</li>
-					<li>
-						<a href="#">Выставки</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /Breadcrumbs -->
-
-		<!-- Section 1 - Afisha Events -->
-
-		<!-- Resp Promo -->
-
-		<div class="resp_promo">
-			<div class="row">
-				<div class="resp_promo_content">
-					<div class="img_box">
-						<div class="white_tag">Завершено</div>
-						<img src="img/banner_afisha_2.jpg" alt="" />
-					</div>
-					<p class="tab_p_2">игра</p>
-					<h2>ТРОПОЙ ПЕРВОБЫТНОГО ЧЕЛОВЕКА</h2>
-					<p>Данный проект поможет школьникам средних общеобразовательных учреждений области сформировать интерес к изучению древней истории островного региона, в игровой форме познакомиться с жизнью первобытного человека.</p>
-					<div class="resp_promo_footer">
-						<div class="place_item_2">
-							<div class="col">
-								<i class="location_pin_dark"></i>
-							</div>
-							<div class="col">
-								<p>Сахалинский областной краеведческий музей</p>
-							</div>
-						</div>
-						<p>9 июля – 27 августа</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- /Resp Promo -->
-
-		<!-- Section 1 - Afisha Event Fin -->
+		<!-- Section 1 - Exhibitions -->
 
 		<section>
 			<div class="row">
-				<div class="two_cols_templ">
-					<div class="left_col">
-						<div class="items_wrap">
-							<div class="item_1">
-								<h3>Аудитория</h3>
-								<p>Школьники</p>
-							</div>
-							<div class="item_1">
-								<h3>Дата</h3>
-								<p>1 декабря 2018 – 1 марта 2019</p>
-							</div>
-							<div class="item_1">
-								<h3>Длительность</h3>
-								<p>45 минут</p>
-							</div>
-							<div class="item_1">
-								<h3>Телефон для справок и предварительной записи</h3>
-								<p><a class="tel_link" href="tel:+74242505051">+7 (4242) 50—50—51</a></p>
-							</div>
+
+				<div class="page_header">
+					<h3>Выставки</h3>
+				</div>
+
+				<!-- Events Slider -->
+
+				<div class="events_slider_wrapp">
+					<div class="events_slider">
+						<div class="slide">
+							<a href="#" class="event_link active">Постоянные</a>
 						</div>
-					</div>
-					<div class="right_col event_article">
-						<div class="text_wrapp">
-							<p>Сахалинский областной краеведческий музей запускает новый проект «Интерактивная игра: Тропой первобытного человека» при поддержке компании «Сахалин Энерджи» в рамках фонда социальных инициатив «Энергия».</p>
-							<p>Данный проект поможет школьникам средних общеобразовательных учреждений области сформировать интерес к изучению древней истории островного региона, в игровой форме познакомиться с жизнью первобытного человека.</p>
+						<div class="slide">
+							<a href="#" class="event_link">Временные</a>
 						</div>
-						<div class="afisha_images">
-							<div class="img_box_wrapp">
-								<div class="img_box">
-									<img src="img/6.jpg" alt="" />
-								</div>
-								<p>Третьеклассники гимназии на игре</p>
-							</div>
-							<div class="img_box_wrapp">
-								<div class="img_box">
-									<img src="img/7.jpg" alt="" />
-								</div>
-								<p>Бум- первобытный человек</p>
-							</div>
-						</div>
-						<div class="text_wrapp">
-							<p>Школьников ждут занятия с элементами театрализации и демонстрацией реплик орудий труда древнего человека, созданных при помощи 3D технологий. Каждый ребенок сможет почувствовать себя частью «древнего племени», которое должно пройти с юга на север. Определенный маршрут задан стилизованной картой-ковром. Нанесенные тематические изображения могут как ускорить, так и замедлить продвижение команды по игровому полю. В то же время тематические изображения будут способствовать формированию у участников игры четкого представления об образе жизни первобытного человека и тех трудностях, которые ему приходилось ежедневно преодолевать.</p>
-						</div>
-						<div class="single_image_slider_wrapp">
-							<div class="single_image_slider">
-								<div class="slide">
-									<div class="img_box">
-										<img src="img/8.jpg" alt="" />
-									</div>
-									<div class="slide_footer">
-										<p>Третьеклассники на игре</p>
-									</div>
-								</div>
-								<div class="slide">
-									<div class="img_box">
-										<img src="img/sob-2.jpg" alt="" />
-									</div>
-									<div class="slide_footer">
-										<p>Третьеклассники на игре 2</p>
-									</div>
-								</div>
-							</div>
-							<div class="single_image_slider_arrows"></div>
+						<div class="slide">
+							<a href="#" class="event_link">Выездные</a>
 						</div>
 					</div>
 				</div>
+
+				<!-- /Events Slider -->
+
+				<!-- Exhibitions thumbnails -->
+
+				<div class="exhibitions_content">
+
+					<div class="exhibitions_sect">
+						<h2>Цокольный этаж</h2>
+						<div class="afisha_thumbnails exhibition_thumbs">
+							<a href="#" class="afisha_thumb exhibition_thumb afisha_thumb_big">
+								<div class="img_box">
+									<img src="img/vustavki-1.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Естественная история сахалина</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="afisha_thumb exhibition_thumb">
+								<div class="img_box">
+									<img src="img/vustavki-2.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Фауна дальневосточных морей</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="exhibitions_sect">
+						<h2>Первый этаж</h2>
+						<div class="afisha_thumbnails exhibition_thumbs">
+							<a href="#" class="afisha_thumb exhibition_thumb">
+								<div class="img_box">
+									<img src="img/vustavki-3.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Выставочный зал</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="afisha_thumb exhibition_thumb afisha_thumb_big">
+								<div class="img_box">
+									<img src="img/vustavki-4.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Растительный и животный мир</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="afisha_thumb exhibition_thumb afisha_thumb_big">
+								<div class="img_box">
+									<img src="img/vustavki-5.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Древние культуры и коренные народы</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+										<div>
+											<p><b>1 июня 2019 — 1 июля 2019</b></p>
+										</div>
+										<div>
+											<p class="small_p">Организатор: Александ Каспирович</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="afisha_thumb exhibition_thumb">
+								<div class="img_box">
+									<img src="img/sob-2.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>В глубинах океана</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+										<div>
+											<p><b>1 июня 2019 — 1 июля 2019</b></p>
+										</div>
+										<div>
+											<p class="small_p">Организатор: Александ Каспирович</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="exhibitions_sect">
+						<h2>Второй этаж</h2>
+						<div class="afisha_thumbnails exhibition_thumbs">
+							<a href="#" class="afisha_thumb exhibition_thumb">
+								<div class="img_box">
+									<img src="img/vustavki-7.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Открытие и освоение островов</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="afisha_thumb exhibition_thumb afisha_thumb_big">
+								<div class="img_box">
+									<img src="img/vustavki-8.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Послевоенное время. Современность</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="afisha_thumb exhibition_thumb afisha_thumb_big">
+								<div class="img_box">
+									<img src="img/vustavki-9.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Довоенное время. Вторая мировая война</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="afisha_thumb exhibition_thumb">
+								<div class="img_box">
+									<img src="img/vustavki-10.jpg" alt="" />
+								</div>
+								<div class="afisha_thumb_descript">
+									<h3>Сахалин - каторжная колония России</h3>
+									<div class="afisha_thumb_descript_footer">
+										<div>
+											<p class="place_p"><span class="icon_box"><i class="location_pin_big"></i></span><span class="text_box">Сахалинский областной краеведческий музей</span></p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- /Exhibitions thumbnails -->
+
 			</div>
 		</section>
 
-		<!-- /Section 1 - Afisha Event Fin -->
+		<!-- /Section 1 - Exhibitions -->
 
-		<!-- Section 2 - Afisha Events -->
 
-		<section>
-			<div class="row">
-				<div class="h2_wrapp">
-					<h2>Другие события</h2>
-				</div>
-				<div class="small_thumbs variable_width_sl_2">
-					<div class="slide">
-						<a href="#" class="small_thumb">
-							<div class="img_box">
-								<img src="img/sob-3.jpg" alt="" />
-							</div>
-							<div class="small_thumb_header">
-								<div class="place_item">
-									<div class="col">
-										<i class="location_pin"></i>
-									</div>
-									<div class="col">
-										<p>Краеведческий музей</p>
-									</div>
-								</div>
-							</div>
-							<div class="small_thumb_descript">
-								<p>экскурсия</p>
-								<h3>История геологического развития Сахалина и Курильских островов</h3>
-								<div class="small_thumb_descript_footer">
-									<div>
-										<p>23 июня, 12:00 — 14:00</p>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="slide">
-						<a href="#" class="small_thumb">
-							<div class="img_box">
-								<img src="img/sob-2.jpg" alt="" />
-							</div>
-							<div class="small_thumb_header">
-								<div>
-									<div class="place_item">
-										<div class="col">
-											<i class="location_pin"></i>
-										</div>
-										<div class="col">
-											<p>Краеведческий музей</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="zayavki_item">
-										<div class="col">
-											<i class="edit"></i>
-										</div>
-										<div class="col">
-											<p>по заявкам</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="small_thumb_descript">
-								<p>мастер–класс</p>
-								<h3>В мире сахалинских животных</h3>
-								<div class="small_thumb_descript_footer">
-									<div>
-										<p>июль</p>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="slide">
-						<a href="#" class="small_thumb">
-							<div class="img_box">
-								<img src="img/sob-6.jpg" alt="" />
-							</div>
-							<div class="small_thumb_header">
-								<div>
-									<div class="place_item">
-										<div class="col">
-											<i class="location_pin"></i>
-										</div>
-										<div class="col">
-											<p>Краеведческий музей</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="small_thumb_descript">
-								<p>мастер–класс</p>
-								<h3>От Анны Резник</h3>
-								<div class="small_thumb_descript_footer">
-									<div>
-										<p>23 июня, 12:00 — 14:00</p>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="slide">
-						<a href="#" class="small_thumb">
-							<div class="img_box">
-								<img src="img/sob-4.jpg" alt="" />
-							</div>
-							<div class="small_thumb_header">
-								<div>
-									<div class="place_item">
-										<div class="col">
-											<i class="location_pin"></i>
-										</div>
-										<div class="col">
-											<p>Краеведческий музей</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="zayavki_item">
-										<div class="col">
-											<i class="edit"></i>
-										</div>
-										<div class="col">
-											<p>по заявкам</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="small_thumb_descript">
-								<p>лекция</p>
-								<h3>Детский сад музею рад</h3>
-								<div class="small_thumb_descript_footer">
-									<div>
-										<p>23 июня, 12:00 — 14:00</p>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- /Section 2 - Afisha Events -->
 
 		<!-- Section 5 - Main Page -->
 
