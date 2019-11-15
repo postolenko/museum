@@ -5,3 +5,4 @@
 # http://postolenko.github.io/museum/afisha_event_fin.html
 # http://postolenko.github.io/museum/exhibitions.html
 # http://postolenko.github.io/museum/exhibition.html
+# http://postolenko.github.io/museum/exhibition_temporary.html

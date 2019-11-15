@@ -5448,6 +5448,53 @@ p.small_p {
 
 /*-- /Section 2 - Exposition Page --*/
 
+/*-- Section 1 - Exposition Temporary Page --*/
+
+.promo_footer_2 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    align-items: center;
+    -webkit-align-items: center;
+    margin: 0 -12px;
+}
+
+.promo_footer_2 > div {
+    padding: 0 12px;
+}
+
+.promo_footer_2 > div:nth-child(1) {
+    max-width: 370px;
+}
+
+.promo_footer_2 > div:nth-child(2) {
+    max-width: 245px;
+    padding: 0 12px;
+}
+
+.promo_footer_2 p {
+    padding: 3px 0;
+}
+
+.promo_footer_resp {
+
+}
+
+.promo_footer_resp .p_bold {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fffffe;
+}
+
+.promo_footer_resp .small_p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fffffe;
+}
+
+/*-- /Section 1 - Exposition Temporary Page --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
