@@ -5174,8 +5174,6 @@ p.small_p {
     display: -webkit-flex;
     -webkit-align-items: flex-end;
     align-items: flex-end;
-    background-position: center;
-    background-size: cover;
     height: 700px;
     overflow: hidden;
     position: relative;
@@ -5185,6 +5183,8 @@ p.small_p {
 .promo_sect_2 .img_box {
     width: 100%;
     height: 100%;
+    background-position: center;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
