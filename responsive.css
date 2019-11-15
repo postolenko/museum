@@ -251,6 +251,10 @@
 		padding: 0 15px;
 	}
 
+	.hiiden_900 {
+		display: none;
+	}
+
 	.resp_900 {
 		display: block;
 	}
@@ -490,7 +494,6 @@ input.search_input {
 }
 
 /*-- /Popup 1 --*/
-
 
 }
 
@@ -770,6 +773,23 @@ input.search_input {
 }
 
 /*-- /Section 1 - Afisha Events --*/
+
+/*-- Section 2 - Exposition Page --*/
+
+.exposition_sect {
+	padding: 1px 0;
+}
+
+.exposition_sect .afisha_images {
+    margin-bottom: 1px;
+}
+
+.single_thumb_wrapp .single_thumb {
+    top: 59px;
+    left: 0;
+}
+
+/*-- /Section 2 - Exposition Page --*/
 
 /*-- Footer --*/
 
