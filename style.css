@@ -5495,6 +5495,195 @@ p.small_p {
 
 /*-- /Section 1 - Exposition Temporary Page --*/
 
+ /*-- Section 1 - Graphic Collections --*/
+
+.collections {
+    margin: 0 -14px;
+}
+
+.collection {
+    display: block;
+    width: 294px;
+    margin: 14px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.collections .collection {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 28px);
+}
+
+.collection img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.collection .mask {
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    background: rgba(8, 25, 48, .7);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.collection:hover .mask {
+    opacity: 1;
+}
+
+.collection .descript {
+    padding: 7px 15px;
+}
+
+.collection .descript:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 14px 0;
+    background-image: url(img/arrow_left_gold.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.collection p {
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #fffffe;
+}
+
+.collection h3 {
+    padding: 3px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fffffe;
+}
+
+.pagination_wrapp {
+    text-align: center;
+    margin: 36px 0 56px 0;
+}
+
+.pagination {
+    display:-flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    width: 240px;
+}
+
+.pagination_wrapp .pagination {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+}
+
+.pagination li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2px;
+}
+
+.pagination li a {
+    display: block;
+    position: relative;
+    min-width: 34px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #3f4649;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.pagination li a.active {
+    color: #fffffe;
+    background-image: url(img/pagination_active.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagination li a.active:hover {
+    color: #fffffe;
+}
+
+.pagination li a:hover {
+    color: #7e1b1f;
+}
+
+.pagination  .dots {
+    position: relative;
+    top: -6px;
+}
+
+.pagination_arrows_wrapp {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.pagination_arrow {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1px;
+}
+
+ /*-- /Section 1 - Graphic Collections --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/

@@ -439,6 +439,14 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 - Graphic Collections --*/
+
+	.collections .collection {
+	    width: calc(33.33% - 28px);
+	}
+
+	/*-- /Section 1 - Graphic Collections --*/
+
 	/*-- Resp Promo --*/
 
 	.resp_promo {
@@ -791,6 +799,19 @@ input.search_input {
 
 /*-- /Section 2 - Exposition Page --*/
 
+/*-- Section 1 - Graphic Collections --*/
+
+.collection h3 {
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.collection .descript:after {
+    margin: 10px 0;
+}
+
+/*-- /Section 1 - Graphic Collections --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -1125,6 +1146,14 @@ section {
 
 /*-- /Exhibitions thumbnails --*/
 
+/*-- Section 1 - Graphic Collections --*/
+
+.collections .collection {
+    width: calc(50% - 28px);
+}
+
+/*-- /Section 1 - Graphic Collections --*/
+
 /*-- Footer --*/
 
 .footer_section {
@@ -1169,6 +1198,23 @@ section {
 	}
 
 	/*-- /Slider Header --*/
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	/*-- Section 1 - Graphic Collections --*/
+
+	.collections {
+	    margin: 0;
+	}
+
+	.collections .collection {
+	    width: 100%;
+	    margin: 14px 0;
+	}
+
+	/*-- /Section 1 - Graphic Collections --*/
 
 }
 

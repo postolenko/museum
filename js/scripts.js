@@ -553,4 +553,10 @@ $(document).ready(function() {
         }
     });
 
+    // ------------------
+
+    $('.masonry').masonry({
+      itemSelector: '.grid_item'
+    });
+
 });
