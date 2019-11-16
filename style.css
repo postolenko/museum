@@ -5817,6 +5817,15 @@ p.small_p {
     border-bottom: solid 1px #6d777c;
 }
 
+.search_wrapp_2_resp .search_form_2_wrapp {
+    margin: 0;
+    width: 100%;
+}
+
+.search_wrapp_2_resp .search_form_2_wrapp input:focus {
+    border-bottom: solid 1px transparent;
+}
+
  /*-- /Section 1 - Collection --*/
 
 /*-- Section 1 - Collections Sculptures --*/
