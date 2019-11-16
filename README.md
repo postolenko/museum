@@ -12,3 +12,4 @@
 # http://postolenko.github.io/museum/collections_legends_sculpture.html
 # http://postolenko.github.io/museum/collection_legend_exponat.html
 # http://postolenko.github.io/museum/search.html
+# http://postolenko.github.io/museum/restoration.html
