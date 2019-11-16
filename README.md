@@ -7,3 +7,4 @@
 # http://postolenko.github.io/museum/exhibition.html
 # http://postolenko.github.io/museum/exhibition_temporary.html
 # http://postolenko.github.io/museum/graphic_collections.html
+# http://postolenko.github.io/museum/collections.html

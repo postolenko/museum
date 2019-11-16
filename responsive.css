@@ -812,6 +812,31 @@ input.search_input {
 
 /*-- /Section 1 - Graphic Collections --*/
 
+/*-- Section 1 - Collection --*/
+
+.page_header_2 {
+	display: block;
+	padding-top: 6px;
+	padding-bottom: 13px;
+}
+
+.page_header_2 > div:nth-child(1) {
+    width: 100%;
+    padding-right: 0;
+}
+
+.page_header_2 > div:nth-child(2) {
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
+}
+
+.events_slider_wrapp_2 {
+	display: none;
+}
+
+/*-- /Section 1 - Collection --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
