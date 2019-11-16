@@ -5812,8 +5812,8 @@ p.small_p {
 .search_wrapp_2_resp {
     display: flex;
     display: -webkit-flex;
-    margin-top: 18px;
-    padding-bottom: 18px;
+    margin-top: 14px;
+    padding-bottom: 16px;
     border-bottom: solid 1px #6d777c;
 }
 
