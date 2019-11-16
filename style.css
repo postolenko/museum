@@ -5836,7 +5836,90 @@ p.small_p {
 
 /*-- /Section 1 - Collections Sculptures --*/
 
+/*-- Section 1 - Collection Exponat --*/
 
+.two_cols {
+    display: flex;
+    display: -webkit-flex;
+    margin: 27px 0 55px 0;
+}
+
+.two_cols .left_col {
+    width: 413px;
+    padding: 10px 13px 10px 0;
+}
+
+.two_cols .right_col {
+    width: calc(100% - 413px);
+    padding: 10px 0 10px 13px;
+}
+
+.img_box_2 {
+    height: 394px;
+    max-width: 401px;
+    margin: 6px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.img_box_2 img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.title_wrapp {
+    padding: 3px 0;
+}
+
+.title_wrapp h1 {
+    padding: 3px 0;
+}
+
+.title_wrapp p {
+    padding: 3px 0;
+}
+
+.article_desc {
+    max-width: 618px;
+}
+
+.article_desc p {
+    padding: 13px 0;
+}
+
+.grey_box {
+    background-color: #eeeeee;
+    margin: 27px 0;
+    padding: 26px 40px 31px 40px;
+}
+
+.grey_box p {
+    padding: 10px 0;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #3f4649;
+}
+
+.grey_box .transparent_pill {
+    margin: 5px 0;
+    min-width: 170px;
+}
+
+.resp_img_box {
+    display: none;
+}
+
+/*-- /Section 1 - Collection Exponat --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

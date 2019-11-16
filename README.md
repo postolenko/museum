@@ -10,3 +10,4 @@
 # http://postolenko.github.io/museum/collections.html
 # http://postolenko.github.io/museum/collections_legends.html
 # http://postolenko.github.io/museum/collections_legends_sculpture.html
+# http://postolenko.github.io/museum/collection_legend_exponat.html
