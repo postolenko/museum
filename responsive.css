@@ -876,6 +876,14 @@ input.search_input {
 
 /*-- /Section 1 - Collection --*/
 
+/*-- Section 1 - Search --*/
+
+.rearch_result_info {
+    padding: 26px 0 3px 0;
+}
+
+/*-- /Section 1 - Search --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
