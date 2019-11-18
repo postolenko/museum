@@ -351,8 +351,7 @@
 	.header_three_cols .options_wrapp {
 	    width: 100%;
 	    margin: 0 -7px;
-	    padding-top: 15px;
-	    padding-left: 0;
+    	padding: 22px 0 5px 0;
 	}
 
 	.resp_inline {

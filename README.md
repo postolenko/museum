@@ -16,3 +16,4 @@
 # http://postolenko.github.io/museum/collections_restoration_archeology.html
 # http://postolenko.github.io/museum/collection_legend_exponat_1.html
 # http://postolenko.github.io/museum/collection_exponat_1.html
+# http://postolenko.github.io/museum/collection_exponat_2.html
