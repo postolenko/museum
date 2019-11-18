@@ -5903,10 +5903,15 @@ p.small_p {
 
 .article_desc {
     max-width: 618px;
+    margin-top: 8px;
 }
 
 .article_desc p {
-    padding: 13px 0;
+    padding: 5px 0;
+}
+
+.article_desc li {
+    padding: 4px 0;
 }
 
 .grey_box {
@@ -5930,6 +5935,10 @@ p.small_p {
 
 .resp_img_box {
     display: none;
+}
+
+.two_cols .single_image_slider_wrapp .single_image_slider_arrows {
+    bottom: -15px;
 }
 
 /*-- /Section 1 - Collection Exponat --*/
