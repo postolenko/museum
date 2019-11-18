@@ -4272,6 +4272,19 @@ p.date_2 {
     background-position: center;
     background-size: cover;
     height: 500px;
+    position: relative;
+}
+
+.promo_box .promo_img:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -webkit-linear-gradient(178deg, rgba(0, 0, 0, 0) 64%, rgba(8, 25, 48, .5) 81%);
+    background-image: -moz-linear-gradient(178deg, rgba(0, 0, 0, 0) 64%, rgba(8, 25, 48, .5) 81%);
+    background-image: linear-gradient(178deg, rgba(0, 0, 0, 0) 64%, rgba(8, 25, 48, .5) 81%);
 }
 
 .promo_box_content {
