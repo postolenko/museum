@@ -49,7 +49,8 @@ var nextSlideDescript,
     arrowsSlider,
     imageWidth,
     respMenu,
-    dropdownBox;
+    dropdownBox,
+    dropdownContent;
 
 $(window).on('load', function() {
     setSliderArrows();
@@ -557,6 +558,31 @@ $(document).ready(function() {
 
     $('.masonry').masonry({
       itemSelector: '.grid_item'
+    });
+
+    // ------------------
+
+    $(".dropdown_item").each(function() {
+        if($(this).find(".dropdown_content").html() != "") {
+            $(this).addClass("ready");
+        }
+    });
+
+    $(".dropdown_title").on("click", function(e) {
+        e.preventDefault();
+        parentBlock = $(this).closest(".dropdown_item");
+        if(parentBlock.hasClass("ready")) {
+            dropdownContent = parentBlock.find(".dropdown_content");
+            if(dropdownContent.is(":hidden")) {
+                dropdownContent.slideDown(300);
+                parentBlock.addClass("active");
+                console.log("down");
+            } else {
+                dropdownContent.slideUp(300);
+                parentBlock.removeClass("active");
+                console.log("up");
+            }
+        }
     });
 
 });

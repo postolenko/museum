@@ -41,6 +41,14 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 - Afisha Events --*/
+
+	.items_wrap {
+	    margin-left: 10%;
+	}
+
+	/*-- /Section 1 - Afisha Events --*/
+
 }
 
 
@@ -481,6 +489,14 @@
 
 	/*-- /Section 1 - Collection Exponat --*/
 
+	/*-- Section 1 - Afisha Events --*/
+
+	.items_wrap {
+	    margin-left: 0;
+	}
+
+	/*-- /Section 1 - Afisha Events --*/
+
 	/*-- Resp Promo --*/
 
 	.resp_promo {
@@ -786,13 +802,14 @@ input.search_input {
 
 .two_cols_templ .left_col {
     width: 100%;
-    padding: 0;
+    padding: 0 0 20px 0;
     text-align: left;
 }
 
 .two_cols_templ .right_col {
     width: 100%;
-    padding: 0;
+    padding: 10px 0;
+    border-top: solid 1px #d0d0d0;
 }
 
 .items_wrap {
@@ -817,6 +834,10 @@ input.search_input {
 
 .afisha_images .img_box_wrapp {
     width: calc(50% - 12px);    
+}
+
+.item_1 {
+    margin: 14px 0;
 }
 
 /*-- /Section 1 - Afisha Events --*/
@@ -883,6 +904,32 @@ input.search_input {
 }
 
 /*-- /Section 1 - Search --*/
+
+/*-- Section 1 - Active Voting --*/
+
+.photo_article {
+	display: block;
+}
+
+.photo_article .col_1 {
+    width: 100%;
+    padding: 5px 0 11px 0;
+}
+
+.photo_article .col_2 {
+    width: 100%;
+    padding: 0;
+}
+
+.photo_article .img_box {
+	max-width: 360px;
+}
+
+.dropdown_title {
+    padding: 15px 50px 16px 0;
+}
+
+/*-- /Section 1 - Active Voting --*/
 
 /*-- Footer --*/
 
