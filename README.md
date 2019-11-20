@@ -21,3 +21,4 @@
 # http://postolenko.github.io/museum/archive_competition.html
 # http://postolenko.github.io/museum/competition_without_nominations.html
 # http://postolenko.github.io/museum/active_voting_fin.html
+# http://postolenko.github.io/museum/competitions.html
