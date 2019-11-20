@@ -931,6 +931,14 @@ input.search_input {
 
 /*-- /Section 1 - Active Voting --*/
 
+/*-- Section 1 - Competition Without Nomination --*/
+
+.photos_articles_wrapp h2 {
+    padding: 5px 0 10px 0;
+}
+
+/*-- /Section 1 - Competition Without Nomination --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {

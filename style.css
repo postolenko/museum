@@ -4272,6 +4272,7 @@ p.date_2 {
     background-position: center;
     background-size: cover;
     height: 500px;
+    background-color: #6d777c;
     position: relative;
 }
 
@@ -5992,7 +5993,7 @@ p.small_p {
 
 /*-- Section 1 - Active Voting --*/
 
-.event_article .text_wrapp {
+.text_wrapp_2 {
     margin-left: 0;
     margin-right: 0;
 }
@@ -6069,6 +6070,7 @@ p.small_p {
 .photo_article .img_box {
     overflow: hidden;
     position: relative;
+    border: solid 1px #9b9b9b;
 }
 
 .photo_article .img_box img {
@@ -6133,7 +6135,17 @@ p.small_p {
 
 /*-- /Section 1 - Active Voting --*/
 
+/*-- Section 1 - Competition Without Nomination --*/
 
+.photos_articles_wrapp {
+    padding-top: 10px;
+}
+
+.photos_articles_wrapp h2 {
+    padding: 18px 0 21px 0;
+}
+
+/*-- /Section 1 - Competition Without Nomination --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

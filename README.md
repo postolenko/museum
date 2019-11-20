@@ -19,3 +19,4 @@
 # http://postolenko.github.io/museum/collection_exponat_2.html
 # http://postolenko.github.io/museum/active_voting.html
 # http://postolenko.github.io/museum/archive_competition.html
+# http://postolenko.github.io/museum/competition_without_nominations.html
