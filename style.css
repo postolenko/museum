@@ -6481,6 +6481,14 @@ textarea::placeholder {
     padding-left: 5%;
 }
 
+.resp_map {
+    display: none;
+}
+
+.resp_map #map {
+    margin: 20px 0;
+}
+
 .two_cols_2 h1 {
     padding-bottom: 16px;
 }
@@ -6613,6 +6621,26 @@ textarea::placeholder {
     align-items: center;
     -webkit-align-items: center;
     width: 140px;
+}
+
+.personal_info .col_1 .img_box {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.personal_info .col_1 .img_box img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .personal_info .inner {

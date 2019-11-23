@@ -23,3 +23,4 @@
 # http://postolenko.github.io/museum/active_voting_fin.html
 # http://postolenko.github.io/museum/competitions.html
 # http://postolenko.github.io/museum/contacts_guestbook.html
+# http://postolenko.github.io/museum/contacts.html

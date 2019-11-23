@@ -38,20 +38,31 @@ function getAppendNavMenu() {
     }
 }
 
- function getAdaptivePositionElements() {
-    $(".append-elem").each(function() {
-        if( $(this).hasClass("desktop-position") ) {
-            screenParam = parseInt( $(this).attr("data-min-screen") );
-            indexElem = $(this).attr("data-append-descktop-elem");
-            if( bodyWidth <= screenParam ) {
-                $("[data-append-elem = '"+ indexElem +"']").append($(this).children());
-            }
-            if( bodyWidth > screenParam ) {
-                $("[data-append-descktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").children());
-            }
-        }
-    });
+function getAppendMap() {
+    if(bodyWidth <= 900) {
+        $("#map").appendTo(".resp_map");
+    } else {
+        $("#map").appendTo(".map_box");
+    }
 }
+
+//  function getAdaptivePositionElements() {
+//     $(".append-elem").each(function() {
+//         // if( $(this).hasClass("desktop-position") ) {
+//             screenParam = parseInt( $(this).attr("data-min-screen") );
+//             indexElem = $(this).attr("data-append-descktop-elem");
+//             if( bodyWidth <= screenParam ) {
+//                 $("[data-append-elem = '"+ indexElem +"']").append($(this).html());
+//                 console.log("1");
+//             }
+//             if( bodyWidth > screenParam ) {
+//                 $("[data-append-descktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").html());
+//                 console.log("2");
+//             }
+//             console.log("1");
+//         // }
+//     });
+// }
 
 var w = window,
 d = document,
@@ -79,7 +90,7 @@ $(window).resize(function() {
     getRespHeaderParams();
     setSliderArrows();
     getAppendNavMenu();
-    getAdaptivePositionElements();
+    getAppendMap();
 });
 
 $(document).scroll(function() {
@@ -92,7 +103,7 @@ $(document).ready(function() {
     getPositionMenu();
     getRespHeaderParams();
     getAppendNavMenu();
-    getAdaptivePositionElements();
+    getAppendMap();
 
 	if( $(".promo_slider").length > 0 ) {
         $(".promo_slider").not(".slick-initialized").slick({

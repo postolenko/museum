@@ -153,6 +153,20 @@
 
 	/*-- /Section 1 - Afisha Events --*/
 
+	/*-- Section 1 - Contacts --*/
+
+	.two_cols_2 .left_col {
+	    width: 32%;
+	    padding-right: 25px;
+	}
+
+	.two_cols_2 .right_col {
+	    width: 68%;
+	    padding-left: 25px;
+	}
+
+	/*-- /Section 1 - Contacts --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -497,6 +511,24 @@
 
 	/*-- /Section 1 - Afisha Events --*/
 
+	/*-- Section 1 - Contacts --*/
+
+	.two_cols_2 {
+		display: block;
+	}
+
+	.two_cols_2 .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.two_cols_2 .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	/*-- /Section 1 - Contacts --*/
+
 	/*-- Resp Promo --*/
 
 	.resp_promo {
@@ -504,6 +536,22 @@
 	}
 
 	/*-- /Resp Promo --*/
+
+	/*-- Section 1 - Contacts --*/
+
+	.resp_map {
+		display: block;
+	}
+
+	.two_cols_2 {
+		margin: 30px 0 40px 0;
+	}
+
+	.dropdowns_wrapp {
+		padding-top: 20px;
+	}
+
+	/*-- /Section 1 - Contacts --*/
 
 /*-- Popup 1 --*/
 
@@ -968,6 +1016,30 @@ input.search_input {
 
 /*-- /Section 1 - Contacts Guestbook --*/
 
+/*-- Section 1 - Contacts --*/
+
+.personal_info .inner {
+	display: block;
+}
+
+.personal_info .col_2 {
+	width: 100%;
+    padding-bottom: 5px;
+    padding-right: 0;
+}
+
+.personal_info .col_3 {
+	width: 100%;
+    padding-left: 0;
+}
+
+.dropdown_title h2 {
+    font-size: 19px;
+    line-height: 26px;
+}
+
+/*-- /Section 1 - Contacts --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -1354,6 +1426,28 @@ section {
 	}
 
 	/*-- /Slider Header --*/
+
+	/*-- Section 1 - Contacts --*/
+
+	.personal_info .col_1 {
+	    width: 100px;
+	}
+
+	.personal_info .col_1 .img_box {
+	    width: 80px;
+	    height: 80px;
+	}
+
+	.personal_info:after {
+	    width: calc(100% - 100px);
+	}
+
+	.personal_info .tel_link {
+	    font-size: 17px;
+	    line-height: 17px;
+	}
+
+	/*-- /Section 1 - Contacts --*/
 
 }
 
