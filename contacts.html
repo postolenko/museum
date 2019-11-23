@@ -16,10 +16,10 @@
 
 	<div class="wrapper">
 
-	<!-- Header -->
+	<!-- Header 2 -->
 		
 	<header>
-		<div class="header_site inner_header">
+		<div class="header_site inner_header inner_header_2">
 			<div class="row row_1" id="resp_header">
 				<div class="top_row">
 					<div class="col_left">
@@ -95,12 +95,10 @@
 											</div>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu">
-											</button>
+											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu"></button>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button search_button" data-popup-link = "popup_1">
-											</button>
+											<button type="button" class="resp_button search_button" data-popup-link = "popup_1"></button>
 										</div>
 										<div class="resp_inline">
 											<button type="button" class="respmenubtn" data-resp-btn = "nav_resp">
@@ -119,61 +117,71 @@
 					</div>
 				</div>
 			</div>
-			<div class="main_nav_scroll_wrapp">
-				<div class="main_nav_scroll" id="fixed_menu">
-					<div class="back_el"></div>
-					<div class="row">
-						<div class="short_logo_wrapp">
-							<a href="#" class="logo_short_link">
-								<img src="img/logo_short.svg" alt="" />
-							</a>
+			<div class="main_nav_sect">
+				<div class="main_nav_scroll_wrapp">
+					<div class="main_nav_scroll" id="fixed_menu">
+						<div class="back_el"></div>
+						<div class="row">
+							<div class="short_logo_wrapp">
+								<a href="#" class="logo_short_link">
+									<img src="img/logo_short.svg" alt="" />
+								</a>
+							</div>
+							<div class="main_nav_wrapp">
+								<ul class="main_nav" id="resp_nav">
+									<li>
+										<a href="#">Музей</a>
+										<ul>
+											<li><a href="#">История создания</a></li>
+											<li><a href="#">Слово директору</a></li>
+											<li><a href="#">Услуги</a></li>
+											<li><a href="#">Партнеры</a></li>
+											<li><a href="#">Документы</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Афиша</a>
+										<ul>
+											<li><a href="#">Афиша 1</a></li>
+											<li><a href="#">Афиша 2</a></li>
+											<li><a href="#">Афиша 3</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Новости</a>
+										<ul>
+											<li><a href="#">Новость 1</a></li>
+											<li><a href="#">Новость 2</a></li>
+											<li><a href="#">Новость 3</a></li>
+											<li><a href="#">Новость 4</a></li>
+											<li><a href="#">Новость 5</a></li>
+											<li><a href="#">Новость 6</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Выставки</a></li>
+									<li><a href="#">Коллекции</a></li>
+									<li><a href="#">Наука</a></li>
+									<li><a href="#">Конкурсы</a></li>
+									<li>
+										<a href="#">Купить</a>
+										<ul>
+											<li><a href="#">История создания</a></li>
+											<li><a href="#">Слово директору</a></li>
+											<li><a href="#">Услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
 						</div>
-						<div class="main_nav_wrapp">
-							<ul class="main_nav" id="resp_nav">
-								<li>
-									<a href="#">Музей</a>
-									<ul>
-										<li><a href="#">История создания</a></li>
-										<li><a href="#">Слово директору</a></li>
-										<li><a href="#">Услуги</a></li>
-										<li><a href="#">Партнеры</a></li>
-										<li><a href="#">Документы</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Афиша</a>
-									<ul>
-										<li><a href="#">Афиша 1</a></li>
-										<li><a href="#">Афиша 2</a></li>
-										<li><a href="#">Афиша 3</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Новости</a>
-									<ul>
-										<li><a href="#">Новость 1</a></li>
-										<li><a href="#">Новость 2</a></li>
-										<li><a href="#">Новость 3</a></li>
-										<li><a href="#">Новость 4</a></li>
-										<li><a href="#">Новость 5</a></li>
-										<li><a href="#">Новость 6</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Выставки</a></li>
-								<li><a href="#">Коллекции</a></li>
-								<li><a href="#">Наука</a></li>
-								<li><a href="#">Конкурсы</a></li>
-								<li>
-									<a href="#">Купить</a>
-									<ul>
-										<li><a href="#">История создания</a></li>
-										<li><a href="#">Слово директору</a></li>
-										<li><a href="#">Услуги</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
-						</div>
+					</div>
+				</div>
+				<div class="row">
+<!-- 					<div class="map_box" data-resp-append = "append_1" data-resp-width = "900">
+						
+					</div> -->
+					<div class="map_box append-elem"  data-append-desktop-elem = "1" data-min-screen = "900">
+						<div id="map"></div>
 					</div>
 				</div>
 			</div>
@@ -257,7 +265,6 @@
 		</div>
 		<!-- /Times -->
 		<!-- Resp Nav -->
-
 		<div class="resp_menu" data-resp-menu = "nav_resp">
 			<div class="inner">
 				<div class="resp_nav_wrapp"></div>
@@ -269,220 +276,216 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- /Resp Nav -->
 		<!-- /Responsive Menus -->
 	</header>
 
-	<!-- /Header -->
+	<!-- /Header 2 -->
 
 	<!-- Content -->
 		<div class="content inner_page">
 
-		<!-- Section 1 - Afisha -->
+		<!-- Section 1 - Contacts -->
 
 		<section>
+			<div class="append-elem" data-append-elem = "1" ></div>
 			<div class="row">
-
-				<div class="breadcrumbs_wrapp_3">
-					<ul class="breadcrumbs_dark">
-						<li>
-							<a href="#">Конкурсы</a>
-						</li>
-					</ul>
+				<div class="prev_text_wrapp">
+					<p>Свои вопросы, комментарии, предложения и пожелания присылайте по адресу:<br /> <a href="mailto:sakhalinmuseum@sakhalin.gov.ru">sakhalinmuseum@sakhalin.gov.ru</a> или задавайте по телефону +7 (4242) 72–75–55, 50–50–51, 72–73–57 (касса)</p>
 				</div>
-
-				<div class="page_header">
-					<h1>Архив конкурсов</h1>
+				<div class="two_cols_2">
+					<div class="left_col">
+						<h1>Контакты</h1>
+						<p>Наше официальное название — Государственное бюджетное учреждение культуры «Сахалинский областной краеведческий музей» (ГБУК ««Сахалинский областной краеведческий музей»).</p>
+						<p>693010, г. Южно–Сахалинск, Коммунистический проспект, 29</p>
+						<a href="#" class="thumb_7">
+							<div class="img_box">
+								<img src="img/books.jpg" alt="" />
+							</div>
+							<div class="mask">
+								<div>
+									<i class="booble"></i>
+									<h3>Гостевая книга</h3>
+									<p>Оцените нашу работу или прочитайте отзывы о работе музея</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="right_col dropdowns_wrapp">
+						<div class="dropdown_item">
+							<div class="dropdown_title">
+								<h2>Административно–управленческий персонал</h2>
+							</div>
+							<div class="dropdown_content">
+								<div class="employers">
+									<div class="personal_info">
+										<div class="col_1">
+											<div class="img_box">
+												<img src="img/photo_1.jpg" alt="" />
+											</div>
+										</div>
+										<div class="inner">
+											<div class="col_2">
+												<h4>Сойкина Анна Владимировна</h4>
+												<p>Начальник отдела</p>
+											</div>
+											<div class="col_3">
+												<p><a href="tel:+74242728799" class="tel_link">+7 (4242) 72–87–99</a></p>
+												<p><a href="mailto:a.soykina@sakhalin.gov.ru" class="red_link">a.soykina@sakhalin.gov.ru</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="personal_info">
+										<div class="col_1">
+											<div class="img_box">
+												<img src="img/photo_2.jpg" alt="" />
+											</div>
+										</div>
+										<div class="inner">
+											<div class="col_2">
+												<h4>Семёнова Елена Романовна</h4>
+												<p>Секретарь руководителя</p>
+											</div>
+											<div class="col_3">
+												<p><a href="tel:+74242728799" class="tel_link">+7 (4242) 72–87–99</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown_item active">
+							<div class="dropdown_title">
+								<h2>Административно–управленческий персонал</h2>
+							</div>
+							<div class="dropdown_content">
+								<div class="employers">
+									<div class="personal_info">
+										<div class="col_1">
+											<div class="img_box">
+												<img src="img/photo_1.jpg" alt="" />
+											</div>
+										</div>
+										<div class="inner">
+											<div class="col_2">
+												<h4>Сойкина Анна Владимировна</h4>
+												<p>Начальник отдела</p>
+											</div>
+											<div class="col_3">
+												<p><a href="tel:+74242728799" class="tel_link">+7 (4242) 72–87–99</a></p>
+												<p><a href="mailto:a.soykina@sakhalin.gov.ru" class="red_link">a.soykina@sakhalin.gov.ru</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="personal_info">
+										<div class="col_1">
+											<div class="img_box">
+												<img src="img/photo_2.jpg" alt="" />
+											</div>
+										</div>
+										<div class="inner">
+											<div class="col_2">
+												<h4>Семёнова Елена Романовна</h4>
+												<p>Секретарь руководителя</p>
+											</div>
+											<div class="col_3">
+												<p><a href="tel:+74242728799" class="tel_link">+7 (4242) 72–87–99</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown_item">
+							<div class="dropdown_title">
+								<h2>Административно–управленческий персонал</h2>
+							</div>
+							<div class="dropdown_content">
+								<div class="employers">
+									<div class="personal_info">
+										<div class="col_1">
+											<div class="img_box">
+												<img src="img/photo_1.jpg" alt="" />
+											</div>
+										</div>
+										<div class="inner">
+											<div class="col_2">
+												<h4>Сойкина Анна Владимировна</h4>
+												<p>Начальник отдела</p>
+											</div>
+											<div class="col_3">
+												<p><a href="tel:+74242728799" class="tel_link">+7 (4242) 72–87–99</a></p>
+												<p><a href="mailto:a.soykina@sakhalin.gov.ru" class="red_link">a.soykina@sakhalin.gov.ru</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="personal_info">
+										<div class="col_1">
+											<div class="img_box">
+												<img src="img/photo_2.jpg" alt="" />
+											</div>
+										</div>
+										<div class="inner">
+											<div class="col_2">
+												<h4>Семёнова Елена Романовна</h4>
+												<p>Секретарь руководителя</p>
+											</div>
+											<div class="col_3">
+												<p><a href="tel:+74242728799" class="tel_link">+7 (4242) 72–87–99</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown_item">
+							<div class="dropdown_title">
+								<h2>Административно–управленческий персонал</h2>
+							</div>
+							<div class="dropdown_content">
+								<div class="employers">
+									<div class="personal_info">
+										<div class="col_1">
+											<div class="img_box">
+												<img src="img/photo_1.jpg" alt="" />
+											</div>
+										</div>
+										<div class="inner">
+											<div class="col_2">
+												<h4>Сойкина Анна Владимировна</h4>
+												<p>Начальник отдела</p>
+											</div>
+											<div class="col_3">
+												<p><a href="tel:+74242728799" class="tel_link">+7 (4242) 72–87–99</a></p>
+												<p><a href="mailto:a.soykina@sakhalin.gov.ru" class="red_link">a.soykina@sakhalin.gov.ru</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="personal_info">
+										<div class="col_1">
+											<div class="img_box">
+												<img src="img/photo_2.jpg" alt="" />
+											</div>
+										</div>
+										<div class="inner">
+											<div class="col_2">
+												<h4>Семёнова Елена Романовна</h4>
+												<p>Секретарь руководителя</p>
+											</div>
+											<div class="col_3">
+												<p><a href="tel:+74242728799" class="tel_link">+7 (4242) 72–87–99</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-
-				<!-- Afisha thumbnails -->
-
-				<div class="afisha_thumbnails">
-					<a href="#" class="afisha_thumb afisha_thumb_big">
-						<div class="img_box">
-							<img src="img/archive_competition_6.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>конкурс</p>
-							<h3>«Острова — это мой кусочек рая!»</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>9 июля – 27 августа</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_7.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>конкурс</p>
-							<h3>ЗАПОВЕДНЫЕ МЕСТА ОСТРОВНОГО КРАЯ</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>до 1 сентября</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_8.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>конкурс</p>
-							<h3>РЕТРОЁЛКА 2018</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>1 ноября 2019 — 25 декабря 2019</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_9.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>конкурс</p>
-							<h3>«Музейный синематограф»</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>до 8 марта 2020</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_10.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>детский конкурс</p>
-							<h3>«Моя коллекция»</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>до 1 сентября</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_11.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>фотоконкурс</p>
-							<h3>«Цветочная феерия»</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>до 1 сентября</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb afisha_thumb_big">
-						<div class="img_box">
-							<img src="img/archive_competition_12.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>фотоконкурс</p>
-							<h3>«Рядом со мной живет ветеран»</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>9 июля – 27 августа</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_13.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>конкурс</p>
-							<h3>РЕТРОЁЛКА 2017</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>1 ноября 2019 — 25 декабря 2019</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_14.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>конкурс творческих моделей</p>
-							<h3>«На колесах»</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>до 8 марта 2020</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_16.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>фотоконкурс</p>
-							<h3>«Храм по имени Россия»</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>до 1 сентября</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb afisha_thumb_big">
-						<div class="img_box">
-							<img src="img/archive_competition_17.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>викторина</p>
-							<h3>«Геннадий Иванович Невельской (1813 — 1876 гг.). Открытия и исследования русского мореплавателя на Дальнем Востоке»</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>9 июля – 27 августа</p>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="afisha_thumb">
-						<div class="img_box">
-							<img src="img/archive_competition_19.jpg" alt="" />
-						</div>
-						<div class="afisha_thumb_descript">
-							<p>конкурс</p>
-							<h3>Творчество без границ</h3>
-							<div class="afisha_thumb_descript_footer">
-								<div>
-									<p>до 1 сентября</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- /Afisha thumbnails -->
-
-				<div class="upload_btn_wrapp">
-					<a href="#" class="upload_btn">
-						<img src="img/upload.svg" alt="" />
-					</a>
-				</div>
-
 			</div>
 		</section>
 
-		<!-- /Section 1 - Afisha -->
-
-
+		<!-- /Section 1 - Contacts -->
 
 		<!-- Section 5 - Main Page -->
 
@@ -751,6 +754,9 @@
 	<script src="slick/slick.js"></script>
 	<script src="vendors/js/jquery.fancybox.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"> </script>
+	<script src="js/map.js"></script>
 
 </body>
 </html>

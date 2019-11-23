@@ -939,6 +939,35 @@ input.search_input {
 
 /*-- /Section 1 - Competition Without Nomination --*/
 
+/*-- Section 1 - Contacts Guestbook --*/
+
+.resp_btn_wrapp {
+    display: block;
+}
+
+.contacts_templ {
+	display: block;
+}
+
+.contacts_templ .left_col {
+	width: 100%;
+	padding: 0;
+}
+
+.contacts_templ .right_col {
+	display: none;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.pagination_wrapp_2 {
+    margin-top: 25px;
+}
+
+/*-- /Section 1 - Contacts Guestbook --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
