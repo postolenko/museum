@@ -100,7 +100,8 @@ var nextSlideDescript,
     goodsCount,
     goodsCount,
     priceValTotal,
-    priceGood;
+    priceGood,
+    dropdownItem;
 
 $(window).on('load', function() {
     setSliderArrows();
@@ -666,5 +667,21 @@ $(document).ready(function() {
         $(this).closest(".good_item").remove();
         countTotalPrice();
     });
+
+    // -------------------
+
+    $("[data-dropdown-btn]").on("click", function(e) {
+        e.preventDefault();
+        dropdownItemName = $(this).attr("data-dropdown-btn");
+        dropdownItem = $("[data-dropdown-box = '"+dropdownItemName+"']");
+        if(dropdownItem.is(":hidden")) {
+            dropdownItem.slideDown();
+            $(this).addClass("active");
+        } else {
+            dropdownItem.slideUp();
+            $(this).removeClass("active");
+        }
+    });
+
 
 });
