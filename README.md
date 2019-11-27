@@ -24,3 +24,6 @@
 # http://postolenko.github.io/museum/competitions.html
 # http://postolenko.github.io/museum/contacts_guestbook.html
 # http://postolenko.github.io/museum/contacts.html
+# http://postolenko.github.io/museum/buy.html
+# http://postolenko.github.io/museum/buy_books.html
+# http://postolenko.github.io/museum/card.html

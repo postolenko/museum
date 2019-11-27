@@ -46,6 +46,23 @@ function getAppendMap() {
     }
 }
 
+function countTotalPrice() {
+    if( $(".goods_prices").length > 0 ) {
+        priceGood = 0;
+        priceValTotal = 0;
+        $(".goods_prices [data-price-val]").each(function() {
+            priceVal = parseInt( $(this).attr("data-price-val") );
+            goodsCount = $(this).closest(".good_item").find(".goods_count input").val();
+            if(goodsCount == "") {
+                goodsCount = 1;
+            }
+            priceGood = priceVal * goodsCount;
+            priceValTotal += priceGood;
+        });
+        $("#total_price").html(priceValTotal);
+    }
+}
+
 //  function getAdaptivePositionElements() {
 //     $(".append-elem").each(function() {
 //         // if( $(this).hasClass("desktop-position") ) {
@@ -78,7 +95,12 @@ var nextSlideDescript,
     dropdownBox,
     dropdownContent,
     appendElem,
-    respWidth;
+    respWidth,
+    priceVal,
+    goodsCount,
+    goodsCount,
+    priceValTotal,
+    priceGood;
 
 $(window).on('load', function() {
     setSliderArrows();
@@ -104,6 +126,7 @@ $(document).ready(function() {
     getRespHeaderParams();
     getAppendNavMenu();
     getAppendMap();
+    countTotalPrice();
 
 	if( $(".promo_slider").length > 0 ) {
         $(".promo_slider").not(".slick-initialized").slick({
@@ -611,6 +634,37 @@ $(document).ready(function() {
                 parentBlock.removeClass("active");
             }
         }
+    });
+
+    // ----------------------
+    $(".count_box button").click(function(e) {
+        e.preventDefault();
+        parentBlock = $(this).closest(".count_box");
+        var countInput = parentBlock.find("input");
+        var countVal = countInput.val();
+        if( $(this).hasClass("minus_btn") && countVal > 1 ) {
+            countVal--;
+        } else if( $(this).hasClass("plus_btn")) {
+            countVal++;
+        }
+        if(countVal == "") {
+            countVal = 1;
+        }
+        countInput.val(countVal);
+        if(parentBlock.hasClass("goods_count")) {
+            countTotalPrice();
+        }
+    });
+
+    $(".goods_count input").on("keyup", function(e) {
+        e.preventDefault();
+        countTotalPrice();
+    });
+
+    $(".good_item .close_3").on("click", function(e) {
+        e.preventDefault();
+        $(this).closest(".good_item").remove();
+        countTotalPrice();
     });
 
 });

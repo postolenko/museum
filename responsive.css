@@ -167,6 +167,23 @@
 
 	/*-- /Section 1 - Contacts --*/
 
+	/*-- /Section 1 - Buy Books --*/
+
+	.books_thumbnails .book_thumb {
+		width: calc(33.33% - 20px);
+	}
+
+	.book_thumb .thumb_descript p {
+	    font-size: 17px;
+	    line-height: 19px;
+	}
+
+	.book_thumb .transparent_pill {
+	    min-width: 125px;
+	}
+
+	/*-- /Section 1 - Buy Books --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -228,6 +245,21 @@
 	}
 
 	/*-- /Afisha thumbnails --*/
+
+	/*-- Section 1 - Card --*/
+
+	.card_templ {
+		display: block;
+		margin: 10px 0 20px 0;
+	}
+
+	.card_templ .left_col,
+	.card_templ .right_col {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- /Section 1 - Card --*/
 
 	/*-- Footer --*/
 
@@ -552,6 +584,29 @@
 	}
 
 	/*-- /Section 1 - Contacts --*/
+
+	/*-- Section 1 - Buy --*/
+
+	.two_cols_3 {
+		display: block;
+	}
+
+	.two_cols_3 > .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.two_cols_3 > .right_col {
+	    width: 100%;
+	    padding-top: 15px;
+	    padding-left: 0;
+	}
+
+	.tickets_dropdowns .transparent_pill {
+	    margin: 20px 0;
+	}
+
+	/*-- /Section 1 - Buy --*/
 
 /*-- Popup 1 --*/
 
@@ -1040,6 +1095,45 @@ input.search_input {
 
 /*-- /Section 1 - Contacts --*/
 
+/*-- /Section 1 - Buy Books --*/
+
+.books_thumbnails .book_thumb {
+	width: calc(50% - 20px);
+}
+
+/*-- /Section 1 - Buy Books --*/
+
+/*-- Card Modal --*/
+
+.card_wrapp {
+    padding: 15px 15px 25px 15px;
+}
+
+.card_title {
+    padding: 10px 40px 10px 0;
+}
+
+.card_title h2 {
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.two_cols_4 {
+	display: block;
+}
+
+.two_cols_4 .left_col,
+.two_cols_4 .right_col {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.card_descript .transparent_pill {
+    margin-top: 9px;
+}
+
+/*-- /Card Modal --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -1382,6 +1476,80 @@ section {
 
 /*-- /Section 1 - Graphic Collections --*/
 
+/*-- Card Modal --*/
+
+.card_wrapp {
+    padding: 35px 15px 25px 15px;
+}
+
+.card_title {
+    padding: 42px 0 10px 0;
+    border-bottom: none;
+}
+
+.card_title h2 {
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.card_title .close_2 {
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: 0;
+    margin-top: 0;
+}
+
+.two_cols_4 {
+    padding: 4px 0 10px 0;
+}
+
+/*-- /Card Modal --*/
+
+/*-- Section 1 - Card --*/
+
+.card_templ {
+    margin: 0 0 10px 0;
+}
+
+.good_item img {
+    margin-right: 20px;
+    margin-left: -100px;
+}
+
+.good_item h3 {
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.price_table {
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+}
+
+.price_table .col:nth-child(1) {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.price_table .col:nth-child(2) {
+    width: 130px;
+}
+
+.price_table .col:nth-child(3) {
+    width: calc(100% - 130px);
+}
+
+.submit_wrapp_2 .transparent_pill_3 {
+    min-width: 100%;
+}
+
+.total_price_p .rub {
+	font-weight: normal;
+}
+
+/*-- /Section 1 - Card --*/
+
 /*-- Footer --*/
 
 .footer_section {
@@ -1408,6 +1576,20 @@ section {
 }
 
 /*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 530px) {
+
+/*-- /Section 1 - Buy Books --*/
+
+.books_thumbnails .book_thumb {
+	width: 100%;
+	max-width: 290px;
+	margin: 20px auto;
+}
+
+/*-- /Section 1 - Buy Books --*/
 
 }
 
