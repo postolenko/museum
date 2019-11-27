@@ -28,6 +28,7 @@
 # http://postolenko.github.io/museum/buy_books.html
 # http://postolenko.github.io/museum/card.html
 # http://postolenko.github.io/museum/souvenir.html
+# http://postolenko.github.io/museum/modals.html
 # http://postolenko.github.io/museum/private.html
 # http://postolenko.github.io/museum/private_2.html
 # http://postolenko.github.io/museum/private_3.html
