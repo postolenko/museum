@@ -80,13 +80,15 @@ function scrollNav() {
 }
 
 function museumNavParams() {
-    museumTopCoord = $("#museum").offset().top;
-    museumBottomCoord = $("#museum").offset().top + $("#museum").height();
-    museumNavBottomCoord = $("#years_nav").offset().top + $("#years_nav").height() - 50;
-    if($(window).scrollTop() + 100 > museumTopCoord &&  museumBottomCoord >= museumNavBottomCoord ) {
-        $("#years_nav").addClass("visible");
-    } else {
-        $("#years_nav").removeClass("visible");
+    if($("#years_nav").length > 0) {
+        museumTopCoord = $("#museum").offset().top;
+        museumBottomCoord = $("#museum").offset().top + $("#museum").height();
+        museumNavBottomCoord = $("#years_nav").offset().top + $("#years_nav").height() - 50;
+        if($(window).scrollTop() + 100 > museumTopCoord &&  museumBottomCoord >= museumNavBottomCoord ) {
+            $("#years_nav").addClass("visible");
+        } else {
+            $("#years_nav").removeClass("visible");
+        }
     }
 }
 
