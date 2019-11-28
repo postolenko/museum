@@ -64,23 +64,20 @@ function countTotalPrice() {
 }
 
 function scrollNav() {
-    navCoord = $(".years_nav").offset().top;
-    $(".years_nav a").each(function() {
-        linkHref = $(this).attr("href");
-        elemCoord = $(linkHref);
-        topElemCoord = elemCoord.offset().top;
-        if( navCoord > topElemCoord) {
-            $(".years_nav a").removeClass("active");
-            $(".years_nav a").removeClass("active_scroll");
-            $(this).addClass("active");
-        } else {
-            $(this).removeClass("active");
-        }
-    });
-}
-
-function museumNavParams() {
     if($("#years_nav").length > 0) {
+        navCoord = $(".years_nav").offset().top;
+        $(".years_nav a").each(function() {
+            linkHref = $(this).attr("href");
+            elemCoord = $(linkHref);
+            topElemCoord = elemCoord.offset().top;
+            if( navCoord > topElemCoord) {
+                $(".years_nav a").removeClass("active");
+                $(".years_nav a").removeClass("active_scroll");
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+        });
         museumTopCoord = $("#museum").offset().top;
         museumBottomCoord = $("#museum").offset().top + $("#museum").height();
         museumNavBottomCoord = $("#years_nav").offset().top + $("#years_nav").height() - 50;
@@ -147,14 +144,12 @@ $(window).resize(function() {
     getAppendNavMenu();
     getAppendMap();
     scrollNav();
-    museumNavParams();
 });
 
 $(document).scroll(function() {
     getPositionMenu();
     getRespHeaderParams();
     scrollNav();
-    museumNavParams();
 });
 
 $(document).ready(function() {
@@ -165,7 +160,6 @@ $(document).ready(function() {
     getAppendMap();
     countTotalPrice();
     scrollNav();
-    museumNavParams();
 
 	if( $(".promo_slider").length > 0 ) {
         $(".promo_slider").not(".slick-initialized").slick({
