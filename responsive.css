@@ -1244,6 +1244,38 @@ input.search_input {
 
 /*-- /Section 1 - Private --*/
 
+/*-- Section 2 - History --*/
+
+.red_num h3 {
+	padding: 0;
+    font-size: 46px;
+    line-height: 50px;
+}
+
+.red_num p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 19px;
+}
+
+.red_nums_thumbs {
+    padding: 0 15px;
+}
+
+.red_num_thumb h3 {
+	padding: 0;
+    font-size: 46px;
+    line-height: 50px;
+}
+
+.red_num_thumb p {
+    padding: 0;
+    font-size: 17px;
+    line-height: 19px;
+}
+
+/*-- /Section 2 - History --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -1676,6 +1708,41 @@ section {
 }
 
 /*-- /Section 1 - History --*/
+
+/*-- Section 2 - History --*/
+
+.single_image_slider_arrows.slider_arrows_2 {
+	bottom: -11px;
+}
+
+.red_num {
+    padding: 5px 0 10px 0;
+}
+
+.red_num h3 {
+    padding: 5px 0;
+    font-size: 41px;
+    line-height: 41px;
+}
+
+.red_num p {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.red_num_thumb {
+	width: 50%;
+	max-width: 50%;
+}
+
+.red_num_thumb p {
+    padding: 0;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+/*-- /Section 2 - History --*/
 
 /*-- Footer --*/
 

@@ -7563,6 +7563,7 @@ p.dropdow_button.active:before {
 .number_thumb {
     display: inline-block;
     vertical-align: top;
+    padding: 0 10px;
 }
 
 .number_thumb h3 {
