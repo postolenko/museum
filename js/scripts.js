@@ -63,6 +63,33 @@ function countTotalPrice() {
     }
 }
 
+function scrollNav() {
+    navCoord = $(".years_nav").offset().top;
+    $(".years_nav a").each(function() {
+        linkHref = $(this).attr("href");
+        elemCoord = $(linkHref);
+        topElemCoord = elemCoord.offset().top;
+        if( navCoord > topElemCoord) {
+            $(".years_nav a").removeClass("active");
+            $(".years_nav a").removeClass("active_scroll");
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+        }
+    });
+}
+
+function museumNavParams() {
+    museumTopCoord = $("#museum").offset().top;
+    museumBottomCoord = $("#museum").offset().top + $("#museum").height();
+    museumNavBottomCoord = $("#years_nav").offset().top + $("#years_nav").height() - 50;
+    if($(window).scrollTop() + 100 > museumTopCoord &&  museumBottomCoord >= museumNavBottomCoord ) {
+        $("#years_nav").addClass("visible");
+    } else {
+        $("#years_nav").removeClass("visible");
+    }
+}
+
 //  function getAdaptivePositionElements() {
 //     $(".append-elem").each(function() {
 //         // if( $(this).hasClass("desktop-position") ) {
@@ -101,7 +128,10 @@ var nextSlideDescript,
     goodsCount,
     priceValTotal,
     priceGood,
-    dropdownItem;
+    dropdownItem,
+    museumTopCoord,
+    museumBottomCoord,
+    museumNavBottomCoord;
 
 $(window).on('load', function() {
     setSliderArrows();
@@ -114,11 +144,15 @@ $(window).resize(function() {
     setSliderArrows();
     getAppendNavMenu();
     getAppendMap();
+    scrollNav();
+    museumNavParams();
 });
 
 $(document).scroll(function() {
     getPositionMenu();
     getRespHeaderParams();
+    scrollNav();
+    museumNavParams();
 });
 
 $(document).ready(function() {
@@ -128,6 +162,8 @@ $(document).ready(function() {
     getAppendNavMenu();
     getAppendMap();
     countTotalPrice();
+    scrollNav();
+    museumNavParams();
 
 	if( $(".promo_slider").length > 0 ) {
         $(".promo_slider").not(".slick-initialized").slick({
@@ -259,10 +295,15 @@ $(document).ready(function() {
 	}
 
     if( $(".single_image_slider").length > 0 ) {
+        $('.single_image_slider').on('init', function(event, slick){
+            sliderName = $(this).attr("data-single-slider");
+            siderArrows = $(this).find(".slick-arrow");
+            siderArrows.appendTo($("[data-single-slider-arrows = '"+sliderName+"']"));
+        });
         $(".single_image_slider").not(".slick-initialized").slick({
             dots: false,
             arrows: true,
-            appendArrows: $(".single_image_slider_arrows"),
+            // appendArrows: $(".single_image_slider_arrows"),
             autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
@@ -681,6 +722,20 @@ $(document).ready(function() {
             dropdownItem.slideUp();
             $(this).removeClass("active");
         }
+    });
+
+    // -------------------
+
+     $(".years_nav a").click(function(e) {
+        e.preventDefault();
+        var hrefAttr = $(this).attr("href");
+        var visibleBlock = $(hrefAttr);
+        parentBlock = $(this).closest(".years_nav");
+        parentBlock.find("a").removeClass("active_scroll");
+        $(this).addClass("active_scroll");
+        $('html, body').stop().animate({
+            'scrollTop': visibleBlock.offset().top
+        }, 500);
     });
 
 

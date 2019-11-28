@@ -184,6 +184,33 @@
 
 	/*-- /Section 1 - Buy Books --*/
 
+	/*-- Section 1 - History --*/
+
+	.years_nav.visible {
+	    left: 10px;
+	}
+
+	.years_nav li {
+	    padding: 5px 0;
+	}
+
+	.years_nav li a {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+
+	.years_nav li a.active,
+	.years_nav li a.active_scroll {
+	    font-size: 22px;
+	}
+
+	.years_nav li:last-child a.active,
+	.years_nav li:last-child a.active_scroll {
+	    font-size: 16px;
+	}
+
+	/*-- /Section 1 - History --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -260,6 +287,15 @@
 	}
 
 	/*-- /Section 1 - Card --*/
+
+	/*-- Section 1 - History --*/
+
+	.years_nav,
+	.years_nav.visible {
+	    display: none;
+	}
+
+	/*-- /Section 1 - History --*/
 
 	/*-- Footer --*/
 
@@ -607,6 +643,20 @@
 	}
 
 	/*-- /Section 1 - Buy --*/
+
+	/*-- Section 1 - History --*/
+
+	.numbers_thumbs {
+	    justify-content: none;
+	    -webkit-justify-content: none;
+	}
+
+	.number_thumb {
+		width: 50%;
+		padding: 10px 0;
+	}
+
+	/*-- /Section 1 - History --*/
 
 /*-- Popup 1 --*/
 
@@ -1609,6 +1659,23 @@ section {
 }
 
 /*-- /Section 1 - Card --*/
+
+/*-- Section 1 - History --*/
+
+.promo_box_2 {
+	background-image: url(img/main-banner.jpg) !important;
+}
+
+.number_thumb {
+	width: 100%;
+	padding: 10px 0;
+}
+
+.promo_box_2_title {
+	display: none;
+}
+
+/*-- /Section 1 - History --*/
 
 /*-- Footer --*/
 
