@@ -35,3 +35,4 @@
 # http://postolenko.github.io/museum/private_4.html
 # http://postolenko.github.io/museum/documents.html
 # http://postolenko.github.io/museum/history.html
+# http://postolenko.github.io/museum/partners.html

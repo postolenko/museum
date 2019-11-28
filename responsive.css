@@ -658,6 +658,18 @@
 
 	/*-- /Section 1 - History --*/
 
+	/*-- Section 1 - Director Words --*/
+
+	.two_cols_5 .left_col {
+	    width: 330px;
+	}
+
+	.two_cols_5 .right_col {
+	    width: calc(100% - 330px);
+	}
+
+	/*-- /Section 1 - Director Words --*/
+
 /*-- Popup 1 --*/
 
 .center_position {
@@ -1276,6 +1288,34 @@ input.search_input {
 
 /*-- /Section 2 - History --*/
 
+/*-- Section 1 - Director Words --*/
+
+.two_cols_5 {
+	display: block;
+	margin-top: 11px;
+}
+
+.two_cols_5 .left_col {
+    width: 100%;
+    padding: 0 0 10px 0;
+}
+
+.two_cols_5 .right_col {
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+
+.photo_wrapp {
+	margin: 0 auto;
+}
+
+.photo_box {
+    margin-top: 0;
+    height: 382px;
+}
+
+/*-- /Section 1 - Director Words --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -1743,6 +1783,15 @@ section {
 }
 
 /*-- /Section 2 - History --*/
+
+/*-- Section 1 - Partners --*/
+
+.partners_thumbnails {
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+/*-- /Section 1 - Partners --*/
 
 /*-- Footer --*/
 
