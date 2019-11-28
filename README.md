@@ -36,3 +36,4 @@
 # http://postolenko.github.io/museum/documents.html
 # http://postolenko.github.io/museum/history.html
 # http://postolenko.github.io/museum/partners.html
+# http://postolenko.github.io/museum/director_words.html
