@@ -297,6 +297,16 @@
 
 	/*-- /Section 1 - History --*/
 
+	/*-- Section 1 - Science --*/
+
+	.tabs .tab {
+	    padding: 6px 10px;
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+
+	/*-- /Section 1 - Science --*/
+
 	/*-- Footer --*/
 
 	.footer {
@@ -669,6 +679,15 @@
 	}
 
 	/*-- /Section 1 - Director Words --*/
+
+	/*-- Section 1 - Science --*/
+
+	.tabs .tab {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+
+	/*-- /Section 1 - Science --*/
 
 /*-- Popup 1 --*/
 
@@ -1315,6 +1334,14 @@ input.search_input {
 }
 
 /*-- /Section 1 - Director Words --*/
+
+/*-- Section 1 - Science --*/
+
+.tabs {
+	display: none;
+}
+
+/*-- /Section 1 - Science --*/
 
 /*-- Footer --*/
 
