@@ -1937,6 +1937,18 @@ section {
 
 	/*-- /Section 1 - Lib Book --*/
 
+	/*-- Section 1 - Lib Book Number --*/
+
+	.content_item .col_1 {
+	    width: calc(100% - 60px);
+	}
+
+	.content_item .col_2 {
+	    width: 60px;
+	}
+
+	/*-- /Section 1 - Lib Book Number --*/
+
 }
 
 @media only screen and (max-width: 480px) {

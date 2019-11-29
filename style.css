@@ -7951,12 +7951,12 @@ p.dropdow_button.active:before {
 
 .two_cols_6 .left_col {
     width: 320px;
-    padding: 10px 10px 10px 0;
+    padding: 10px 15px 10px 0;
 }
 
 .two_cols_6 .right_col {
     width: calc(100% - 320px);
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 15px;
 }
 
 .two_cols_6 .left_col .img_box {
@@ -7996,6 +7996,59 @@ p.dropdow_button.active:before {
 }
 
 /*-- /Section 1 - Lib Book --*/
+
+/*-- Section 1 - Lib Book Number --*/
+
+.contents_wrapp {
+
+}
+
+.contents_wrapp h2:nth-child(1) {
+    margin-top: -9px;
+}
+
+.contents_wrapp h3 {
+    padding: 18px 0;
+    text-transform: uppercase;
+}
+
+.contents_wrapp h2 + h3 {
+    padding-top: 20px;
+}
+
+.content_item + h3 {
+    padding-top: 28px;
+}
+
+.content_item {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+}
+
+.content_item .col_1 {
+    width: calc(100% - 100px);
+    padding-right: 5px;
+}
+
+.content_item .col_2 {
+    width: 100px;
+    padding-left: 5px;
+    text-align: right;
+}
+
+.content_item p {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #3f4649;
+}
+
+p.gold {
+    color: #b89459;
+}
+
+/*-- /Section 1 - Lib Book Number --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
