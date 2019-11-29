@@ -1343,6 +1343,28 @@ input.search_input {
 
 /*-- /Section 1 - Science --*/
 
+/*-- Section 1 - Lib Book --*/
+
+.two_cols_6 {
+    display: block;
+}
+
+.two_cols_6 .left_col {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.two_cols_6 .right_col {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.buttons_wrapp_2 {
+	text-align: left;
+}
+
+/*-- /Section 1 - Lib Book --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -1900,6 +1922,20 @@ section {
 	}
 
 	/*-- /Section 1 - Contacts --*/
+
+	/*-- Section 1 - Lib Book --*/
+
+	.resp_header h1 {
+	    font-size: 27px;
+	    line-height: 34px;
+	}
+
+	.buttons_wrapp_2 {
+		padding: 5px 0;
+		text-align: center;
+	}
+
+	/*-- /Section 1 - Lib Book --*/
 
 }
 

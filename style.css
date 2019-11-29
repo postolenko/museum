@@ -7907,9 +7907,95 @@ p.dropdow_button.active:before {
     font-weight: 900;
     letter-spacing: .9px;
     color: #ffffff;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.tabs .tab.active,
+.tabs .tab:active {
+    background-color: #081930;
+}
+
+.tabs .tab:hover {
+    background-color: #081930;
 }
 
 /*-- /Section 1 - Science --*/
+
+/*-- Section 1 - Lib Book --*/
+
+.two_cols_6 {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0;
+}
+
+.two_cols_6 .left_col {
+    width: 320px;
+    padding: 10px 10px 10px 0;
+}
+
+.two_cols_6 .right_col {
+    width: calc(100% - 320px);
+    padding: 10px 0 10px 10px;
+}
+
+.two_cols_6 .left_col .img_box {
+    width: 100%;
+    max-width: 295px;
+    overflow: hidden;
+}
+
+.two_cols_6 .left_col .img_box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.buttons_wrapp_2 {
+    padding: 11px 0;
+    text-align: center;
+}
+
+.buttons_wrapp_2 .transparent_pill {
+    margin: 11px 0;
+    width: 100%;
+    max-width: 250px;
+}
+
+.two_cols_6 p {
+    padding: 0 0 10px 0;
+}
+
+.two_cols_6 p.authors_p {
+    padding-top: 17px;
+}
+
+/*-- /Section 1 - Lib Book --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
