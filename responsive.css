@@ -331,6 +331,14 @@
 
 	/*-- /Section 1 - Science --*/
 
+	/*-- Section 1 - News --*/
+
+	.projects_thumbnails_2 .project_thumb {
+	    width: calc( 50% - 28px);
+	}
+
+	/*-- /Section 1 - News --*/
+
 	/*-- Footer --*/
 
 	.footer {
@@ -1455,6 +1463,21 @@ input.search_input {
 
 /*-- /Section 1 - Projects --*/
 
+/*-- Section 1 - News --*/
+
+.projects_thumbnails_2 {
+	display: flex;
+	display: -webkit-flex;
+    margin-top: 25px;
+}
+
+.projects_thumbnails_2 .project_thumb {
+    width: calc( 50% - 28px);
+    margin: 14px;
+}
+
+/*-- /Section 1 - News --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -1931,6 +1954,19 @@ section {
 }
 
 /*-- /Section 1 - Partners --*/
+
+/*-- Section 1 - News --*/
+
+.projects_thumbnails_2 {
+    margin: 25px 0 0 0;
+}
+
+.projects_thumbnails_2 .project_thumb {
+    width: 100%;
+    margin: 14px 0;
+}
+
+/*-- /Section 1 - News --*/
 
 /*-- Footer --*/
 

@@ -43,3 +43,4 @@
 # http://postolenko.github.io/museum/lib_book_number.html
 # http://postolenko.github.io/museum/periodical.html
 # http://postolenko.github.io/museum/projects.html
+# http://postolenko.github.io/museum/news.html

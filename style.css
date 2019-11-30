@@ -1697,6 +1697,7 @@ textarea:focus {
     display: -webkit-flex;
     -webkit-align-items: flex-end;
     align-items: flex-end;
+    padding-bottom: 18px;
 }
 
 .slides_desc_append .inner {
@@ -1704,7 +1705,7 @@ textarea:focus {
 }
 
 .slides_desc_append p {
-    padding: 1px 0;
+    padding: 10px 0;
     font-size: 16px;
     line-height: 23px;
     font-weight: normal;
@@ -8347,6 +8348,92 @@ p.gold {
 }
 
 /*-- /Section 1 - Projects --*/
+
+/*-- Section 1 - One Project --*/
+
+.project_templ {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+}
+
+.project_templ .left_col {
+    width: 420px;
+    padding-right: 10px;
+}
+
+.project_templ .right_col {
+    width: calc(100% - 420px);
+    padding-left: 10px;
+}
+
+.left_nav {
+    max-width: 250px;
+    position: relative;
+    left: 27%;
+}
+
+.left_nav li {
+    padding: 12px 0;
+}
+
+.left_nav li a {
+    border-bottom: 1px dashed #3f4649;
+    text-transform: uppercase;
+    font-family: Room;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #3f4649;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.left_nav li a:hover {
+    border-bottom: 1px dashed transparent;
+    font-weight: normal;
+    color: #7e1b1f;
+}
+
+.left_nav li a.active,
+.left_nav li a.active:hover {
+    border-bottom: 1px dashed transparent;
+    font-size: 24px;
+    font-weight: 900;
+    color: #7e1b1f;
+}
+
+/*-- /Section 1 - One Project --*/
+
+/*-- Section 1 - News --*/
+
+.projects_thumbnails_2 {
+    margin-top: 25px;
+}
+
+.projects_thumbnails_2 .project_thumb {
+    width: calc( 33.33% - 28px);
+}
+
+/*-- /Section 1 - News --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
