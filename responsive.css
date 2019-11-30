@@ -235,6 +235,14 @@
 
 	/*-- /Section 1 - Periodical --*/
 
+	/*-- Section 2 - News Page --*/
+
+	.news_page_article .afisha_images .img_box_wrapp {
+	    width: calc(50% - 12px);
+	}
+
+	/*-- /Section 2 - News Page --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -1478,6 +1486,14 @@ input.search_input {
 
 /*-- /Section 1 - News --*/
 
+/*-- Section 2 - News Page --*/
+
+.news_page_article {
+    margin: 15px auto;
+}
+
+/*-- /Section 2 - News Page --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {
@@ -1967,6 +1983,14 @@ section {
 }
 
 /*-- /Section 1 - News --*/
+
+/*-- Section 2 - News Page --*/
+
+.news_page_article .afisha_images .img_box_wrapp {
+    width: 100%;
+}
+
+/*-- /Section 2 - News Page --*/
 
 /*-- Footer --*/
 

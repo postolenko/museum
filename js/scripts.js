@@ -743,5 +743,21 @@ $(document).ready(function() {
         }, 500);
     });
 
+    // -------------------
+
+    if( $(".news_slider").length > 0 ) {
+        $(".news_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: false,
+            speed: 1200,
+            infinite: true,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            variableWidth: true
+        });
+    } 
+
 
 });

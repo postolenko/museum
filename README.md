@@ -44,3 +44,4 @@
 # http://postolenko.github.io/museum/periodical.html
 # http://postolenko.github.io/museum/projects.html
 # http://postolenko.github.io/museum/news.html
+# http://postolenko.github.io/museum/news_page.html
