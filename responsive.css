@@ -1416,6 +1416,45 @@ input.search_input {
 
 /*-- /Section 1 - Periodical --*/
 
+/*-- Section 1 - Projects --*/
+
+.projects_thumbnails {
+    display: block;
+    margin: 5px 0;
+}
+
+.project_thumb {
+    width: 100%;
+    margin: 24px 0;
+}
+
+.project_img_box_wrapp {
+    height: 290px;
+}
+
+.project_thumb .img_box {
+    height: 290px;
+}
+
+.project_thumb .descript {
+	width: 100%;
+    padding: 8px 0;
+}
+
+.project_thumb p {
+    padding: 0;
+}
+
+.tags_2 {
+    padding: 16px 0 2px 0;
+}
+
+.tags_2 li {
+    padding: 4px 1px !important;
+}
+
+/*-- /Section 1 - Projects --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {

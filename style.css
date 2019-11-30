@@ -8245,6 +8245,109 @@ p.gold {
 
 /*-- /Section 1 - Periodical --*/
 
+/*-- Section 1 - Projects --*/
+
+.tags_2 {
+    padding: 23px 0 2px 0;
+}
+
+.tag_3 {
+    padding: 3px 8px 4px 8px;
+    font-size: 16.8px;
+}
+
+.projects_thumbnails {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 5px -14px;
+}
+
+.project_thumb {
+    display: block;
+    width: calc(50% - 28px);
+    margin: 14px;
+}
+
+.project_img_box_wrapp {
+    height: 402px;
+    overflow: hidden;
+}
+
+.project_thumb .img_box {
+    height: 402px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: 3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: 3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: 3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+.project_thumb:hover .img_box {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.project_thumb .img_box img  {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.project_thumb .descript {
+    width: 98%;
+    padding: 13px 0 8px 0;
+}
+
+.project_thumb h3 {
+    padding: 5px 0;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    font-size: 23px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #7e1b1f;
+}
+
+.project_thumb p {
+    padding: 5px 0;
+}
+
+.project_thumb p.date {
+    padding-top: 9px;
+}
+
+/*-- /Section 1 - Projects --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
