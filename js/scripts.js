@@ -633,6 +633,15 @@ $(document).ready(function() {
 
     // -----------------
 
+    $("[data-dropdown-box-link]").each(function() {
+        if($(this).hasClass("active")) {
+            dropdownBox = $("[data-dropdown-box = '"+$(this).attr("data-dropdown-box-link")+"']");
+            dropdownBox.css({
+                "display" : "block"
+            });
+        }
+    });
+
     $("[data-dropdown-box-link]").on("click", function(e) {
         e.preventDefault();
         dropdownBox = $("[data-dropdown-box = '"+$(this).attr("data-dropdown-box-link")+"']");

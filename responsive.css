@@ -211,6 +211,30 @@
 
 	/*-- /Section 1 - History --*/
 
+	/*-- Section 1 - Periodical --*/
+
+	.three_cols {
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.three_cols .col:nth-child(1) {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.three_cols .col:nth-child(2) {
+	    width: 100%;
+	    padding: 10px 0 0 0;
+	}
+
+	.three_cols .col:nth-child(3) {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	/*-- /Section 1 - Periodical --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -1364,6 +1388,33 @@ input.search_input {
 }
 
 /*-- /Section 1 - Lib Book --*/
+
+/*-- /Section 1 - Periodical --*/
+
+.resp_filters_wrapp.resp_filters_wrapp_2 {
+	padding-top: 0;
+	margin-bottom: 15px;
+}
+
+.resp_filters_wrapp.resp_filters_wrapp_3 {
+	padding-top: 0;
+}
+
+.years_filter_wrapp {
+	display: none;
+}
+
+.resp_filters_wrapp {
+	padding-top: 11px;
+}
+
+.resp_filters_wrapp .calendar_header {
+	justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    margin: 0;
+}
+
+/*-- /Section 1 - Periodical --*/
 
 /*-- Footer --*/
 
