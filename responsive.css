@@ -2062,6 +2062,14 @@ section {
 
 /*-- /Section 1 - One Project --*/
 
+/*-- Section 2 - Sistem Page --*/
+
+.table_3 .table_row .cell {
+    padding: 13px 5px;
+}
+
+/*-- /Section 2 - Sistem Page --*/
+
 /*-- Footer --*/
 
 .footer_section {

@@ -4745,6 +4745,10 @@ p.date_2 {
     margin: 0 auto;
 }
 
+.text_wrapp h3 {
+    text-transform: uppercase;
+}
+
 .afisha_images {
     display: flex;
     display: -webkit-flex;
@@ -8783,8 +8787,56 @@ ul.line_mark li:before {
     min-width: 248px;
 }
 
-
 /*-- /Section 2 - News Page --*/
+
+/*-- Section 2 - Sistem Page --*/
+
+.table_wrapp {
+    width: 100%;
+    max-width: 827px;
+    margin: 0 auto 15px auto;
+    overflow-x: auto;
+}
+
+.table_3 {
+    display: table;
+    width: 100%;
+    max-width: 618px;
+    min-width: 470px;
+    border-collapse: collapse;
+}
+
+.table_3 .table_row {
+    display: table-row;
+    vertical-align: top;
+    border-bottom: 1px solid #dedede;
+}
+
+.table_3 .table_row .cell {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 24px 10px;
+}
+
+.table_3 .table_row .cell:nth-child(1) {
+    width: 30%;
+    padding-left: 0;
+}
+
+.table_3 .table_row .cell:nth-child(2) {
+    width: 25%;
+}
+
+.table_3 .table_row .cell:nth-child(3) {
+    width: 30%;
+}
+
+.table_3 .table_row .cell:nth-child(4) {
+    width: 15%;
+    padding-right: 0;
+}
+
+/*-- /Section 2 - Sistem Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
