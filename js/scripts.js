@@ -64,27 +64,27 @@ function countTotalPrice() {
 }
 
 function scrollNav() {
-    if($("#years_nav").length > 0) {
-        navCoord = $(".years_nav").offset().top;
-        $(".years_nav a").each(function() {
+    if($(".page_nav").length > 0) {
+        navCoord = $(".page_nav").offset().top;
+        $(".page_nav a").each(function() {
             linkHref = $(this).attr("href");
             elemCoord = $(linkHref);
             topElemCoord = elemCoord.offset().top;
             if( navCoord > topElemCoord) {
-                $(".years_nav a").removeClass("active");
-                $(".years_nav a").removeClass("active_scroll");
+                $(".page_nav a").removeClass("active");
+                $(".page_nav a").removeClass("active_scroll");
                 $(this).addClass("active");
             } else {
                 $(this).removeClass("active");
             }
         });
-        museumTopCoord = $("#museum").offset().top;
-        museumBottomCoord = $("#museum").offset().top + $("#museum").height();
-        museumNavBottomCoord = $("#years_nav").offset().top + $("#years_nav").height() - 50;
+        museumTopCoord = $(".scroll_page").offset().top;
+        museumBottomCoord = $(".scroll_page").offset().top + $(".scroll_page").height();
+        museumNavBottomCoord = $(".page_nav").offset().top + $(".page_nav").height() - 50;
         if($(window).scrollTop() + 100 > museumTopCoord &&  museumBottomCoord >= museumNavBottomCoord ) {
-            $("#years_nav").addClass("visible");
+            $(".page_nav").addClass("visible");
         } else {
-            $("#years_nav").removeClass("visible");
+            $(".page_nav").removeClass("visible");
         }
     }
 }
@@ -731,11 +731,11 @@ $(document).ready(function() {
 
     // -------------------
 
-     $(".years_nav a").click(function(e) {
+     $(".page_nav a").click(function(e) {
         e.preventDefault();
         var hrefAttr = $(this).attr("href");
         var visibleBlock = $(hrefAttr);
-        parentBlock = $(this).closest(".years_nav");
+        parentBlock = $(this).closest(".page_nav");
         parentBlock.find("a").removeClass("active_scroll");
         $(this).addClass("active_scroll");
         $('html, body').stop().animate({

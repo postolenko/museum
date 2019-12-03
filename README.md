@@ -45,3 +45,4 @@
 # http://postolenko.github.io/museum/projects.html
 # http://postolenko.github.io/museum/news.html
 # http://postolenko.github.io/museum/news_page.html
+# http://postolenko.github.io/museum/one_project.html
