@@ -8559,11 +8559,6 @@ ul.line_mark li:before {
     transform: translate(-50%, -50%);
 }
 
-.personal_info_2 h4,
-.personal_info_2 p {
-    /*padding: 2px 0;*/
-}
-
 .project_article ul.roman > li {
     padding-left: 0;
 }
