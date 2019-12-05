@@ -8859,16 +8859,16 @@ ul.line_mark li:before {
     min-height: calc(100vh - 150px);
 }
 
-.error_page  {
-
-}
-
 .error_image {
     display: block;
     max-width: 736px;
     max-height: 90vh;
     width: 100%;
-    margin: 10px 0 23px 0;
+    margin: 10px auto 23px auto;
+}
+
+.error_page_content {
+    width: 100%;
 }
 
 .error_page_message {
