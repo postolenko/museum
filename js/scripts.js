@@ -1,5 +1,5 @@
 function getPositionMenu() {
-    if(bodyWidth > 900) {
+    if(bodyWidth > 900 && $(".main_nav_scroll_wrapp").length > 0) {
         if( $(document).scrollTop() > $(".main_nav_scroll_wrapp").offset().top + 150) {
             $(".main_nav_scroll_wrapp").height($("#fixed_menu").outerHeight());
             $("#fixed_menu").addClass("fixed");
@@ -757,7 +757,29 @@ $(document).ready(function() {
             swipeToSlide: true,
             variableWidth: true
         });
-    } 
+    }
+
+    // ------------------
+
+    // $(".float_thumb").on("mouseover", function() {
+    //     setTimeout(function() {
+    //         $(this).addClass("active");
+    //     }, 400);
+    // });
+
+    $( ".float_thumb" ).bind({
+      mouseenter: function() {
+        // setTimeout(function() {
+            parentBlock = $(this).closest(".error_page_content");
+            parentBlock.find(".error_page_message").addClass("hide");
+            // $(this).addClass("active");
+        // }, 400);
+      },
+      mouseleave: function() {
+        // $(this).removeClass("active");
+        parentBlock.find(".error_page_message").removeClass("hide");
+      }
+    });
 
 
 });

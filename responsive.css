@@ -255,6 +255,72 @@
 
 	/*-- /Section 1 - One Project --*/
 
+	/*-- Section 1 - Error Page --*/
+
+	.error_image {
+	    max-width: 480px;
+	}
+
+	.error_info {
+	    padding: 5px 0;
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+
+	.error_page_message p {
+	    padding: 0;
+	}
+
+	.float_thumb .description {
+	    margin-top: 0;
+	}
+
+	.float_thumb .description h3 {
+	    padding: 2px 0;
+	    font-size: 19px;
+	    line-height: 25px;
+	}
+
+	.float_thumb .description p {
+	    padding: 5px 0;
+	    font-size: 15px;
+	    line-height: 19px;
+	}
+
+	.float_thumb img {
+	    -webkit-transform: scale(.8);
+	    -moz-transform: scale(.8);
+	    transform: scale(.8);
+	}
+
+	.float_thumb:hover img {
+	    -webkit-transform: scale(1);
+	    -moz-transform: scale(1);
+	    transform: scale(1);
+	}
+
+	.error_page_content .float_thumb_1 {
+	    max-width: 360px;
+	}
+
+	.error_page_content .float_thumb_2 {
+	    max-width: 220px;
+	}
+
+	.error_page_content .float_thumb_3 {
+	    max-width: 250px;
+	}
+
+	.error_page_content .float_thumb_4 {
+	    max-width: 350px;
+	}
+
+	.error_page_content .float_thumb_4:hover {
+	    left: 48%;
+	}
+
+	/*-- /Section 1 - Error Page --*/
+
 	/*-- Footer --*/
 
 	.footer_three_cols .col:nth-child(1) {
@@ -614,6 +680,10 @@
 
 	.promo_box {
 		display: none;
+	}
+
+	.logo.error_logo {
+	    width: 182px;
 	}
 
 	/*-- /Header --*/
@@ -1545,6 +1615,38 @@ input.search_input {
 }
 
 /*-- /Section 1 - One Project --*/
+
+/*-- Section 1 - Error Page --*/
+
+.float_thumb {
+	display: none;
+}
+
+.error_page {
+    display: block;
+    min-height: 100%;
+}
+
+.error_image {
+    max-width: 90%;
+    margin: 10px auto;
+}
+
+.error_page_message {
+	display: block !important;
+}
+
+.resp_image {
+    display: block;
+}
+
+.error_page_message p,
+.error_page_message p a {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+/*-- /Section 1 - Error Page --*/
 
 /*-- Footer --*/
 

@@ -47,3 +47,5 @@
 # http://postolenko.github.io/museum/news_page.html
 # http://postolenko.github.io/museum/one_project.html
 # http://postolenko.github.io/museum/sistem_page.html
+# http://postolenko.github.io/museum/error_page.html
+# http://postolenko.github.io/museum/505.html

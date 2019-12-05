@@ -8838,6 +8838,261 @@ ul.line_mark li:before {
 
 /*-- /Section 2 - Sistem Page --*/
 
+/*-- Section 1 - Error Page --*/
+
+.error_page_wrapp {
+    overflow: hidden;
+}
+
+.header_error_page {
+    width: 100%;
+    padding: 25px 0 0 0;
+}
+
+.error_page {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    min-height: calc(100vh - 150px);
+}
+
+.error_page  {
+
+}
+
+.error_image {
+    display: block;
+    max-width: 736px;
+    max-height: 90vh;
+    width: 100%;
+    margin: 10px 0 23px 0;
+}
+
+.error_page_message {
+    text-align: center;
+    opacity: 1;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.error_info {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: Room;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 900;
+    letter-spacing: .95px;
+    color: #3f4649;
+}
+
+.error_page_message p {
+    padding: 12px 0;
+}
+
+.error_page_message.hide {
+    opacity: 0;
+}
+
+.float_thumb {
+    cursor: pointer;
+    -webkit-transition-property: top, left;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: top, left;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: top, left;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: top, left;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: top, left;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.float_thumb img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: 5px auto;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.float_thumb .description {
+    margin-top: 76px;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+
+.float_thumb:hover .description {
+    display: block;
+}
+
+.float_thumb .description h3 {
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 900;
+    letter-spacing: .95px;
+    color: #3f4649;
+}
+
+.float_thumb .description p {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    color: #3f4649;
+}
+
+.error_page_content .float_thumb {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.error_page_content .float_thumb_1 {
+    max-width: 500px;
+    top: 12%;
+    left: 3%;
+}
+
+.error_page_content .float_thumb_2 {
+    max-width: 320px;
+    top: 40%;
+    left: -5%;
+}
+
+.error_page_content .float_thumb_3 {
+    max-width: 386px;
+    top: -6%;
+    left: 35%;
+}
+
+.error_page_content .float_thumb_4 {
+    max-width: 500px;
+    top: 32%;
+    left: 61%;
+}
+
+.float_thumb:hover img {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.float_thumb_1:hover {
+    left: 8%;
+}
+
+.float_thumb_2:hover {
+    top: 24%;
+    left: 3%;
+}
+
+.float_thumb_4:hover {
+    top: 10%;
+}
+
+.resp_image {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.resp_image_1 {
+    top: auto;
+    right: 0;
+    left: auto;
+    bottom: 0;
+}
+
+.resp_image_2 {
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    left: auto;
+    bottom: auto;
+}
+
+.resp_image_3 {
+    top: 20px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+}
+
+.resp_image_4 {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+}
+
+/*-- /Section 1 - Error Page --*/
+
+
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
