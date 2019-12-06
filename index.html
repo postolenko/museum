@@ -80,7 +80,7 @@
 											<a href="#" class="icon_link">
 												<img src="img/eye.svg" alt="" />
 											</a>
-											<a href="#" class="icon_link" data-popup-link = "popup_1">
+											<a href="#" class="icon_link" data-toggle="modal" data-target="#searchModal">
 												<img src="img/search.svg" alt="" />
 											</a>
 										</div>
@@ -95,14 +95,10 @@
 											</div>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu">
-												<!-- <img src="img/clock.svg" alt="" /> -->
-											</button>
+											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu"></button>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button search_button" data-popup-link = "popup_1">
-												<!-- <img src="img/search_white.svg" alt="" /> -->
-											</button>
+											<button type="button" class="resp_button search_button" data-toggle="modal" data-target="#searchModal"></button>
 										</div>
 										<div class="resp_inline">
 											<button type="button" class="respmenubtn" data-resp-btn = "nav_resp">
@@ -1200,17 +1196,16 @@
 
 	<!-- /Footer -->
 
-
 	<!-- Popups -->
 
 	<!-- Popup 1 -->
 
-	<div class="popup_sect" data-popup="popup_1">
-		<div class="popup_wrapp">
-			<div class="center_position">
-				<div>		
+	<div class="modal" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+		<div class="modal-dialog search_dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content search_modal">
 					<div class="search_form">
-						<button type="button" class="close_btn"><i class="close"></i></button>
+						<button type="button" class="close_btn" data-dismiss="modal" aria-label="Close"><i class="close"></i></button>
 						<h3>Поиск</h3>
 						<div class="search_form_wrapp">
 							<form>
@@ -1224,7 +1219,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>			
 
 	<!-- /Popup 1 -->
 
@@ -1237,7 +1232,9 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
-	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/jquery.fancybox.js"></script>	
+	<script src="vendors/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>

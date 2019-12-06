@@ -841,8 +841,10 @@
 
 /*-- Popup 1 --*/
 
-.center_position {
-	min-height: auto;
+.search_dialog .modal-dialog-centered {
+    align-items: flex-start;
+    min-height: calc(100% - 1rem);
+    padding-left: 15px;
 }
 
 .search_form h3 {
@@ -882,7 +884,7 @@ input.search_input {
 .search_form .close_btn {
 	position: absolute;
 	top: 0;
-	right: 17px;
+	right: 0;
 }
 
 /*-- /Popup 1 --*/
@@ -1696,6 +1698,19 @@ input.search_input {
 
 /*-- /Footer --*/
 
+/*-- Popups --*/
+
+.modal_title_2 h3 {
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.modal_title_2 p {
+    padding: 0;
+}
+
+/*-- /Popups --*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -2198,6 +2213,54 @@ section {
 }
 
 /*-- /Footer --*/
+
+/*-- Popups --*/
+
+.upload_files_resp {
+    display: block;
+}
+
+.form_two_cols {
+	display: block;
+	align-items: center;
+    margin: 16px 0 0 0;
+}
+
+.drop_zone {
+	display: none;
+}
+
+.form_two_cols .col {
+	width: 100% !important;
+}
+
+.popup_form_2 textarea {
+    height: 213px;
+}
+
+.modal_1 {
+	min-height: 100vh;
+    padding: 45px 15px 11px 15px;
+}
+
+.popup_form_2 .input_wrapp {
+	margin-top: 20px;
+}
+
+.modal_3 {
+	min-height: 100vh;
+}
+
+.modal_2 {
+	min-height: 100vh;
+    padding: 45px 15px 11px 15px;
+}
+
+.modal_4 {
+	min-height: 100vh;
+}
+
+/*-- /Popups --*/
 
 }
 
