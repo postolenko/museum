@@ -3512,19 +3512,23 @@ p.date_2 {
 }
 
 .events_slider {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*display: -webkit-flex;*/
+/*    flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     justify-content: space-between;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: space-between;*/
+    white-space: nowrap;
+    margin: 0 -22px;
 }
 
 .events_slider .slide {
+    display: inline-block;
+    vertical-align: top;
     padding: 0 22px;
 }
 
-.transparent_arrow_left {
+/*.transparent_arrow_left {
     width: 24px;
     height: 20px;
     border: 1px solid transparent;
@@ -3582,7 +3586,7 @@ p.date_2 {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     transform: rotate(-90deg);
-}
+}*/
 
 .event_link {
     display: inline-block;

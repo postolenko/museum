@@ -89,6 +89,14 @@ function scrollNav() {
     }
 }
 
+function getEventsSliderParams() {
+    if( $(".events_slider .mCSB_container").hasClass("mCS_x_hidden")) {
+        $(".events_slider").removeClass("scroller");
+    } else {
+        $(".events_slider").addClass("scroller");
+    }
+}
+
 //  function getAdaptivePositionElements() {
 //     $(".append-elem").each(function() {
 //         // if( $(this).hasClass("desktop-position") ) {
@@ -144,6 +152,7 @@ $(window).resize(function() {
     getAppendNavMenu();
     getAppendMap();
     scrollNav();
+    getEventsSliderParams();
 });
 
 $(document).scroll(function() {
@@ -160,6 +169,7 @@ $(document).ready(function() {
     getAppendMap();
     countTotalPrice();
     scrollNav();
+    getEventsSliderParams();
 
 	if( $(".promo_slider").length > 0 ) {
         $(".promo_slider").not(".slick-initialized").slick({
@@ -311,22 +321,22 @@ $(document).ready(function() {
         });
     }    
 
-    if( $(".events_slider").length > 0 ) {
-        $(".events_slider").not(".slick-initialized").slick({
-            dots: false,
-            arrows: true,
-            autoplay: false,
-            autoplaySpeed: false,
-            speed: 1200,
-            infinite: false,
-            slidesToScroll: 1,
-            swipeToSlide: true,
-            variableWidth: true,
-            initialSlide: 0,
-            prevArrow: '<button class="slick_prev transparent_arrow_left" aria-label="Previous" type="button"></button>',
-            nextArrow: '<button class="slick_next transparent_arrow_right" aria-label="Next" type="button"></button>'
-        });
-    } 
+    // if( $(".events_slider").length > 0 ) {
+    //     $(".events_slider").not(".slick-initialized").slick({
+    //         dots: false,
+    //         arrows: true,
+    //         autoplay: false,
+    //         autoplaySpeed: false,
+    //         speed: 1200,
+    //         infinite: false,
+    //         slidesToScroll: 1,
+    //         swipeToSlide: true,
+    //         variableWidth: true,
+    //         initialSlide: 0,
+    //         prevArrow: '<button class="slick_prev transparent_arrow_left" aria-label="Previous" type="button"></button>',
+    //         nextArrow: '<button class="slick_next transparent_arrow_right" aria-label="Next" type="button"></button>'
+    //     });
+    // }
 
 	$(".lang_active").on("click", function(e) {
 		e.preventDefault();
@@ -703,6 +713,15 @@ $(document).ready(function() {
       mouseleave: function() {
         parentBlock.find(".error_page_message").removeClass("hide");
       }
+    });
+
+    // -------------------
+
+    $(".events_slider").mCustomScrollbar({
+        scrollButtons:{
+            enable:true
+        },
+        axis:"x"
     });
 
 });
