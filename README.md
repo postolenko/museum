@@ -49,4 +49,4 @@
 # http://postolenko.github.io/museum/sistem_page.html
 # http://postolenko.github.io/museum/error_page.html
 # http://postolenko.github.io/museum/error_page_500.html
-# http://postolenko.github.io/museum/modal_1.html
+# http://postolenko.github.io/museum/modals.html
