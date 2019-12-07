@@ -484,6 +484,20 @@
 
 	/*-- /Footer --*/
 
+	/*-- Popup --*/
+
+	.popup_two_cols .left_col {
+	    width: 64%;
+	    padding-right: 20px;
+	}
+
+	.popup_two_cols .right_col {
+	    width: 36%;
+	    padding-left: 20px;
+	}
+
+	/*-- /Popup --*/
+
 }
 
 
@@ -885,6 +899,54 @@ input.search_input {
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+.popup_two_cols h2 {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: normal;
+}
+
+.popup_two_cols {
+	display: block;
+	margin: 20px 0;
+}
+
+.popup_two_cols .left_col,
+.popup_two_cols .right_col {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.good_item_2 .col:nth-child(2) {
+    padding-top: 5px;
+}
+
+.good_item_2 .col:nth-child(3) {
+    padding-top: 1px;
+}
+
+.good_item_2 {
+    margin: 20px 0;
+}
+
+.good_item_2 h3 {
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.good_item_2 p {
+    font-size: 17px;
+    line-height: 19px;
+}
+
+.dropdown_prices_title p {
+    font-size: 23px;
+    line-height: 25px;
+}
+
+.dropdown_prices_title p:after {
+    top: 8px;
 }
 
 /*-- /Popup 1 --*/
@@ -2431,6 +2493,27 @@ section {
 	}
 
 	/*-- /Section 1 - One Project --*/
+
+	/*-- Popups --*/
+
+	.good_item_2 {
+	    display: flex;
+	    display: -webkit-flex;
+	    flex-wrap: wrap;
+	    flex-wrap: -webkit-wrap;
+	}
+
+	.good_item_2 .col:nth-child(1) {
+	    padding: 10px 0;
+	    width: 100%;
+	}
+
+	.good_item_2 .col:nth-child(2) {
+	    width: calc(100% - 100px);
+	    padding: 5px 0 0 0;
+	}
+
+	/*-- /Popups --*/
 
 }
 

@@ -52,9 +52,9 @@ function countTotalPrice() {
         priceValTotal = 0;
         $(".goods_prices [data-price-val]").each(function() {
             priceVal = parseInt( $(this).attr("data-price-val") );
-            goodsCount = $(this).closest(".good_item").find(".goods_count input").val();
+            goodsCount = $(this).closest(".good_price_item").find(".goods_count input").val();
             if(goodsCount == "") {
-                goodsCount = 1;
+                goodsCount = 0;
             }
             priceGood = priceVal * goodsCount;
             priceValTotal += priceGood;
@@ -480,73 +480,7 @@ $(document).ready(function() {
         }
     });
 
-    // -------------------------
-
-    // $("[data-popup-link]").on("click", function(e) {
-    //     e.preventDefault();
-    //     popupName = $(this).attr("data-popup-link");
-    //     div = document.createElement('div');
-    //     div.style.overflowY = 'scroll';
-    //     div.style.width = '50px';
-    //     div.style.height = '50px';
-    //     div.style.visibility = 'hidden';
-    //     document.body.appendChild(div);
-    //     scrollWidth = div.offsetWidth - div.clientWidth;
-    //     document.body.removeChild(div);
-    //     $("body").css({
-    //         "position" : "fixed",
-    //         "top" :  -$(document).scrollTop() + "px",
-    //         "overflow" : "hidden",
-    //         "right" : 0,
-    //         "left" : 0,
-    //         "bottom" : 0,
-    //         "padding-right" : scrollWidth + "px"
-    //     });
-    //     $("body").addClass("fixed");
-    //     $("[data-popup]").fadeIn(300);
-    // });
-
-    // $(".close_btn").on("click", function(e) {
-    //     e.preventDefault();
-    //     curTop = $("body").css("top");
-    //     curTop = Math.abs(parseInt(curTop, 10));
-    //     $("body").attr("style", "")
-    //     if (curTop !== 0) {
-    //         $("html").scrollTop(curTop);
-    //     }
-    //     $("body").removeClass("fixed");
-    //     $(this).closest("[data-popup]").fadeOut(300);
-    // });
-
-    // $(this).keydown(function(eventObject){
-    //     if (eventObject.which == 27 ) {
-    //         curTop = $("body").css("top");
-    //         curTop = Math.abs(parseInt(curTop, 10));
-    //         $("body").attr("style", "")
-    //         if (curTop !== 0) {
-    //             $("html").scrollTop(curTop);
-    //         }
-    //         $("body").removeClass("fixed");
-    //         $("[data-popup]").fadeOut(300);
-    //     }
-    // });
-
-    // $(".popup_sect").mouseup(function (e){
-    //     hide_element = $(".popup_wrapp");
-    //     if (!hide_element.is(e.target)
-    //         && hide_element.has(e.target).length === 0) {
-    //         curTop = $("body").css("top");
-    //         curTop = Math.abs(parseInt(curTop, 10));
-    //         $("body").attr("style", "")
-    //         if (curTop !== 0) {
-    //             $("html").scrollTop(curTop);
-    //         }
-    //         $("body").removeClass("fixed");
-    //         $("[data-popup]").fadeOut(300);
-    //     }
-    // });
-
-    // ------------
+    // ----------------------
 
     $(".main_nav > li > a").on("click", function(e) {
         var parentItem = $(this).closest("li");
@@ -689,13 +623,13 @@ $(document).ready(function() {
         parentBlock = $(this).closest(".count_box");
         var countInput = parentBlock.find("input");
         var countVal = countInput.val();
-        if( $(this).hasClass("minus_btn") && countVal > 1 ) {
+        if( $(this).hasClass("minus_btn") && countVal > 0 ) {
             countVal--;
         } else if( $(this).hasClass("plus_btn")) {
             countVal++;
         }
         if(countVal == "") {
-            countVal = 1;
+            countVal = 0;
         }
         countInput.val(countVal);
         if(parentBlock.hasClass("goods_count")) {
@@ -708,9 +642,9 @@ $(document).ready(function() {
         countTotalPrice();
     });
 
-    $(".good_item .close_3").on("click", function(e) {
+    $(".good_price_item .close_3").on("click", function(e) {
         e.preventDefault();
-        $(this).closest(".good_item").remove();
+        $(this).closest(".good_price_item").remove();
         countTotalPrice();
     });
 
