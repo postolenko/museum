@@ -855,10 +855,9 @@
 
 /*-- Popup 1 --*/
 
-.search_dialog .modal-dialog-centered {
+.modal-dialog-centered.search_modal_centered {
     align-items: flex-start;
-    min-height: calc(100% - 1rem);
-    padding-left: 15px;
+    -webkit-align-items: flex-start;
 }
 
 .search_form h3 {
@@ -1762,6 +1761,15 @@ input.search_input {
 
 /*-- Popups --*/
 
+.search_modal {
+    padding: 15px;
+}
+
+.search_form .close_btn {
+    top: 15px;
+    right: 15px;
+}
+
 .modal_title_2 h3 {
     font-size: 28px;
     line-height: 34px;
@@ -1769,6 +1777,28 @@ input.search_input {
 
 .modal_title_2 p {
     padding: 0;
+}
+
+.modal-dialog {
+	width: 100%;
+    margin: 0 auto;
+}
+
+.modal-content {
+	min-height: 100vh;
+	max-width: 100%;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.search_modal_centered .modal-content {
+	min-height: auto;
+	min-height: unset;
+}
+
+.modal-open .modal {
+	padding-right: 0 !important;
 }
 
 /*-- /Popups --*/
@@ -2301,7 +2331,7 @@ section {
 }
 
 .modal_1 {
-	min-height: 100vh;
+	/*min-height: 100vh;*/
     padding: 45px 15px 11px 15px;
 }
 
@@ -2310,19 +2340,85 @@ section {
 }
 
 .modal_3 {
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 }
 
 .modal_2 {
-	min-height: 100vh;
+	/*min-height: 100vh;*/
     padding: 45px 15px 11px 15px;
 }
 
 .modal_4 {
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 }
 
 /*-- /Popups --*/
+
+	/*-- Basket Succes Modal --*/
+
+/*	.succes_modal {
+		padding: 0;
+		border-radius: 0;
+	}
+
+	.succes_modal .centered {
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		-webkit-align-items: center;
+		justify-content: center;
+		-webkit-justify-content: center;
+		width: 100%;
+		min-height: 100vh;
+	}
+
+	.succes_modal .centered > div {
+		max-width: 290px;
+		margin: 0 auto;
+	}
+
+	.modal-content {
+		padding: 15px;
+		border-radius: 0;
+		min-height: calc(100vh - 1rem);
+	}*/
+
+	.modal-content .centered {
+/*		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		-webkit-align-items: center;
+		justify-content: center;
+		-webkit-justify-content: center;
+		width: 100%;*/
+		/*min-height: 100vh;*/
+	}
+
+/*	.modal-content .centered > div {
+		width: 100%;
+	}*/
+
+	.succes_modal h2 {
+	    padding: 5px 0;
+	    font-size: 28px;
+	    line-height: 30px;
+	}
+
+	.succes_modal p {
+	    padding: 8px 0;
+	    font-size: 16px;
+	    line-height: 17px;
+	}
+
+/*	#succesModal .modal-dialog {
+	    margin: 0;
+	}*/
+
+/*	#succesModal .modal-dialog-centered {
+	    width: calc(100vw - 17px);
+	}*/
+
+	/*-- /Basket Succes Modal --*/
 
 }
 
@@ -2430,51 +2526,6 @@ section {
 	}
 
 	/*-- /Section 1 - Graphic Collections --*/
-
-	/*-- Basket Succes Modal --*/
-
-	.succes_modal {
-		padding: 0;
-		border-radius: 0;
-	}
-
-	.succes_modal .centered {
-		display: flex;
-		display: -webkit-flex;
-		align-items: center;
-		-webkit-align-items: center;
-		justify-content: center;
-		-webkit-justify-content: center;
-		width: 100%;
-		min-height: 100vh;
-	}
-
-	.succes_modal .centered > div {
-		max-width: 290px;
-		margin: 0 auto;
-	}
-
-	.succes_modal h2 {
-	    padding: 5px 0;
-	    font-size: 28px;
-	    line-height: 30px;
-	}
-
-	.succes_modal p {
-	    padding: 8px 0;
-	    font-size: 16px;
-	    line-height: 17px;
-	}
-
-	#succesModal .modal-dialog {
-	    margin: 0;
-	}
-
-	#succesModal .modal-dialog-centered {
-	    width: calc(100vw - 17px);
-	}
-
-	/*-- /Basket Succes Modal --*/
 
 	/*-- Section 1 - One Project --*/
 

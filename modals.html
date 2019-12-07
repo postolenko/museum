@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Сахалинский Областной Краеведческий Музей</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -20,8 +19,8 @@
 	<!-- Header -->
 		
 	<header>
-		<div class="header_site inner_header">
-			<div class="row row_1" id="resp_header">
+		<div class="header_site">
+			<div class="row row_1 main_header" id="resp_header">
 				<div class="top_row">
 					<div class="col_left">
 						<a href="#" class="logo">
@@ -81,7 +80,7 @@
 											<a href="#" class="icon_link">
 												<img src="img/eye.svg" alt="" />
 											</a>
-											<a href="#" class="icon_link" data-popup-link = "popup_1">
+											<a href="#" class="icon_link" data-toggle="modal" data-target="#searchModal">
 												<img src="img/search.svg" alt="" />
 											</a>
 										</div>
@@ -96,12 +95,10 @@
 											</div>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu">
-											</button>
+											<button type="button" class="resp_button time_button" data-resp-btn = "time_menu"></button>
 										</div>
 										<div class="resp_inline">
-											<button type="button" class="resp_button search_button" data-popup-link = "popup_1">
-											</button>
+											<button type="button" class="resp_button search_button" data-toggle="modal" data-target="#searchModal"></button>
 										</div>
 										<div class="resp_inline">
 											<button type="button" class="respmenubtn" data-resp-btn = "nav_resp">
@@ -120,60 +117,94 @@
 					</div>
 				</div>
 			</div>
-			<div class="main_nav_scroll_wrapp">
-				<div class="main_nav_scroll" id="fixed_menu">
-					<div class="back_el"></div>
-					<div class="row">
-						<div class="short_logo_wrapp">
-							<a href="#" class="logo_short_link">
-								<img src="img/logo_short.svg" alt="" />
-							</a>
+			<div class="main_nav_sect">
+				<div class="main_nav_scroll_wrapp">
+					<div class="main_nav_scroll" id="fixed_menu">
+						<div class="back_el"></div>
+						<div class="row">
+							<div class="short_logo_wrapp">
+								<a href="#" class="logo_short_link">
+									<img src="img/logo_short.svg" alt="" />
+								</a>
+							</div>
+							<div class="main_nav_wrapp">
+								<ul class="main_nav" id="resp_nav">
+									<li>
+										<a href="#">Музей</a>
+										<ul>
+											<li><a href="#">История создания</a></li>
+											<li><a href="#">Слово директору</a></li>
+											<li><a href="#">Услуги</a></li>
+											<li><a href="#">Партнеры</a></li>
+											<li><a href="#">Документы</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Афиша</a>
+										<ul>
+											<li><a href="#">Афиша 1</a></li>
+											<li><a href="#">Афиша 2</a></li>
+											<li><a href="#">Афиша 3</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Новости</a>
+										<ul>
+											<li><a href="#">Новость 1</a></li>
+											<li><a href="#">Новость 2</a></li>
+											<li><a href="#">Новость 3</a></li>
+											<li><a href="#">Новость 4</a></li>
+											<li><a href="#">Новость 5</a></li>
+											<li><a href="#">Новость 6</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Выставки</a></li>
+									<li><a href="#">Коллекции</a></li>
+									<li><a href="#">Наука</a></li>
+									<li><a href="#">Конкурсы</a></li>
+									<li>
+										<a href="#">Купить</a>
+										<ul>
+											<li><a href="#">История создания</a></li>
+											<li><a href="#">Слово директору</a></li>
+											<li><a href="#">Услуги</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
 						</div>
-						<div class="main_nav_wrapp">
-							<ul class="main_nav" id="resp_nav">
-								<li>
-									<a href="#">Музей</a>
-									<ul>
-										<li><a href="#">История создания</a></li>
-										<li><a href="#">Слово директору</a></li>
-										<li><a href="#">Услуги</a></li>
-										<li><a href="#">Партнеры</a></li>
-										<li><a href="#">Документы</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Афиша</a>
-									<ul>
-										<li><a href="#">Афиша 1</a></li>
-										<li><a href="#">Афиша 2</a></li>
-										<li><a href="#">Афиша 3</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Новости</a>
-									<ul>
-										<li><a href="#">Новость 1</a></li>
-										<li><a href="#">Новость 2</a></li>
-										<li><a href="#">Новость 3</a></li>
-										<li><a href="#">Новость 4</a></li>
-										<li><a href="#">Новость 5</a></li>
-										<li><a href="#">Новость 6</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Выставки</a></li>
-								<li><a href="#">Коллекции</a></li>
-								<li><a href="#">Наука</a></li>
-								<li><a href="#">Конкурсы</a></li>
-								<li>
-									<a href="#">Купить</a>
-									<ul>
-										<li><a href="#">История создания</a></li>
-										<li><a href="#">Слово директору</a></li>
-										<li><a href="#">Услуги</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
+					</div>
+				</div>
+				<div class="promo_slider_sect">
+					<div class="row">
+						<div class="promo_slider_wrapp">
+							<div class="promo_sl_arrows"></div>
+							<div class="promo_slider">
+								<div class="slide">
+									<div class="img_box" style="background-image: url(img/culture.jpg);"></div>
+									<div class="slide_desc">
+										<div class="inner">					
+											<p>Экспозиция</p>
+											<h3>ДРЕВНИЕ КУЛЬТУРЫ И КОРЕННЫЕ НАРОДЫ</h3>
+											<a class="transparent_pill_2" href="#">Интересно?</a>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="img_box" style="background-image: url(img/culture.jpg);"></div>
+									<div class="slide_desc">
+										<div class="inner">
+											<p>Экспозиция</p>
+											<h3>ДРЕВНИЕ КУЛЬТУРЫ И КОРЕННЫЕ НАРОДЫ 2</h3>
+											<a class="transparent_pill_2" href="#">Интересно?</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slides_desc_append">
+								<div class="inner" id="slideContent"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -279,107 +310,130 @@
 
 	<!-- Content -->
 		<div class="content inner_page">
+			<div class="row">
+				<h1>Модальные окна</h1>
+			</div>
+
+		<style>
+
+			.modals {
+				display: flex;
+				display: -webkit-flex;
+				flex-wrap: wrap;
+				flex-wrap: -webkit-wrap;
+			}
+
+			.modals > div {
+				margin: 20px;
+			}
+
+		</style>
 
 		<div class="row">
-			<br />
-			<a href="#" class="transparent_pill" data-toggle="modal" data-target="#succesModal">
-				Модальное окно заказ оформлен
-			</a>
-			<br />
-			<br />
-		</div>
-
-		<!-- Section 5 - Main Page -->
-
-		<section class="grey_light_bg">
-			<div class="row">
-				<div class="slider_5_wrapp">
-					<div class="slider_5">
-						<div class="slide">
-							<a href="#" class="thumb_2">
-								<div class="img_box">
-									<img src="img/books.jpg" alt="" />
-								</div>
-								<div class="mask">
-									<div class="inner">
-										<h3>Виртуальный музей</h3>
-										<p>Музей национальных культур Сахалина и Курильских островов XIX–XX веков</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#" class="thumb_2">
-								<img src="img/books.jpg" alt="" />
-								<div class="mask">
-									<div class="inner">
-										<h3>Наши атласы</h3>
-										<p>Картотеки, собранные нашими специалистами и оформленные в полиграфическую продукцию</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#" class="thumb_2">
-								<img src="img/books.jpg" alt="" />
-								<div class="mask">
-									<div class="inner">
-										<h3>Библиотека Сахалинского музея</h3>
-										<p>редакционная и издательская деятельность (книги, журналы, атласы, статьи)</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#" class="thumb_2">
-								<img src="img/books.jpg" alt="" />
-								<div class="mask">
-									<div class="inner">
-										<h3>Виртульная экскурсия</h3>
-										<p>Посетите наш музей онлайн</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#" class="thumb_2">
-								<img src="img/books.jpg" alt="" />
-								<div class="mask">
-									<div class="inner">
-										<h3>Музеи сахалинской области</h3>
-										<p>Каталог всех музеев Сахалинской области</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#" class="thumb_2">
-								<img src="img/books.jpg" alt="" />
-								<div class="mask">
-									<div class="inner">
-										<h3>Виртуальный музей</h3>
-										<p>Музей национальных культур Сахалина и Курильских островов XIX–XX веков</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#" class="thumb_2">
-								<img src="img/books.jpg" alt="" />
-								<div class="mask">
-									<div class="inner">
-										<h3>Наши атласы</h3>
-										<p>Картотеки, собранные нашими специалистами и оформленные в полиграфическую продукцию</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
+			<div class="modals">
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#exampleModal">
+						Корзина
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#succesModal">
+						Заказ оформлен
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal1">
+						Отправить статью
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal2">
+						Отправить статью 2
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal3">
+						Войти в систему
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal4">
+						Забыли пароль?
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal5">
+						Восстановление пароля
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal6">
+						Оставить отзыв
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal7">
+						Рассказать историю предмета
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal8">
+						Рассказать историю предмета 2
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal9">
+						Рассказать историю предмета 3
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal10">
+						Сообщение отправлено
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal11">
+						Отправить работу на конкурс
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal12">
+						Отправить работу на конкурс 2
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal13">
+						Заявка отправлена
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal14">
+						Регистрация
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal15">
+						Регистрация 2
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal16">
+						Купить билет
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal17">
+						Купить билет 2
+					</a>
+				</div>
+				<div>
+					<a href="#" class="transparent_pill" data-toggle="modal" data-target="#modal18">
+						Отправить заявку на мероприятие
+					</a>
 				</div>
 			</div>
-		</section>
 
-		<!-- /Section 5 - Main Page -->
+		</div>
 
 		</div>
 	<!-- /Content -->
@@ -522,12 +576,12 @@
 
 	<!-- Popup 1 -->
 
-	<div class="popup_sect" data-popup="popup_1">
-		<div class="popup_wrapp">
-			<div class="center_position">
-				<div>		
+	<div class="modal" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered search_modal_centered">
+				<div class="modal-content search_modal">
 					<div class="search_form">
-						<button type="button" class="close_btn"><i class="close"></i></button>
+						<button type="button" class="close_btn" data-dismiss="modal" aria-label="Close"><i class="close"></i></button>
 						<h3>Поиск</h3>
 						<div class="search_form_wrapp">
 							<form>
@@ -543,6 +597,1147 @@
 		</div>
 	</div>
 
+	<div class="modal" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_1">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Отправить статью</h3>
+								<p>Для отправки сообщения <a href="#" class="grey_link">войдите</a> или <a href="#" class="grey_link">зарегистрируйтесь</a></p>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Название статьи:" name="" />
+									</div>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="upload_files_items">
+										<h3>Загруженные файлы</h3>
+										<div class="upload_file_item">
+											<div><p>Рисунок 1.png</p></div>
+											<div><button type="button" class="del_btn"></button></div>
+										</div>
+										<div class="upload_file_item">
+											<div><p>Статья о вожных ресурсах2.doc</p></div>
+											<div><button type="button" class="del_btn"></button></div>
+										</div>
+									</div>
+									<div class="drop_zone_wrapp">
+										<div class="drop_zone">
+											<div class="dz-default dz-message" id="dropzone">
+												Добавьте сюда файлы или выберите их
+												<label class="file_upload grey_link" for="file_1"><input type="file" id="file_1">на компьютере</label>
+											</div>
+										</div>
+										<label class="upload_files_resp transparent_pill_3" for="file_2"><input type="file" id="file_2">Добавить файлы</label>
+										<p>Мы принимаем файлы в форматах: doc, docx, pdf, jpg, png</p>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_2"><input type="checkbox" id="ch_2" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_1">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Отправить статью</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Ирина Константинопольская" name="" />
+									</div>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Название статьи:" name="" />
+									</div>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="drop_zone_wrapp">
+										<div class="drop_zone">
+											<div class="dz-default dz-message" id="dropzone">
+												Добавьте сюда файлы или выберите их
+												<label class="file_upload grey_link" for="file_1"><input type="file" id="file_1">на компьютере</label>
+											</div>
+										</div>
+										<label class="upload_files_resp transparent_pill_3" for="file_2"><input type="file" id="file_2">Добавить файлы</label>
+										<p>Мы принимаем файлы в форматах: doc, docx, pdf, jpg, png</p>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_3"><input type="checkbox" id="ch_3" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Войти в систему</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="tel" placeholder="Телефон:" name="" />
+									</div>
+									<div class="input_wrapp">
+										<input type="password" placeholder="Пароль:" name="" />
+									</div>
+									<div class="form_text_wrapp">
+										<p><a href="#" class="grey_link">Забыли пароль?</a></p>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Забыли пароль?</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="tel" placeholder="Телефон:" name="" />
+									</div>
+									<div class="form_text_wrapp">
+										<p>Вам на телефон придет код для восстановления пароля</p>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_3">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Восстановление пароля</h3>
+							</div>
+							<div class="popup_form_2 popup_form_2_3">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Код из смс" name="" />
+									</div>
+									<div class="form_text_wrapp form_text_wrapp_2">
+										<p>Придумайте пароль</p>
+									</div>
+									<div class="input_wrapp">
+										<input type="password" placeholder="Пароль:" name="" />
+									</div>
+									<div class="input_wrapp">
+										<input type="password" placeholder="Повторите пароль:" name="" />
+									</div>
+									<div class="submit_wrapp_3 submit_wrapp_3_2">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_4">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Оставить отзыв</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Имя:" name="" />
+									</div>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_4"><input type="checkbox" id="ch_4" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3 submit_wrapp_3_2">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_1">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Рассказать историю предмета</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Ирина Константинопольская" name="" />
+									</div>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="drop_zone_wrapp">
+										<div class="drop_zone">
+											<div class="dz-default dz-message" id="dropzone">
+												Добавьте сюда файлы или выберите их
+												<label class="file_upload grey_link" for="file_1"><input type="file" id="file_1">на компьютере</label>
+											</div>
+										</div>
+										<label class="upload_files_resp transparent_pill_3" for="file_2"><input type="file" id="file_2">Добавить файлы</label>
+										<p>Мы принимаем файлы в форматах: doc, docx, pdf, jpg, png</p>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_5"><input type="checkbox" id="ch_5" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal8" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_1">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Рассказать историю предмета</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Ирина Константинопольская" name="" />
+									</div>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="upload_files_items">
+										<h3>Загруженные файлы</h3>
+										<div class="upload_file_item">
+											<div><p>Рисунок экспоната.png</p></div>
+											<div><button type="button" class="del_btn"></button></div>
+										</div>
+										<div class="upload_file_item">
+											<div><p>Расказ бабушки о предмете.doc</p></div>
+											<div><button type="button" class="del_btn"></button></div>
+										</div>
+									</div>
+									<div class="drop_zone_wrapp">
+										<div class="drop_zone">
+											<div class="dz-default dz-message" id="dropzone">
+												Добавьте сюда файлы или выберите их
+												<label class="file_upload grey_link" for="file_1"><input type="file" id="file_1">на компьютере</label>
+											</div>
+										</div>
+										<label class="upload_files_resp transparent_pill_3" for="file_2"><input type="file" id="file_2">Добавить файлы</label>
+										<p>Мы принимаем файлы в форматах: doc, docx, pdf, jpg, png</p>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_6"><input type="checkbox" id="ch_6" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modal9" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_1">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Рассказать историю предмета</h3>
+								<p>Для отправки сообщения <a href="#" class="grey_link">войдите</a> или <a href="#" class="grey_link">зарегистрируйтесь</a></p>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="drop_zone_wrapp">
+										<div class="drop_zone">
+											<div class="dz-default dz-message" id="dropzone">
+												Добавьте сюда файлы или выберите их
+												<label class="file_upload grey_link" for="file_1"><input type="file" id="file_1">на компьютере</label>
+											</div>
+										</div>
+										<label class="upload_files_resp transparent_pill_3" for="file_2"><input type="file" id="file_2">Добавить файлы</label>
+										<p>Мы принимаем файлы в форматах: doc, docx, pdf, jpg, png</p>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_7"><input type="checkbox" id="ch_7" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modal10" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_4">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Сообщение отправлено</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modal11" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_5">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Отправить работу на конкурс</h3>
+							</div>
+							<div class="popup_form_2 popup_form_2_4">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Ирина Константинопольская" name="" />
+									</div>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Название работы" name="" />
+									</div>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="drop_zone_wrapp">
+										<div class="drop_zone">
+											<div class="dz-default dz-message" id="dropzone">
+												Добавьте сюда файлы или выберите их
+												<label class="file_upload grey_link" for="file_1"><input type="file" id="file_1">на компьютере</label>
+											</div>
+										</div>
+										<label class="upload_files_resp transparent_pill_3" for="file_2"><input type="file" id="file_2">Добавить файлы</label>
+										<p>Мы принимаем файлы в форматах: doc, docx, pdf, jpg, png</p>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_6"><input type="checkbox" id="ch_6" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modal12" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_5">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Отправить работу на конкурс</h3>
+								<p>Для отправки сообщения <a href="#" class="grey_link">войдите</a> или <a href="#" class="grey_link">зарегистрируйтесь</a></p>
+							</div>
+							<div class="popup_form_2 popup_form_2_4">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Название работы" name="" />
+									</div>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="upload_files_items">
+										<h3>Загруженные файлы</h3>
+										<div class="upload_file_item">
+											<div><p>Рисунок экспоната.png</p></div>
+											<div><button type="button" class="del_btn"></button></div>
+										</div>
+										<div class="upload_file_item">
+											<div><p>Расказ бабушки о предмете.doc</p></div>
+											<div><button type="button" class="del_btn"></button></div>
+										</div>
+									</div>
+									<div class="drop_zone_wrapp">
+										<div class="drop_zone">
+											<div class="dz-default dz-message" id="dropzone">
+												Добавьте сюда файлы или выберите их
+												<label class="file_upload grey_link" for="file_1"><input type="file" id="file_1">на компьютере</label>
+											</div>
+										</div>
+										<label class="upload_files_resp transparent_pill_3" for="file_2"><input type="file" id="file_2">Добавить файлы</label>
+										<p>Мы принимаем файлы в форматах: doc, docx, pdf, jpg, png</p>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_6"><input type="checkbox" id="ch_6" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modal13" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_6">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Заявка отправлена</h3>
+								<p>В течение двух дней с вами свяжется наш менеджер для уточнения деталей</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modal14" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Регистрация</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="tel" placeholder="Телефон:" name="" />
+									</div>
+									<div class="form_text_wrapp">
+										<p>Вам на телефон придет код для регистрации</p>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal15" tabindex="-1" role="dialog" aria-labelledby="modal15" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Регистрация</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Код из смс" name="" />
+									</div>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Имя пользоваткля" name="" />
+									</div>
+									<div class="form_text_wrapp form_text_wrapp_2">
+										<p>Придумайте пароль</p>
+									</div>
+									<div class="input_wrapp">
+										<input type="password" placeholder="Пароль:" name="" />
+									</div>
+									<div class="input_wrapp">
+										<input type="password" placeholder="Повторите пароль:" name="" />
+									</div>
+									<div class="submit_wrapp_3 submit_wrapp_3_2">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal16" tabindex="-1" role="dialog" aria-labelledby="modal16" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_7">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Купить билет</h3>
+							</div>
+							<div class="goods_prices">
+								<div class="popup_two_cols">
+									<div class="left_col">
+										<div class="name_wrapp">
+											<p>Ирина Константинопольская</p>
+										</div>
+										<h2>Количество</h2>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Взрослые</h3>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="1" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Иностранные граждане</h3>
+												<p>взрослые</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Переводчик</h3>
+												<p>иностранной группы</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Пенсионеры</h3>
+												<p>после предоставления удостоверения</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="100">100 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Дети</h3>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="0">0 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown_prices_wrapp">
+											<div>
+												<div class="dropdown_prices_title" data-dropdown-btn = "prices_dropdown_2">
+													<p>Другие льготные категории</p>
+												</div>
+											</div>
+											<div class="dropdown_prices" data-dropdown-box = "prices_dropdown_2">
+												<div class="good_item_2 good_price_item">
+													<div class="col">
+														<h3>Взрослые</h3>
+														<p>взрослые</p>
+													</div>
+													<div class="col">
+														<p class="red_price" data-price-val="200">200 ₽</p>
+													</div>
+													<div class="col">
+														<div class="count_box goods_count">
+															<button type="button" class="plus_btn"><span>+</span></button>
+															<input type="number" value="0" />	
+															<button type="button" class="minus_btn"><span>-</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="good_item_2 good_price_item">
+													<div class="col">
+														<h3>Иностранные граждане</h3>
+														<p>взрослые</p>
+													</div>
+													<div class="col">
+														<p class="red_price" data-price-val="200">200 ₽</p>
+													</div>
+													<div class="col">
+														<div class="count_box goods_count">
+															<button type="button" class="plus_btn"><span>+</span></button>
+															<input type="number" value="0" />	
+															<button type="button" class="minus_btn"><span>-</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="right_col">
+										<h2>Выберите день</h2>
+										<div class="popup_calendar_wrapp">
+											<div class="popup_calendar_title">
+												<h3>июль, 2019</h3>
+												<p><a class="beige_link" href="#">другой месяц</a></p>
+											</div>
+											<div class="popup_calendar_box">
+												<div class="popup_calendar_header">
+													<div>пн</div>
+													<div>вт</div>
+													<div>ср</div>
+													<div>чт</div>
+													<div>пт</div>
+													<div>сб</div>
+													<div>вс</div>
+												</div>
+												<div class="popup_calendar_days">
+													<div></div><div></div><div></div><div></div><div><span class="prev_day">1</span></div><div><span class="prev_day">2</span></div><div><span class="prev_day">3</span></div><div><span class="prev_day">4</span></div><div><span class="prev_day">5</span></div>
+													<div><span class="prev_day">6</span></div><div><span class="prev_day">7</span></div><div><span class="prev_day">8</span></div><div><span class="prev_day">9</span></div><div><span class="prev_day">10</span></div><div><span class="prev_day">11</span></div><div><span class="prev_day">12</span></div><div><span class="prev_day">13</span></div>
+													<div><span class="active">14</span></div>
+													<div><span class="next_day">15</span></div>
+													<div><span class="next_day">16</span></div>
+													<div><span class="next_day">17</span></div>
+													<div><span class="next_day">18</span></div>
+													<div><span class="next_day">19</span></div>
+													<div><span class="next_day">20</span></div>
+													<div><span class="next_day">21</span></div>
+													<div><span class="next_day">22</span></div>
+													<div><span class="next_day">23</span></div>
+													<div><span class="next_day">24</span></div>
+													<div><span class="next_day">25</span></div>
+													<div><span class="next_day">26</span></div>
+													<div><span class="next_day">27</span></div>
+													<div><span class="next_day">28</span></div>
+													<div><span class="next_day">29</span></div>
+													<div><span class="next_day">30</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popup_calc_footer">
+									<div>
+										<div class="total_price_wrapp">
+											<p class="total_price_p">Цена: <span id="total_price">0</span> <span class="rub">₽</span></p>
+										</div>
+									</div>
+									<div>
+										<input type="submit" class="transparent_pill" value="Купить">
+									</div>
+									<div>
+										<div class="popup_footer_text">
+											<p>На ваш телефон придет сообщение с код бронирования. При посещении музея покажите его на кассе для получения билета.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal17" tabindex="-1" role="dialog" aria-labelledby="modal17" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_7 modal_center">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Купить билет</h3>
+							</div>
+							<div class="goods_prices">
+								<div class="popup_two_cols">
+									<div class="left_col">
+										<div class="name_wrapp">
+											<p>Ирина Константинопольская</p>
+										</div>
+										<h2>Количество</h2>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Взрослые</h3>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="1" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Иностранные граждане</h3>
+												<p>взрослые</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Переводчик</h3>
+												<p>иностранной группы</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Пенсионеры</h3>
+												<p>после предоставления удостоверения</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="100">100 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Дети</h3>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="0">0 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown_prices_wrapp">
+											<div>
+												<div class="dropdown_prices_title" data-dropdown-btn = "prices_dropdown">
+													<p>Другие льготные категории</p>
+												</div>
+											</div>
+											<div class="dropdown_prices" data-dropdown-box = "prices_dropdown">
+												<div class="good_item_2 good_price_item">
+													<div class="col">
+														<h3>Взрослые</h3>
+														<p>взрослые</p>
+													</div>
+													<div class="col">
+														<p class="red_price" data-price-val="200">200 ₽</p>
+													</div>
+													<div class="col">
+														<div class="count_box goods_count">
+															<button type="button" class="plus_btn"><span>+</span></button>
+															<input type="number" value="0" />	
+															<button type="button" class="minus_btn"><span>-</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="good_item_2 good_price_item">
+													<div class="col">
+														<h3>Иностранные граждане</h3>
+														<p>взрослые</p>
+													</div>
+													<div class="col">
+														<p class="red_price" data-price-val="200">200 ₽</p>
+													</div>
+													<div class="col">
+														<div class="count_box goods_count">
+															<button type="button" class="plus_btn"><span>+</span></button>
+															<input type="number" value="0" />	
+															<button type="button" class="minus_btn"><span>-</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="right_col">
+										<h2>Выберите день</h2>
+										<div class="popup_calendar_wrapp">
+											<div class="popup_calendar_title align_center">
+												<p><a class="beige_link" href="#">2019 | 2020</a></p>
+											</div>
+											<div class="popup_calendar_box">
+												<div class="popup_calendar_months">
+													<div><span class="prev_month">январь</span></div>
+													<div><span class="prev_month">февраль</span></div>
+													<div><span class="prev_month">март</span></div>
+													<div><span class="prev_month">апрель</span></div>
+													<div><span class="prev_month">май</span></div>
+													<div><span class="prev_month">июнь</span></div>
+													<div><span class="active_month">июль</span></div>
+													<div><span class="next_month">август</span></div>
+													<div><span class="next_month">сентябрь</span></div>
+													<div><span class="next_month">октябрь</span></div>
+													<div><span class="next_month">ноябрь</span></div>
+													<div><span class="next_month">декабрь</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popup_calc_footer">
+									<div>
+										<div class="total_price_wrapp">
+											<p class="total_price_p">Цена: <span id="total_price">0</span> <span class="rub">₽</span></p>
+										</div>
+									</div>
+									<div>
+										<input type="submit" class="transparent_pill" value="Купить">
+									</div>
+									<div>
+										<div class="popup_footer_text">
+											<p>На ваш телефон придет сообщение с код бронирования. При посещении музея покажите его на кассе для получения билета.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal18" tabindex="-1" role="dialog" aria-labelledby="modal18" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_7">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Отправить заявку</h3>
+							</div>
+							<div class="popup_two_cols">
+								<div class="left_col">
+									<form>
+										<div class="custom_select custom_select_2 dropdown_select">
+											<div class="select_title active_val">Тип мероприятия</div>
+											<div class="select_list">
+												<ul class="vals_list">
+													<li><a href="#">Тематическая экскурсия</a></li>
+													<li><a href="#">Обзорная экскурсия</a></li>
+													<li><a href="#">Тематическая экскурсия с занятием</a></li>
+													<li><a href="#">Лекция</a></li>
+													<li><a href="#">Культурно–массовое мероприятие, посещение мастер–класса</a></li>
+													<li><a href="#">Пешезодная жкскурсия по уличной территории музея</a></li>
+													<li><a href="#">Экскурсия по городу на транспорте заказчика</a></li>
+													<li><a href="#">Выездная жкскурсия за пределы города на траспорте заказчика </a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="input_wrapp">
+											<input type="number" placeholder="Количество участников:" name="">
+										</div>
+										<div class="form_text_wrapp form_text_wrapp_3">
+											<p>минимальное количество слушателей — 5 человек</p>
+										</div>
+										<div class="input_wrapp">
+											<input type="tel" placeholder="Телефон:" name="">
+										</div>
+										<div class="input_wrapp">
+											<input type="email" placeholder="Эл. почта для связи:" name="">
+										</div>
+										<div class="form_two_cols">
+											<div class="col">
+												<img src="img/captcha.jpg" alt="" style="width: auto; max-width: 100%;">
+											</div>
+											<div class="col">
+												<label class="checkbox" for="ch_4_2"><input type="checkbox" id="ch_4_2" name="">Я согласен на обработку моих персональных данных</label>
+											</div>
+										</div>
+										<div class="submit_wrapp_3 submit_wrapp_3_2">
+											<input type="submit" class="transparent_pill_3" value="Отправить">
+										</div>
+									</form>
+								</div>
+								<div class="right_col">
+									<h2>Выберите день</h2>
+									<div class="popup_calendar_wrapp">
+										<div class="popup_calendar_title">
+											<h3>июль, 2019</h3>
+											<p><a class="beige_link" href="#">другой месяц</a></p>
+										</div>
+										<div class="popup_calendar_box">
+											<div class="popup_calendar_header">
+												<div>пн</div>
+												<div>вт</div>
+												<div>ср</div>
+												<div>чт</div>
+												<div>пт</div>
+												<div>сб</div>
+												<div>вс</div>
+											</div>
+											<div class="popup_calendar_days">
+												<div></div><div></div><div></div><div></div><div><span class="prev_day">1</span></div><div><span class="prev_day">2</span></div><div><span class="prev_day">3</span></div><div><span class="prev_day">4</span></div><div><span class="prev_day">5</span></div>
+												<div><span class="prev_day">6</span></div><div><span class="prev_day">7</span></div><div><span class="prev_day">8</span></div><div><span class="prev_day">9</span></div><div><span class="prev_day">10</span></div><div><span class="prev_day">11</span></div><div><span class="prev_day">12</span></div><div><span class="prev_day">13</span></div>
+												<div><span class="active">14</span></div>
+												<div><span class="next_day">15</span></div>
+												<div><span class="next_day">16</span></div>
+												<div><span class="next_day">17</span></div>
+												<div><span class="next_day">18</span></div>
+												<div><span class="next_day">19</span></div>
+												<div><span class="next_day">20</span></div>
+												<div><span class="next_day">21</span></div>
+												<div><span class="next_day">22</span></div>
+												<div><span class="next_day">23</span></div>
+												<div><span class="next_day">24</span></div>
+												<div><span class="next_day">25</span></div>
+												<div><span class="next_day">26</span></div>
+												<div><span class="next_day">27</span></div>
+												<div><span class="next_day">28</span></div>
+												<div><span class="next_day">29</span></div>
+												<div><span class="next_day">30</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- /Popup 1 -->
 
 	<!-- Card Modal -->
@@ -551,55 +1746,39 @@
 		<div class="modal-dialog card_content">
 			<div class="modal-dialog-centered">
 				<div class="modal-content card_wrapp">
-					<div class="card_title">
-						<h2>«ИСТОРИЯ И КУЛЬТУРА КОРЕННЫХ НАРОДОВ ДАЛЬНЕГО ВОСТОКА»</h2>
-				        <button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
-				        <i class="close_icon"></i>
-				        </button>
-				    </div>
-				    <div class="two_cols_4">
-				    	<div class="left_col">
-				    		<div class="img_box">
-				    			<img src="img/book-14.jpg" alt="" />
-				    		</div>
-				    	</div>
-				    	<div class="right_col">
-				    		<div class="card_descript">
-								<p>Материалы международной научной конференции, посвященной 150-летию со дня рождения Льва Яковлевича Штернберга и 145-летию со дня рождения Бронислава Осиповича Пилсудского (7–9 ноября 2011 г.).</p>
-								<p>В сборник включены доклады ученых из Саппоро, Эбецу (Япония), Гронинген (Нидерланды), Санкт-Петербурга, Хабаровска, Владивостока, Южно-Сахалинска и муниципальных образований Сахалинской области, представителей коренных малочисленных народов Севера.</p>
-								<p>В докладах подняты актуальные вопросы: сохранение культурного наследия; документирование, изучение и сохранение языков; проблемы социально-экономического и культурного развития коренных народов Дальнего Востока России на современном этапе.</p>
-								<p>Материалы предназначены широкому кругу читателей.</p>
-								<p>2013 г. 288 с., илл.</p>
-								<a href="#" class="transparent_pill">517,78 ₽</a>
-							</div>
-				    	</div>
-				    </div>
+					<div class="centered">
+						<div>
+							<div class="card_title">
+								<h2>«ИСТОРИЯ И КУЛЬТУРА КОРЕННЫХ НАРОДОВ ДАЛЬНЕГО ВОСТОКА»</h2>
+						        <button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+						    </div>
+						    <div class="two_cols_4">
+						    	<div class="left_col">
+						    		<div class="img_box">
+						    			<img src="img/book-14.jpg" alt="" />
+						    		</div>
+						    	</div>
+						    	<div class="right_col">
+						    		<div class="card_descript">
+										<p>Материалы международной научной конференции, посвященной 150-летию со дня рождения Льва Яковлевича Штернберга и 145-летию со дня рождения Бронислава Осиповича Пилсудского (7–9 ноября 2011 г.).</p>
+										<p>В сборник включены доклады ученых из Саппоро, Эбецу (Япония), Гронинген (Нидерланды), Санкт-Петербурга, Хабаровска, Владивостока, Южно-Сахалинска и муниципальных образований Сахалинской области, представителей коренных малочисленных народов Севера.</p>
+										<p>В докладах подняты актуальные вопросы: сохранение культурного наследия; документирование, изучение и сохранение языков; проблемы социально-экономического и культурного развития коренных народов Дальнего Востока России на современном этапе.</p>
+										<p>Материалы предназначены широкому кругу читателей.</p>
+										<p>2013 г. 288 с., илл.</p>
+										<a href="#" class="transparent_pill">517,78 ₽</a>
+									</div>
+						    	</div>
+						    </div>
+						</div>
+					</div>
 			    </div>
 			</div>
 		</div>
 	</div>
 
 	<!-- /Card Modal -->
-
-	<!-- Basket Succes Modal -->
-
-	<div class="modal" id="succesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-dialog-centered">
-				<div class="modal-content succes_modal">
-					<div class="centered">
-						<div>
-							<button type="button" class="close_2" data-dismiss="modal" aria-label="Close"><i class="close_icon"></i></button>
-							<h2>заказ оформлен</h2>
-							<p>В течения дня с вами свяжется наш менеджер для уточнения деталей</p>
-						</div>
-					</div>
-		    	</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- /Basket Succes Modal -->	
 
 	<!-- /Popups -->
 

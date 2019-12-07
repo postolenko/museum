@@ -9852,6 +9852,10 @@ body.fixed {
   overflow: hidden;
 }
 
+.modal-content .centered {
+    margin: 0 auto;
+}
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -9872,6 +9876,7 @@ body.fixed {
 .modal-dialog {
   position: relative;
   width: auto;
+  width: 100%;
   margin: 0.5rem;
   pointer-events: none;
 }
@@ -9950,15 +9955,17 @@ body.fixed {
   position: relative;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  /*-ms-flex-direction: column;*/
+  /*flex-direction: column;*/
   width: 100%;
+  margin: 0 auto;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  align-items: center;
 }
 
 .modal-backdrop {
@@ -10040,8 +10047,8 @@ body.fixed {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
+    /*max-width: 500px;*/
+    /*margin: 1.75rem auto;*/
   }
   .modal-dialog-scrollable {
     max-height: calc(100% - 3.5rem);
@@ -10078,6 +10085,8 @@ body.fixed {
 .card_content {
     width: 100%;
     max-width: 1187px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card_wrapp {
@@ -10174,12 +10183,13 @@ body.fixed {
 .succes_modal {
     width: 100%;
     max-width: 522px;
+    min-height: 470px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
     background-color: #fffffe;
     text-align: center;
-    padding: 131px 15px 135px 15px;
+    padding: 15px;
 }
 
 .succes_modal .close_2 {
@@ -10210,12 +10220,13 @@ body.fixed {
 
 /*-- Popup 1 --*/
 
-.search_dialog {
+.search_modal {
+    background-color: transparent;
     max-width: 890px;
 }
 
-.search_modal {
-    background-color: transparent;
+.search_form {
+    width: 100%;
 }
 
 .close_btn {
@@ -10594,7 +10605,7 @@ input.search_input::placeholder {
 
 .modal_4 {
     max-width: 735px;
-    min-height: 826px;
+    /*min-height: 826px;*/
 }
 
 .modal_5 {
