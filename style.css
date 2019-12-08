@@ -3211,6 +3211,8 @@ p.date_2 {
 .events_slider {
     white-space: nowrap;
     margin: 0 -22px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .events_slider .slide {

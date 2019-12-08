@@ -141,13 +141,13 @@ var nextSlideDescript,
     museumNavBottomCoord;
 
 $(window).on('load', function() {
-    setSliderArrows();
     $(".events_slider").mCustomScrollbar({
         scrollButtons:{
             enable:true
         },
         axis:"x"
     });
+    setSliderArrows();
     if(detectIEEdge() != false) {
         var meta = document.createElement('meta');
         meta.setAttribute('name', 'format-detection');
