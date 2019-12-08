@@ -97,6 +97,24 @@ function getEventsSliderParams() {
     }
 }
 
+function detectIEEdge() {
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf('MSIE ');
+    if (msie > 0) {
+        return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    }
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+        var rv = ua.indexOf('rv:');
+        return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    }
+    var edge = ua.indexOf('Edge/');
+    if (edge > 0) {
+       return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    }
+    return false;
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -124,6 +142,12 @@ var nextSlideDescript,
 
 $(window).on('load', function() {
     setSliderArrows();
+    if(detectIEEdge() != false) {
+        var meta = document.createElement('meta');
+        meta.setAttribute('name', 'format-detection');
+        meta.setAttribute('content', 'telephone=no');
+        document.getElementsByTagName('head')[0].appendChild(meta);
+    }
 });
 
 $(window).resize(function() {
@@ -634,15 +658,5 @@ $(document).ready(function() {
     });
 
     // -------------------
-
-    var ua = window.navigator.userAgent;
-    var isIE = /MSIE|Trident/.test(ua);
-
-    if ( isIE ) {
-        var meta = document.createElement('meta');
-        meta.setAttribute('name', 'format-detection');
-        meta.setAttribute('content', 'telephone=no');
-        document.getElementsByTagName('head')[0].appendChild(meta);
-    }
 
 });
