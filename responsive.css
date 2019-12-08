@@ -1711,6 +1711,27 @@ input.search_input {
 
 /*-- /Section 1 - Error Page --*/
 
+/*-- Souvenir --*/
+
+.basket_resp {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.basket_resp > div:nth-child(1) {
+    width: calc(100% - 120px);
+    padding-right: 5px;
+}
+
+.basket_resp > div:nth-child(2) {
+    display: block;
+    width: 120px;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+/*-- /Souvenir --*/
+
 /*-- Footer --*/
 
 .seo_texts_wrapp {

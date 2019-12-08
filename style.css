@@ -6760,6 +6760,7 @@ textarea::placeholder {
 .cash_link {
     display: inline-flex;
     display: -webkit-inline-flex;
+    margin-top: 12px;
 }
 
 .cash_link .col:nth-child(1) {
@@ -6777,7 +6778,10 @@ textarea::placeholder {
     display: block;
     width: 30px;
     height: 30px;
-    outline: 1px solid red;
+    background-image: url(img/shopping_cart.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cash_link p {
@@ -7195,8 +7199,14 @@ textarea::placeholder {
 
 /*-- Section 1 - Souvenir --*/
 
-.book_thumb {
+.basket_resp > div:nth-child(1) {
+    width: 100%;
+    padding-right: 0;
+}
 
+.basket_resp > div:nth-child(2) {
+    display: none;
+    width: 120px;
 }
 
 .book_thumb h3 {

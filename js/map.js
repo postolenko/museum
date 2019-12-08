@@ -15,12 +15,6 @@ function init(){
     myPlacemark = new ymaps.Placemark([46.959064, 142.744463], {
         hintContent: 'Краеведческий музей',
         balloonContent: 'Краеведческий музей'
-    }
-    , {
-        // iconLayout: 'default#image',
-        // iconImageHref: 'img/yandex_map_marker.png',
-        // iconImageSize: [43, 52],
-        // iconImageOffset: [0, 0]
     });
 
     myMap.behaviors

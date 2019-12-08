@@ -71,8 +71,8 @@
 								<div class="col options_wrapp">
 									<div class="sign_links resp_hidden">
 										<ul>
-											<li><a href="#">Вход</a></li>
-											<li><a href="#">Регистрация</a></li>
+											<li><a href="#" data-toggle="modal" data-target="#modal3">Вход</a></li>
+											<li><a href="#" data-toggle="modal" data-target="#modal14">Регистрация</a></li>
 										</ul>
 									</div>
 									<div>
@@ -108,7 +108,7 @@
 											</button>
 										</div>
 										<div class="resp_hidden">
-											<button type="button" class="transparent_pill">купить билет</button>
+											<button type="button" class="transparent_pill" data-toggle="modal" data-target="#modal16">купить билет</button>
 										</div>
 									</div>
 								</div>
@@ -295,8 +295,8 @@
 				<div class="resp_nav_wrapp"></div>
 				<div class="sign_links sign_links_2">
 					<ul>
-						<li><a href="#">Вход</a></li>
-						<li><a href="#">Регистрация</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#modal3">Вход</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#modal14">Регистрация</a></li>
 					</ul>
 				</div>
 			</div>
@@ -370,18 +370,18 @@
 								<p class="month_active active_val">Июнь</p>
 								<div class="dropdown_box">
 									<ul class="months_list vals_list">
-										<li><a hef="#">Январь</a></li>
-										<li><a hef="#">Февраль</a></li>
-										<li><a hef="#">Март</a></li>
-										<li><a hef="#">Апрель</a></li>
-										<li><a hef="#">Май</a></li>
-										<li><a hef="#">Июнь</a></li>
-										<li><a hef="#">Июль</a></li>
-										<li><a hef="#">Август</a></li>
-										<li><a hef="#">Сентябрь</a></li>
-										<li><a hef="#">Октябрь</a></li>
-										<li><a hef="#">Ноябрь</a></li>
-										<li><a hef="#">Декабрь</a></li>
+										<li><a href="#">Январь</a></li>
+										<li><a href="#">Февраль</a></li>
+										<li><a href="#">Март</a></li>
+										<li><a href="#">Апрель</a></li>
+										<li><a href="#">Май</a></li>
+										<li><a href="#">Июнь</a></li>
+										<li><a href="#">Июль</a></li>
+										<li><a href="#">Август</a></li>
+										<li><a href="#">Сентябрь</a></li>
+										<li><a href="#">Октябрь</a></li>
+										<li><a href="#">Ноябрь</a></li>
+										<li><a href="#">Декабрь</a></li>
 									</ul>
 								</div>
 							</div>
@@ -477,16 +477,6 @@
 								<div class="img_box">
 									<img src="img/afisha_1.jpg" alt="" />
 								</div>
-								<!-- <div class="thumb_5_header">
-									<div class="place_item">
-										<div class="col">
-											<i class="location_pin"></i>
-										</div>
-										<div class="col">
-											<p>Сахалинский областной краеведческий музей</p>
-										</div>
-									</div>
-								</div> -->
 								<div class="thumb_5_descript">
 									<p>лекция</p>
 									<h3>Природные особенности северо-западного сектора Тихого океана</h3>
@@ -529,16 +519,6 @@
 								<div class="img_box">
 									<img src="img/afisha_1.jpg" alt="" />
 								</div>
-								<!-- <div class="thumb_5_header">
-									<div class="place_item">
-										<div class="col">
-											<i class="location_pin"></i>
-										</div>
-										<div class="col">
-											<p>Сахалинский областной краеведческий музей</p>
-										</div>
-									</div>
-								</div> -->
 								<div class="thumb_5_descript">
 									<p>лекция</p>
 									<h3>Природные особенности северо-западного сектора Тихого океана</h3>
@@ -1159,7 +1139,7 @@
 						<div class="col">
 							<div class="btn_wrapp">
 								<h3 class="h3">Оцените нашу работу</h3>
-								<button type="button" class="transparent_pill_2">Оставить отзыв</button>
+								<button type="button" class="transparent_pill_2" data-toggle="modal" data-target="#modal6">Оставить отзыв</button>
 							</div>
 						</div>
 					</div>
@@ -1201,8 +1181,8 @@
 	<!-- Popup 1 -->
 
 	<div class="modal" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
-		<div class="modal-dialog search_dialog">
-			<div class="modal-dialog-centered">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered search_modal_centered">
 				<div class="modal-content search_modal">
 					<div class="search_form">
 						<button type="button" class="close_btn" data-dismiss="modal" aria-label="Close"><i class="close"></i></button>
@@ -1219,9 +1199,372 @@
 				</div>
 			</div>
 		</div>
-	</div>			
+	</div>
 
 	<!-- /Popup 1 -->
+
+	<!-- Корзина -->
+
+	<div class="modal" id="modal16" tabindex="-1" role="dialog" aria-labelledby="modal16" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_7">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Купить билет</h3>
+							</div>
+							<div class="goods_prices">
+								<div class="popup_two_cols">
+									<div class="left_col">
+										<div class="name_wrapp">
+											<p>Ирина Константинопольская</p>
+										</div>
+										<h2>Количество</h2>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Взрослые</h3>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="1" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Иностранные граждане</h3>
+												<p>взрослые</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Переводчик</h3>
+												<p>иностранной группы</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="200">200 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Пенсионеры</h3>
+												<p>после предоставления удостоверения</p>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="100">100 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="good_item_2 good_price_item">
+											<div class="col">
+												<h3>Дети</h3>
+											</div>
+											<div class="col">
+												<p class="red_price" data-price-val="0">0 ₽</p>
+											</div>
+											<div class="col">
+												<div class="count_box goods_count">
+													<button type="button" class="plus_btn"><span>+</span></button>
+													<input type="number" value="0" />	
+													<button type="button" class="minus_btn"><span>-</span></button>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown_prices_wrapp">
+											<div>
+												<div class="dropdown_prices_title" data-dropdown-btn = "prices_dropdown_2">
+													<p>Другие льготные категории</p>
+												</div>
+											</div>
+											<div class="dropdown_prices" data-dropdown-box = "prices_dropdown_2">
+												<div class="good_item_2 good_price_item">
+													<div class="col">
+														<h3>Взрослые</h3>
+														<p>взрослые</p>
+													</div>
+													<div class="col">
+														<p class="red_price" data-price-val="200">200 ₽</p>
+													</div>
+													<div class="col">
+														<div class="count_box goods_count">
+															<button type="button" class="plus_btn"><span>+</span></button>
+															<input type="number" value="0" />	
+															<button type="button" class="minus_btn"><span>-</span></button>
+														</div>
+													</div>
+												</div>
+												<div class="good_item_2 good_price_item">
+													<div class="col">
+														<h3>Иностранные граждане</h3>
+														<p>взрослые</p>
+													</div>
+													<div class="col">
+														<p class="red_price" data-price-val="200">200 ₽</p>
+													</div>
+													<div class="col">
+														<div class="count_box goods_count">
+															<button type="button" class="plus_btn"><span>+</span></button>
+															<input type="number" value="0" />	
+															<button type="button" class="minus_btn"><span>-</span></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="right_col">
+										<h2>Выберите день</h2>
+										<div class="popup_calendar_wrapp">
+											<div class="popup_calendar_title">
+												<h3>июль, 2019</h3>
+												<p><a class="beige_link" href="#">другой месяц</a></p>
+											</div>
+											<div class="popup_calendar_box">
+												<div class="popup_calendar_header">
+													<div>пн</div>
+													<div>вт</div>
+													<div>ср</div>
+													<div>чт</div>
+													<div>пт</div>
+													<div>сб</div>
+													<div>вс</div>
+												</div>
+												<div class="popup_calendar_days">
+													<div></div><div></div><div></div><div></div><div><span class="prev_day">1</span></div><div><span class="prev_day">2</span></div><div><span class="prev_day">3</span></div><div><span class="prev_day">4</span></div><div><span class="prev_day">5</span></div>
+													<div><span class="prev_day">6</span></div><div><span class="prev_day">7</span></div><div><span class="prev_day">8</span></div><div><span class="prev_day">9</span></div><div><span class="prev_day">10</span></div><div><span class="prev_day">11</span></div><div><span class="prev_day">12</span></div><div><span class="prev_day">13</span></div>
+													<div><span class="active">14</span></div>
+													<div><span class="next_day">15</span></div>
+													<div><span class="next_day">16</span></div>
+													<div><span class="next_day">17</span></div>
+													<div><span class="next_day">18</span></div>
+													<div><span class="next_day">19</span></div>
+													<div><span class="next_day">20</span></div>
+													<div><span class="next_day">21</span></div>
+													<div><span class="next_day">22</span></div>
+													<div><span class="next_day">23</span></div>
+													<div><span class="next_day">24</span></div>
+													<div><span class="next_day">25</span></div>
+													<div><span class="next_day">26</span></div>
+													<div><span class="next_day">27</span></div>
+													<div><span class="next_day">28</span></div>
+													<div><span class="next_day">29</span></div>
+													<div><span class="next_day">30</span></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popup_calc_footer">
+									<div>
+										<div class="total_price_wrapp">
+											<p class="total_price_p">Цена: <span id="total_price">0</span> <span class="rub">₽</span></p>
+										</div>
+									</div>
+									<div>
+										<input type="submit" class="transparent_pill" value="Купить">
+									</div>
+									<div>
+										<div class="popup_footer_text">
+											<p>На ваш телефон придет сообщение с код бронирования. При посещении музея покажите его на кассе для получения билета.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Корзина -->
+
+	<!-- Войти в систему -->
+
+	<div class="modal" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Войти в систему</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="tel" placeholder="Телефон:" name="" />
+									</div>
+									<div class="input_wrapp">
+										<input type="password" placeholder="Пароль:" name="" />
+									</div>
+									<div class="form_text_wrapp">
+										<p><a href="#" class="grey_link" data-toggle="modal" data-target="#modal4">Забыли пароль?</a></p>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Войти в систему -->
+
+	<!-- Регистрация -->
+
+	<div class="modal" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modal14" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Регистрация</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="tel" placeholder="Телефон:" name="" />
+									</div>
+									<div class="form_text_wrapp">
+										<p>Вам на телефон придет код для регистрации</p>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Регистрация -->
+
+	<!-- Оставить отзыв -->
+
+	<div class="modal" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2 modal_4">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Оставить отзыв</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="text" placeholder="Имя:" name="" />
+									</div>
+									<div class="input_wrapp">
+										<textarea placeholder="Сообщение:"></textarea>
+									</div>
+									<div class="form_two_cols">
+										<div class="col">
+											<img src="img/captcha.jpg" alt="" / style="width: auto; max-width: 100%;">
+										</div>
+										<div class="col">
+											<label class="checkbox" for="ch_4"><input type="checkbox" id="ch_4" name="" />Я согласен на обработку моих персональных данных</label>
+										</div>
+									</div>
+									<div class="submit_wrapp_3 submit_wrapp_3_2">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Оставить отзыв -->
+
+	<!-- Забыли пароль -->
+
+	<div class="modal" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-dialog-centered">
+				<div class="modal-content modal_2">
+					<div class="centered">
+						<div>
+							<div class="modal_title_2">
+								<button type="button" class="close_2" data-dismiss="modal" aria-label="Close">
+						        <i class="close_icon"></i>
+						        </button>
+								<h3>Забыли пароль?</h3>
+							</div>
+							<div class="popup_form_2">
+								<form>
+									<div class="input_wrapp">
+										<input type="tel" placeholder="Телефон:" name="" />
+									</div>
+									<div class="form_text_wrapp">
+										<p>Вам на телефон придет код для восстановления пароля</p>
+									</div>
+									<div class="submit_wrapp_3">
+										<input type="submit" class="transparent_pill_3" value="Отправить" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Забыли пароль -->
 
 	<!-- /Popups -->
 
@@ -1230,12 +1573,16 @@
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
-	<script src="vendors/js/jquery.fancybox.js"></script>	
+	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU"></script>
+	<script src="js/map.js"></script>
 
 </body>
 </html>
