@@ -142,6 +142,12 @@ var nextSlideDescript,
 
 $(window).on('load', function() {
     setSliderArrows();
+    $(".events_slider").mCustomScrollbar({
+        scrollButtons:{
+            enable:true
+        },
+        axis:"x"
+    });
     if(detectIEEdge() != false) {
         var meta = document.createElement('meta');
         meta.setAttribute('name', 'format-detection');
@@ -648,15 +654,5 @@ $(document).ready(function() {
       }
     });
 
-    // -------------------
-
-    $(".events_slider").mCustomScrollbar({
-        scrollButtons:{
-            enable:true
-        },
-        axis:"x"
-    });
-
-    // -------------------
 
 });
