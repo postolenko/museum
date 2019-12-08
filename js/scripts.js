@@ -633,4 +633,16 @@ $(document).ready(function() {
         axis:"x"
     });
 
+    // -------------------
+
+    var ua = window.navigator.userAgent;
+    var isIE = /MSIE|Trident/.test(ua);
+
+    if ( isIE ) {
+        var meta = document.createElement('meta');
+        meta.setAttribute('name', 'format-detection');
+        meta.setAttribute('content', 'telephone=no');
+        document.getElementsByTagName('head')[0].appendChild(meta);
+    }
+
 });
