@@ -147,6 +147,11 @@ $(window).on('load', function() {
         },
         axis:"x"
     });
+    if($('.masonry').length > 0) {
+        $('.masonry').masonry({
+          itemSelector: '.grid_item'
+        });
+    }
     setSliderArrows();
     if(detectIEEdge() != false) {
         var meta = document.createElement('meta');
@@ -535,12 +540,6 @@ $(document).ready(function() {
             dropdownBox.slideUp(300);
             $(this).removeClass("active");
         }
-    });
-
-    // ------------------
-
-    $('.masonry').masonry({
-      itemSelector: '.grid_item'
     });
 
     // ------------------
